@@ -12,9 +12,9 @@ import os
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
 group = "adapt_lab"
-study = "TPOT"
+study = "sharp"
 PI = "Allen"
-scriptsFolder = "TPOT_scripts"
+scriptsFolder = "sharp_scripts"
 
 # The following variables are used in the main script and need to be defined here. 
 # They need to exist prior to running the script
