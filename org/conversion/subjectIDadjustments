@@ -1,0 +1,29 @@
+adjustments:
+
+0099	099
+07		007
+28		028
+37		037
+42		042
+45		045
+
+remaining:
+
+TPOT_20161205,,1
+TPOT_20180507_154457,,1
+TPOT1202_20170919,,1
+
+duplicates:
+
+TPOT013_20161109,013,1
+TPOT013_20170407,013,1
+Came in twice because personalized affect task broke
+1st one will have usable MPRAGE, resting States,  affect labeling, diffusion’s and EPI
+
+TPOT030_20170224,030,1
+TPOT030_20170407,030,1
+Came in twice because personalized affect task broke
+1st one will have usable MPRAGE, resting States,  affect labeling, diffusion’s and EPI
+
+TPOT039_20170117,039,1
+TPOT039_20170120,039,1

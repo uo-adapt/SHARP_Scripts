@@ -1,0 +1,67 @@
+{
+    "descriptions": [
+        {
+            "dataType": "anat",
+            "modalityLabel": "T1w",
+            "criteria": {
+                "SeriesDescription": "mprage_p2"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-Resting1",
+            "criteria": {
+                "SeriesDescription": "Resting_1"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-Resting2",
+            "criteria": {
+                "SeriesDescription": "Resting_2"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-Video1",
+            "criteria": {
+                "SeriesDescription": "Video_1"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-Affect1",
+            "criteria": {
+                "SeriesDescription": "Affect_1"
+            }
+        },
+        {
+            "dataType": "func",
+            "modalityLabel": "bold",
+            "customLabels": "task-Affect2",
+            "criteria": {
+                "SeriesDescription": "Affect_2"
+            }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "epi",
+            "customLabels": "dir-ap",
+            "criteria": {
+                "SeriesDescription": "se_epi_fieldmap_ap"
+            }
+        },
+        {
+            "dataType": "fmap",
+            "modalityLabel": "epi",
+            "customLabels": "dir-pa",
+            "criteria": {
+                "SeriesDescription": "se_epi_fieldmap_pa"
+            }
+        }
+    ]
+}
