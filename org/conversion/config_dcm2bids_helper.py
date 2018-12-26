@@ -21,7 +21,7 @@ scriptsFolder = "SHARP_Scripts"
 
 # Directories
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder that contains bidsdir and codedir
-dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, 'Archive', study)
+dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, 'Archive', "sharp")
 bidsdir = os.path.join(parentdir, "bids_data") # where the niftis will be put
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 logdir = os.path.join(codedir, "logs_helper")
