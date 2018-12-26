@@ -21,7 +21,7 @@ scriptsFolder = "TPOT_scripts"
 
 # Directories
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder that contains bidsdir and codedir
-dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, PI, study)
+dicomdir = os.path.join(os.sep, "projects", "lcni", "dcm", group, 'Archive', study)
 bidsdir = os.path.join(parentdir, "bids_data") # where the niftis will be put
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 logdir = os.path.join(codedir, "logs_helper")
@@ -31,7 +31,7 @@ outputlog = os.path.join(logdir, "outputlog_helper.txt")
 errorlog = os.path.join(logdir, "errorlog_helper.txt")
 
 # Test subject
-test_subject = "TPOT015_20170120" # Name of a directory that contains DICOMS for one participant
+test_subject = "SH220_20160307" # Name of a directory that contains DICOMS for one participant
 
 # Run on local machine (run_local = True) or high performance cluster with slurm (run_local = False)
 run_local = False

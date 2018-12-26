@@ -1,2 +1,0 @@
-Example in:
-/projects/adapt_lab/shared/TPOT/bids_data/tmp_dcm2bids/helper
