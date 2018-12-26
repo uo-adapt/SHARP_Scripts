@@ -21,11 +21,12 @@ subjectdir_contents = os.listdir(dicomdir)
 subjectdir_contents = filter(lambda k: len(k) < 16, subjectdir_contents)
 subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
 
-subjectdir_contents = [subject + "," + subject + "1" for subject in subjectdir_contents]
+subjectdir_contents = [subject + "," + subject for subject in subjectdir_contents]
 
 for subject in range(len(subjectdir_contents)):
 	subjectdir_contents[subject] = subjectdir_contents[subject][:-9]
 
+subjectdir_contents = [subject + ",1" for subject in subjectdir_contents]
 
 subjectdir_contents
 
