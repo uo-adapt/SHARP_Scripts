@@ -25,7 +25,7 @@ from datetime import datetime
 group = "adapt_lab"
 study = "sharp"
 PI = "Allen"
-scriptsFolder = "sharp_scripts"
+scriptsFolder = "SHARP_Scripts"
 
 
 # Set directories
