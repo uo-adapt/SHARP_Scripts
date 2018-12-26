@@ -12,7 +12,7 @@ import os
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
 group = "adapt_lab"
-study = "sharp"
+study = "SHARP"
 PI = "Allen"
 scriptsFolder = "SHARP_Scripts"
 
