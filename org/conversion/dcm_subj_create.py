@@ -24,7 +24,11 @@ subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
 for subject in range(len(subjectdir_contents)):
 	subjectdir_contents[subject] = subjectdir_contents[subject][:5]
 
-subjectdir_contents = print('\n'.join(subjectdir_contents))
 
-with open(os.path.join(codedir,"subject_list.txt"), "w") as output:
-    output.write(str(subjectdir_contents))
+with open(os.path.join(codedir,"subject_list.txt"), mode="w") as outfile:  # also, tried mode="rb"
+    for subject in subjectdir_contents:
+        outfile.write("%s\n" % subject)
+
+
+
+
