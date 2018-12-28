@@ -17,11 +17,20 @@ parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder th
 bidsdir = os.path.join(parentdir,"bids_data")
 codedir = os.path.join(parentdir, scriptsFolder, "dMRI", "preproc") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 
-# List the subject directory names and store them
+# List the subject directory names, store them, then sort
 subjectdir_contents = os.listdir(bidsdir)
+subjectdir_contents.sort()
 
 # Remove any directory names that don't contain SH in them (like 'derivatives')
 subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
+
+# list of subjects to be ommitted from 'subject_list.txt'
+thing = ['sub-SH219',"sub-SH227","sub-SH231"]
+
+# Remove list of subjects from the list
+for i in thing:
+	if i in str(subjectdir_contents):
+	 subjectdir_contents.remove(i)
 
 # Remove 'sub-' from the directory names, leaving only participant IDs
 for subject in range(len(subjectdir_contents)):

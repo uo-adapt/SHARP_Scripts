@@ -18,6 +18,7 @@ parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder th
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 
 subjectdir_contents = os.listdir(dicomdir)
+subjectdir_contents.sort()
 subjectdir_contents = filter(lambda k: len(k) < 16, subjectdir_contents)
 subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
 
