@@ -25,7 +25,7 @@ errorlog=""$scriptsdir"/output/errorlog_preprocdiff.txt"
 # Create error log file
 touch "${errorlog}"
 
-if [ $(ls "$datadir"/sub-"${subid}"/ses-1/dwi/*.nii.gz | wc -l) -eq 1 ]; then
+if [ $(ls "$datadir"/sub-"${subid}"/ses-1/dwi/*.nii.gz | wc -l) -eq 2 ]; then
 
 # Extract B0 images from nifti files & combine in single volume.
 mkdir -p "$outputdir"/"${subid}"/ses-1/
