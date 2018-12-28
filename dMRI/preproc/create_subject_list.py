@@ -13,7 +13,6 @@ scriptsFolder = "SHARP_Scripts"
 # They need to exist prior to running the script
 
 # Directories
-bidsdir = os.path.join()
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder that contains bidsdir and codedir
 bidsdir = os.path.join(parentdir,"bid_data")
 codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains subject_list.txt, config file, and dcm2bids_batch.py
