@@ -17,10 +17,17 @@ parentdir = os.path.join(os.sep, "projects", group, "shared", study) # folder th
 bidsdir = os.path.join(parentdir,"bids_data")
 codedir = os.path.join(parentdir, scriptsFolder, "dMRI", "preproc") # Contains subject_list.txt, config file, and dcm2bids_batch.py
 
+# List the subject directory names and store them
 subjectdir_contents = os.listdir(bidsdir)
+
+# Remove any directory names that don't contain SH in them (like 'derivatives')
 subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
 
+# Remove 'sub-' from the directory names, leaving only participant IDs
+for subject in range(len(subjectdir_contents)):
+	subjectdir_contents[subject] = subjectdir_contents[subject][4:]
 
+# Write the subject list to a text file
 with open(os.path.join(codedir,"subject_list.txt"), mode="w") as outfile:  # also, tried mode="rb"
     for subject in subjectdir_contents:
         outfile.write("%s\n" % subject)
