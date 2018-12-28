@@ -9,8 +9,7 @@ from pprint import pprint
 # Change these to your own paths/times/etc.
 bidsdir = os.path.join(os.sep, 'projects', 'adapt_lab', 'shared', 'SHARP', 'bids_data')
 
-TaskName1 = 'rest1'
-TaskName2 = 'rest2'
+# Change these to whatever your task names are. You must make sure that the amount of variables here match the amount of if stamements in the write_to_json() function. 
 
 def main():
     subjectdirs = get_subjectdirs()
@@ -60,18 +59,8 @@ def write_to_json(func_jsons:list, func_dir_path:str):
             json_path = os.path.join(func_dir_path, func_json)
             with open(json_path) as target_json:
                 json_file = json.load(target_json)
-                json_file['TaskName'] = TaskName1
-            with open(json_path, 'w') as target_json:
-                json.dump(json_file, target_json, indent=4)
-        elif func_json.endswith('rest2_bold.json'):
-            json_path = os.path.join(func_dir_path, func_json)
-            with open(json_path) as target_json:
-                json_file = json.load(target_json)
-                json_file['TaskName'] = TaskName2
+                json_file['TaskName'] = re.search('task-(.+?)_bold.json', func_json).group(1)
             with open(json_path, 'w') as target_json:
                 json.dump(json_file, target_json, indent=4)
 
 main()
-
-
-
