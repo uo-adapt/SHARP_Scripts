@@ -54,10 +54,10 @@ fslmerge -a diffusion_data sub-"${subid}"_ses-1_acq-rl_dwi.nii.gz sub-"${subid}"
 
 # Combining bvecs & bvals from both diffusion sequences
 echo merging "${subid}" bvecs
-paste -d"\0" sub-"${subid}"_ses-1_acq-rl_dwi.bvec sub-"${subid}"_ses-1_acq-lr_dwi_bvecs >> bvecs
+paste -d"\0" sub-"${subid}"_ses-1_acq-rl_dwi.bvec sub-"${subid}"_ses-1_acq-lr_dwi.bvec >> bvecs
 
 echo merging "${subid}" bvals
-paste -d"\0" sub-"${subid}"_ses-1_acq-rl_dwi.bvals sub-"${subid}"_ses-1_acq-lr_dwi_bvals >> bvals
+paste -d"\0" sub-"${subid}"_ses-1_acq-rl_dwi.bval sub-"${subid}"_ses-1_acq-lr_dwi.bval >> bvals
 
 
 # Running eddy with outlier replacement
