@@ -20,7 +20,7 @@ def main():
             func_dir_path = os.path.join(bidsdir, subjectdir, timepoint, 'func')
             if os.path.isdir(func_dir_path):
                 func_jsons = get_func_jsons(func_dir_path)
-                write_to_json(func_jsons, func_dir_path, TaskName)
+                write_to_json(func_jsons, func_dir_path)
             else:
                 continue
 
@@ -54,7 +54,7 @@ def get_func_jsons(func_dir_path):
     func_jsons = [f for f in os.listdir(func_dir_path) if f.endswith('bold.json')]
     return func_jsons
 
-def write_to_json(func_jsons:list, func_dir_path:str,TaskName:str):
+def write_to_json(func_jsons:list, func_dir_path:str):
     for func_json in func_jsons:
         if func_json.endswith('rest1_bold.json'):
             json_path = os.path.join(func_dir_path, func_json)
@@ -67,7 +67,7 @@ def write_to_json(func_jsons:list, func_dir_path:str,TaskName:str):
             json_path = os.path.join(func_dir_path, func_json)
             with open(json_path) as target_json:
                 json_file = json.load(target_json)
-                json_file['TaskName'] = TaskName1
+                json_file['TaskName'] = TaskName2
             with open(json_path, 'w') as target_json:
                 json.dump(json_file, target_json, indent=4)
 
