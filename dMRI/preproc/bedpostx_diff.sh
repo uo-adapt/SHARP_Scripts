@@ -6,9 +6,9 @@
 module load fsl
 
 # Set directory names
-datadir="/projects/adapt_lab/shared/ADS/data/BIDS_data"
-scriptsdir="/projects/adapt_lab/shared/ADS/Scripts/dMRI/preproc/wave2"
-outputdir="/projects/adapt_lab/shared/ADS/data/BIDS_data/derivatives/dMRI_preproc"
+datadir="/projects/adapt_lab/shared/SHARP/data/bids_data"
+scriptsdir="/projects/adapt_lab/shared/SHARP/SHARP_Scripts/dMRI/preproc"
+outputdir="/projects/adapt_lab/shared/SHARP/data/bids_data/derivatives/dMRI_preproc"
 
 # Set file dependencies
 data=""$outputdir"/"${subid}"/ses-wave2/dwi/data.nii.gz"
