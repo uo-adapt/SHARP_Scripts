@@ -7,7 +7,7 @@ import json
 from pprint import pprint
 
 # Change these to your own paths/times/etc.
-bidsdir = os.path.join(os.sep, 'projects', 'adapt_lab', 'shared', 'SHARP', 'BIDS_data')
+bidsdir = os.path.join(os.sep, 'projects', 'adapt_lab', 'shared', 'SHARP', 'bids_data')
 
 TaskName1 = 'rest1'
 TaskName2 = 'rest2'
