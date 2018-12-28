@@ -6,7 +6,7 @@
 # for each subject in that list.
 
 # Set your study
-STUDY=/projects/adapt_lab/shared/ADS
+STUDY=/projects/adapt_lab/shared/SHARP
 
 # Set subject list
 SUBJLIST=`cat subject_list_test.txt`
