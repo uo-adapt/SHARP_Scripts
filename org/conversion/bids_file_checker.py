@@ -23,8 +23,6 @@ codedir = os.path.join(parentdir, "SHARP_Scripts", "org", "conversion") # Contai
 logdir = os.path.join(codedir, "logs_checker")
 subject_list = os.path.join(codedir,"subject_list.txt")
 
-os.mkdir(logdir)
-
 try:
 	# Create target Directory
 	os.mkdir(logdir)
