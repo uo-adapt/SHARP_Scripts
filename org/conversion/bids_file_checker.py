@@ -25,6 +25,13 @@ subject_list = os.path.join(codedir,"subject_list.txt")
 
 os.mkdir(logdir)
 
+try:
+    # Create target Directory
+    os.mkdir(logdir)
+    print("Directory " , logdir ,  " Created ") 
+except FileExistsError:
+    print("Directory " , logdir ,  " already exists")
+
 # Change these to match teh types of files you have for your study (e.g., remove fmap if you don't have field maps)
 scan_type_list = {"anat","func","dwi"}
 
