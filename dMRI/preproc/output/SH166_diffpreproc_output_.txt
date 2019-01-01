@@ -1,7 +1,0 @@
-making SH166 b0 image
-running SH166 topup
-creating SH166 nodif brain mask
-merging SH166 diffusion sequences
-merging SH166 bvecs
-merging SH166 bvals
-running SH166 eddy

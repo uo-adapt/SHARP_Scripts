@@ -14,7 +14,7 @@ import pandas as pd
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
 Group="adapt_lab"
-Study="ADS"
+Study="SHARP"
 
 # Change these to your own paths/times/etc.
 parentdir = os.path.join(os.sep, "projects", Group, "shared", Study) # folder that contains bidsdir and codedir

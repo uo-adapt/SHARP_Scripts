@@ -1,7 +1,0 @@
-making SH177 b0 image
-running SH177 topup
-creating SH177 nodif brain mask
-merging SH177 diffusion sequences
-merging SH177 bvecs
-merging SH177 bvals
-running SH177 eddy
