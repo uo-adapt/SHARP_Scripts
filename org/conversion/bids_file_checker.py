@@ -23,7 +23,7 @@ codedir = os.path.join(parentdir, "SHARP_Scripts", "org", "conversion") # Contai
 logdir = os.path.join(codedir, "logs_checker")
 subject_list = os.path.join(codedir,"subject_list.txt")
 
-mkdir(logdir)
+os.mkdir(logdir)
 
 # Change these to match teh types of files you have for your study (e.g., remove fmap if you don't have field maps)
 scan_type_list = {"anat","func","dwi"}
