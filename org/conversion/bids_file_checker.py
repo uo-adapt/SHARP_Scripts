@@ -40,7 +40,7 @@ scan_list = scan_list.transpose()
 
 # Each wave that should be represented. It should be noted that this script assumes the same number and type of 
 # scans are the same throughout each run. If this is not the case...good luck coding!
-waves = {"wave2","wave3"}
+waves = {"wave1"}
 
 
 def write_to_errorlog(message,error_type):
