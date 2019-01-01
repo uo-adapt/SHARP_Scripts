@@ -19,17 +19,22 @@ codedir = os.path.join(parentdir, scriptsFolder, "org", "conversion") # Contains
 
 subjectdir_contents = os.listdir(dicomdir)
 subjectdir_contents.sort()
+
+# filter subject directory for anything less than 16 characters (this is study specific)
 subjectdir_contents = filter(lambda k: len(k) < 16, subjectdir_contents)
+
+# filters subject directory for anything with 'SH' in the name (this is study specific)
 subjectdir_contents = list(filter(lambda k: 'SH' in k, subjectdir_contents))
 
+# duplicates each line separated by "," (e.g., "SH149" becomes "SH149,SH149")
 subjectdir_contents = [subject + "," + subject for subject in subjectdir_contents]
 
+# Removes the last 9 characters of each line 
 for subject in range(len(subjectdir_contents)):
 	subjectdir_contents[subject] = subjectdir_contents[subject][:-9]
 
+# adds a ",1" to the end of each line (to indicate session)
 subjectdir_contents = [subject + ",1" for subject in subjectdir_contents]
-
-subjectdir_contents
 
 with open(os.path.join(codedir,"subject_list.txt"), mode="w") as outfile:  # also, tried mode="rb"
     for subject in subjectdir_contents:
