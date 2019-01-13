@@ -1,19 +1,19 @@
 
 Fmriprep on SH212
 
-Container: /projects/adapt_lab/shared/containers/poldracklab_fmriprep_latest-2017-12-07-ba92e815fc4e.img
+Container: /projects/adapt_lab/shared/containers/fmriprep-1.2.4.simg
 
 Subject directory: /projects/adapt_lab/shared/SHARP/bids_data
 
 Starting on: rest
 
 
-190113-00:10:58,464 workflow IMPORTANT:
+190113-00:55:32,581 nipype.workflow IMPORTANT:
 	 
-    Running fMRIPREP version 1.0.0:
+    Running fMRIPREP version 1.2.4:
       * BIDS dataset path: /projects/adapt_lab/shared/SHARP/bids_data.
       * Participant list: ['SH212'].
-      * Run identifier: 20190113-001058_155d8bb9-9b47-4b01-94ea-697419e11c39.
+      * Run identifier: 20190113-005532_57c8f36c-9b59-4925-945f-d9540544b224.
     
 
 
