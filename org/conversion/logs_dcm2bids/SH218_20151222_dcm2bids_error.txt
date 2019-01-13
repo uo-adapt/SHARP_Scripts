@@ -99,7 +99,7 @@ slices not stacked: orientation varies (localizer?) [0.474416 0.826832 0.302123 
 Convert 1 DICOM as /projects/adapt_lab/shared/SHARP/bids_data/tmp_dcm2bids/sub-SH218_ses-1/002_SH218_20151222_AAHScout_20151222154734c (162x162x1x1)
 Warning: Check that 2D images are not mirrored.
 compress: "/usr/bin/pigz" -n -f -6 "/projects/adapt_lab/shared/SHARP/bids_data/tmp_dcm2bids/sub-SH218_ses-1/002_SH218_20151222_AAHScout_20151222154734c.nii"
-Conversion required 121.586671 seconds (3.807713 for core code).
+Conversion required 167.098065 seconds (3.757100 for core code).
 
 INFO:dcm2bids:
 INFO:dcm2bids:Sidecars matching:
@@ -123,5 +123,6 @@ INFO:dcm2bids:MATCH           010_SH218_20151222_dif..lr_20151222154734.json
 INFO:dcm2bids:
 INFO:dcm2bids:Checking if a description matches several sidecars ...
 INFO:dcm2bids:'T1w' has several runs
+INFO:dcm2bids:'task-rest_bold' has several runs
 INFO:dcm2bids:
 INFO:dcm2bids:moving acquisitions into BIDS output directory

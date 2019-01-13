@@ -17,19 +17,19 @@
         {
             "dataType": "func",
             "modalityLabel": "bold",
-            "customLabels": "task-rest1",
+            "customLabels": "task-rest",
             "criteria": {
                 "SeriesDescription": "Resting_1"
             }
         },
-        {
-            "dataType": "func",
+	{
+	    "dataType": "func",
             "modalityLabel": "bold",
-            "customLabels": "task-rest2",
+            "customLabels": "task-rest",
             "criteria": {
                 "SeriesDescription": "Resting_2"
             }
-        },
+	},
         {
             "dataType": "dwi",
             "modalityLabel": "dwi",

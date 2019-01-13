@@ -111,7 +111,7 @@ compress: "/usr/bin/pigz" -n -f -6 "/projects/adapt_lab/shared/SHARP/bids_data/t
 Convert 1 DICOM as /projects/adapt_lab/shared/SHARP/bids_data/tmp_dcm2bids/sub-SH177_ses-1/004_SH177_20150828_AAHScout_20150828123521b (162x162x1x1)
 Warning: Check that 2D images are not mirrored.
 compress: "/usr/bin/pigz" -n -f -6 "/projects/adapt_lab/shared/SHARP/bids_data/tmp_dcm2bids/sub-SH177_ses-1/004_SH177_20150828_AAHScout_20150828123521b.nii"
-Conversion required 120.576023 seconds (3.830476 for core code).
+Conversion required 166.251477 seconds (3.871362 for core code).
 
 INFO:dcm2bids:
 INFO:dcm2bids:Sidecars matching:
@@ -138,5 +138,6 @@ INFO:dcm2bids:MATCH           011_SH177_20150828_dif..lr_20150828123521.json
 INFO:dcm2bids:
 INFO:dcm2bids:Checking if a description matches several sidecars ...
 INFO:dcm2bids:'T1w' has several runs
+INFO:dcm2bids:'task-rest_bold' has several runs
 INFO:dcm2bids:
 INFO:dcm2bids:moving acquisitions into BIDS output directory

@@ -31,7 +31,7 @@ task="rest"
 echo -e "\nStarting on: $task"
 echo -e "\n"
 
-export FS_LICENSE=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsMRI/license.txt
+export FS_LICENSE=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/license.txt
 
 singularity run --bind "${group_dir}":"${group_dir}" ${image} ${bids_dir} ${derivatives} participant \
 --participant_label ${subid} \
@@ -39,6 +39,7 @@ singularity run --bind "${group_dir}":"${group_dir}" ${image} ${bids_dir} ${deri
  -t ${task} --use-aroma --write-graph \
 --output-space {'T1w','template','fsaverage5','fsnative'} \
 --mem-mb 100000 \
+--skip_bids_validation \
 --fs-license-file $FS_LICENSE
 
 echo -e "\n"

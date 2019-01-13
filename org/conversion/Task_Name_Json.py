@@ -56,7 +56,7 @@ def get_func_jsons(func_dir_path):
 
 def write_to_json(func_jsons:list, func_dir_path:str):
     for func_json in func_jsons:
-        if func_json.endswith('rest1_bold.json'):
+        if func_json.endswith('_bold.json'):
             json_path = os.path.join(func_dir_path, func_json)
             with open(json_path) as target_json:
                 json_file = json.load(target_json)
