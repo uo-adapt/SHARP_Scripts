@@ -2,13 +2,17 @@
 #
 
 module load singularity
+module load afni
+module load ants
+module load fsl
+module load prl
+module load R
+module load python3
 
-HOME=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/
 
-singularity run -B ${DATA_ROOT}:${HOME}xcpEngine  \
-   /projects/adapt_lab/shared/containers/xcpEngine.simg \
-   -d ${HOME}xcpEngine/anat-complete+.dsn \
-   -c ${HOME}xcpEngine/anat_cohort.csv  \
-   -o ${HOME}xcpEngine/xcp_output \
-   -t 1 \
-   -r ${HOME}/xcpEngine
+singularity run -B /projects/adapt_lab/shared/SHARP/SHARP_scripts/rsfMRI/xcpEngine \
+	/projects/adapt_lab/shared/containers/xcpEngine.simg \
+	-d anat-Complete+_201901151515.dsn -c anat_cohort.csv \
+	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
+	-t 1 \
+	-r /projects/adapt_lab/shared/SHARP/SHARP_scripts/rsfMRI/xcpEngine
