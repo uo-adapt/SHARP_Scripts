@@ -11,7 +11,7 @@ module load python3
 
 cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
-singularity run /projects/adapt_lab/shared/containers/xcpEngine.simg \
+singularity run /projects/adapt_lab/shared/containers/xcpEngine.simg 
 	-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \
 	-c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv \
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
