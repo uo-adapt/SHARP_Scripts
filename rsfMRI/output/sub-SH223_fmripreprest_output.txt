@@ -1025,3 +1025,51 @@ recon-all -autorecon-hemi lh -noparcstats -nocortparc2 -noparcstats2 -nocortparc
 recon-all -autorecon-hemi rh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
 190115-10:03:58,743 nipype.interface INFO:
 	 resume recon-all : recon-all -autorecon-hemi rh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-21:03:47,894 nipype.workflow INFO:
+	 [Node] Finished "_autorecon_surfs0".
+190115-21:15:50,860 nipype.workflow INFO:
+	 [Node] Finished "_autorecon_surfs1".
+190115-21:15:51,175 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon_resume_wf.autorecon_surfs" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs".
+190115-21:15:51,207 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs0".
+190115-21:15:51,225 nipype.interface INFO:
+	 recon-all complete : Not running
+190115-21:15:51,227 nipype.workflow INFO:
+	 [Node] Running "_autorecon_surfs0" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+echo recon-all: nothing to do
+190115-21:15:51,232 nipype.interface INFO:
+	 recon-all complete : Not running
+190115-21:15:51,423 nipype.workflow INFO:
+	 [Node] Finished "_autorecon_surfs0".
+190115-21:15:51,431 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs1".
+190115-21:15:51,449 nipype.interface INFO:
+	 recon-all complete : Not running
+190115-21:15:51,451 nipype.workflow INFO:
+	 [Node] Running "_autorecon_surfs1" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+echo recon-all: nothing to do
+190115-21:15:51,456 nipype.interface INFO:
+	 recon-all complete : Not running
+190115-21:15:51,637 nipype.workflow INFO:
+	 [Node] Finished "_autorecon_surfs1".
+190115-21:15:51,668 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon_resume_wf.autorecon_surfs".
+190115-21:15:55,160 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon30" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon3/mapflow/_autorecon30".
+190115-21:15:55,161 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon31" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon3/mapflow/_autorecon31".
+190115-21:15:55,175 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon3 -hemi lh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
+190115-21:15:55,178 nipype.workflow INFO:
+	 [Node] Running "_autorecon30" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon3 -hemi lh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
+190115-21:15:55,183 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon3 -hemi lh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
+190115-21:15:55,203 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon3 -hemi rh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
+190115-21:15:55,216 nipype.workflow INFO:
+	 [Node] Running "_autorecon31" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon3 -hemi rh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
+190115-21:15:55,221 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon3 -hemi rh -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer -nosphere -nosurfreg -nojacobian_white -noavgcurv -nocortparc -nopial
