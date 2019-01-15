@@ -3053,3 +3053,91 @@ fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmr
 	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge".
 190115-17:41:55,105 nipype.workflow INFO:
 	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")
+190115-17:45:15,659 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_to_mni_transform".
+190115-17:45:18,462 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/merge".
+190115-17:45:18,648 nipype.workflow INFO:
+	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")
+190115-17:49:22,62 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.merge".
+190115-17:49:24,479 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.rm_nonsteady" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/rm_nonsteady".
+190115-17:49:24,482 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/validate".
+190115-17:49:24,487 nipype.workflow INFO:
+	 [Node] Running "rm_nonsteady" ("nipype.interfaces.utility.wrappers.Function")
+190115-17:49:24,501 nipype.workflow INFO:
+	 [Node] Running "validate" ("fmriprep.interfaces.images.ValidateImage")
+190115-17:49:24,531 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate".
+190115-17:49:26,943 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref".
+190115-17:49:27,28 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190115-17:49:48,237 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.237533:++ 3dvolreg: AFNI version=Debian-16.2.07~dfsg.1-5~nd16.04+1 (Jun 12 2017) [64-bit]
+190115-17:49:48,237 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.237533:++ Authored by: RW Cox
+190115-17:49:48,272 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.272627:** AFNI converts NIFTI_datatype=4 (INT16) in file /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref/slice.nii.gz to FLOAT32
+190115-17:49:48,272 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.272627:     Warnings of this type will be muted for this session.
+190115-17:49:48,272 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.272627:     Set AFNI_NIFTI_TYPE_WARN to YES to see them all, NO to see none.
+190115-17:49:48,273 nipype.interface INFO:
+	 stderr 2019-01-15T17:49:48.272627:++ Coarse del was 10, replaced with 9
+190115-17:50:18,200 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.rm_nonsteady".
+190115-17:50:20,979 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_bold_mean" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_bold_mean".
+190115-17:50:20,984 nipype.workflow INFO:
+	 [Node] Running "calc_bold_mean" ("nipype.interfaces.fsl.maths.MeanImage"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -Tmean /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_bold_mean/vol0000_xform-00000_merged_cut_mean.nii.gz
+190115-17:50:20,986 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_median_val" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_median_val".
+190115-17:50:21,23 nipype.workflow INFO:
+	 [Node] Running "calc_median_val" ("nipype.interfaces.fsl.utils.ImageStats"), a CommandLine Interface with command:
+fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -k /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_corrected_brain_mask_maths_trans.nii.gz -p 50 
+190115-17:51:49,940 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_bold_mean".
+190115-17:51:55,881 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.merge".
+190115-17:51:59,272 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.rm_nonsteady" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/rm_nonsteady".
+190115-17:51:59,276 nipype.workflow INFO:
+	 [Node] Running "rm_nonsteady" ("nipype.interfaces.utility.wrappers.Function")
+190115-17:51:59,280 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/validate".
+190115-17:51:59,326 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.rm_nonsteady".
+190115-17:51:59,328 nipype.workflow INFO:
+	 [Node] Running "validate" ("fmriprep.interfaces.images.ValidateImage")
+190115-17:51:59,356 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate".
+190115-17:52:00,566 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.calc_bold_mean" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_bold_mean".
+190115-17:52:00,572 nipype.workflow INFO:
+	 [Node] Running "calc_bold_mean" ("nipype.interfaces.fsl.maths.MeanImage"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged.nii -Tmean /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_bold_mean/vol0000_xform-00000_merged_mean.nii.gz
+190115-17:52:00,581 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.calc_median_val" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_median_val".
+190115-17:52:00,584 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref".
+190115-17:52:00,603 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190115-17:52:00,609 nipype.workflow INFO:
+	 [Node] Running "calc_median_val" ("nipype.interfaces.fsl.utils.ImageStats"), a CommandLine Interface with command:
+fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged.nii -k /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_corrected_brain_mask_maths_trans.nii.gz -p 50 
+190115-17:52:24,984 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:++ 3dvolreg: AFNI version=Debian-16.2.07~dfsg.1-5~nd16.04+1 (Jun 12 2017) [64-bit]
+190115-17:52:24,985 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:++ Authored by: RW Cox
+190115-17:52:24,985 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:** AFNI converts NIFTI_datatype=4 (INT16) in file /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref/slice.nii.gz to FLOAT32
+190115-17:52:24,985 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:     Warnings of this type will be muted for this session.
+190115-17:52:24,985 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:     Set AFNI_NIFTI_TYPE_WARN to YES to see them all, NO to see none.
+190115-17:52:24,985 nipype.interface INFO:
+	 stderr 2019-01-15T17:52:24.984756:++ Coarse del was 10, replaced with 9

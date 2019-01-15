@@ -1,0 +1,1 @@
+/cm/local/apps/slurm/var/spool/job3083839/slurm_script: line 10: -d: command not found
