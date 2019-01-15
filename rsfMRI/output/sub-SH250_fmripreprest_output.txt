@@ -2883,3 +2883,5 @@ fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working
 	 [Node] Running "bold_to_mni_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
 190115-18:01:32,145 nipype.workflow INFO:
 	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.anat_preproc_wf.mni_mask".
+190115-18:05:28,343 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.anat_preproc_wf.mni_seg".
