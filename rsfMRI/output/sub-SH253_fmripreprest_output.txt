@@ -3047,3 +3047,9 @@ fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmr
 fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize/uni_xform.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_corrected_brain_mask_maths.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask/uni_xform_masked.nii.gz
 190115-17:28:35,537 nipype.workflow INFO:
 	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask".
+190115-17:41:50,961 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_to_mni_transform".
+190115-17:41:54,947 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH253_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH253_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge".
+190115-17:41:55,105 nipype.workflow INFO:
+	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")

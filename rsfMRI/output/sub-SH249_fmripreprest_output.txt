@@ -3014,3 +3014,106 @@ fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmr
 190115-17:40:54,242 nipype.workflow INFO:
 	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
 N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref/ref_image.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/ref_image_valid_corrected_brain_mask_maths_trans_dil_hdr.nii.gz --output ref_image_corrected.nii.gz
+190115-17:41:28,403 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.rm_nonsteady".
+190115-17:41:31,988 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_bold_mean" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_bold_mean".
+190115-17:41:31,989 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_median_val" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_median_val".
+190115-17:41:32,5 nipype.workflow INFO:
+	 [Node] Running "calc_bold_mean" ("nipype.interfaces.fsl.maths.MeanImage"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -Tmean /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_bold_mean/vol0000_xform-00000_merged_cut_mean.nii.gz
+190115-17:41:32,12 nipype.workflow INFO:
+	 [Node] Running "calc_median_val" ("nipype.interfaces.fsl.utils.ImageStats"), a CommandLine Interface with command:
+fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -k /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -p 50 
+190115-17:42:03,887 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190115-17:42:07,48 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190115-17:42:07,193 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_corrected_brain.nii.gz -f 0.20 -m
+190115-17:42:36,374 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+190115-17:42:39,703 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+190115-17:42:39,887 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_corrected_brain_mask_dil.nii.gz
+190115-17:42:58,352 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_bold_mean".
+190115-17:43:18,392 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.merge".
+190115-17:43:20,113 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.rm_nonsteady" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/rm_nonsteady".
+190115-17:43:20,114 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/validate".
+190115-17:43:20,243 nipype.workflow INFO:
+	 [Node] Running "rm_nonsteady" ("nipype.interfaces.utility.wrappers.Function")
+190115-17:43:20,256 nipype.workflow INFO:
+	 [Node] Running "validate" ("fmriprep.interfaces.images.ValidateImage")
+190115-17:43:20,281 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate".
+190115-17:43:22,99 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref".
+190115-17:43:22,145 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190115-17:43:29,420 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.gen_ref".
+190115-17:43:32,335 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/validate_ref".
+190115-17:43:32,476 nipype.workflow INFO:
+	 [Node] Running "validate_ref" ("fmriprep.interfaces.images.ValidateImage")
+190115-17:43:32,721 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.validate_ref".
+190115-17:43:39,922 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+190115-17:43:40,662 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+190115-17:43:40,854 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/gen_ref/ref_image.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/ref_image_valid_corrected_brain_mask_maths_trans_dil_hdr.nii.gz --output ref_image_corrected.nii.gz
+190115-17:43:42,553 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+190115-17:43:42,741 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_corrected_brain.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_corrected_brain_mask_dil.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_image_corrected_brain_masked.nii.gz
+190115-17:43:45,665 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask".
+190115-17:43:48,692 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize".
+190115-17:43:48,885 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize/ref_image_corrected_brain_masked.nii.gz
+190115-17:44:10,474 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.calc_median_val".
+190115-17:44:12,841 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.getusans" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/getusans".
+190115-17:44:12,854 nipype.workflow INFO:
+	 [Node] Running "getusans" ("nipype.interfaces.utility.wrappers.Function")
+190115-17:44:12,860 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.getusans".
+190115-17:44:14,142 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.rm_nonsteady".
+190115-17:44:14,824 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.smooth" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/smooth".
+190115-17:44:15,6 nipype.workflow INFO:
+	 [Node] Running "smooth" ("nipype.interfaces.fsl.preprocess.SUSAN"), a CommandLine Interface with command:
+susan /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii 2961.9534300000 2.5479654009 3 1 1 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/calc_bold_mean/vol0000_xform-00000_merged_cut_mean.nii.gz 3949.2712400000 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/smooth/vol0000_xform-00000_merged_cut_smooth.nii.gz
+190115-17:44:16,868 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.calc_bold_mean" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_bold_mean".
+190115-17:44:16,869 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.calc_median_val" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_median_val".
+190115-17:44:17,8 nipype.workflow INFO:
+	 [Node] Running "calc_bold_mean" ("nipype.interfaces.fsl.maths.MeanImage"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -Tmean /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/calc_bold_mean/vol0000_xform-00000_merged_cut_mean.nii.gz
+190115-17:44:17,18 nipype.workflow INFO:
+	 [Node] Running "calc_median_val" ("nipype.interfaces.fsl.utils.ImageStats"), a CommandLine Interface with command:
+fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/merge/vol0000_xform-00000_merged_cut.nii -k /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -p 50 
+190115-17:44:55,44 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190115-17:44:58,303 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH249_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190115-17:44:58,392 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH249_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_corrected_brain.nii.gz -f 0.20 -m
