@@ -15,4 +15,4 @@ container=containers/fmriprep-1.2.4.simg
 study="SHARP"
 
 
-sbatch --export ALL,subid=${SUBJ} --job-name xcpAnat --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
+sbatch --job-name xcpAnat --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
