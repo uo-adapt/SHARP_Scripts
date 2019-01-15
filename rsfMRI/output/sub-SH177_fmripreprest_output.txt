@@ -3338,3 +3338,56 @@ melodic -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_f
 190115-16:42:14,261 nipype.workflow INFO:
 	 [Node] Running "ica_aroma" ("niworkflows.interfaces.segmentation.ICA_AROMARPT"), a CommandLine Interface with command:
 ICA_AROMA.py -tr 0.780 -den nonaggr -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/smooth/vol0000_xform-00000_merged_cut_smooth.nii.gz -m /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_corrected_brain_mask_maths_trans.nii.gz -meldir /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/melodic -mc /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_hmc_wf/normalize_motion/motion_params.txt -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/ica_aroma/out
+190115-16:50:10,138 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.ica_aroma".
+190115-16:50:11,512 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.add_nonsteady" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/add_nonsteady".
+190115-16:50:11,513 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.ica_aroma_confound_extraction" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/ica_aroma_confound_extraction".
+190115-16:50:11,580 nipype.workflow INFO:
+	 [Node] Running "add_nonsteady" ("nipype.interfaces.utility.wrappers.Function")
+190115-16:50:11,594 nipype.workflow INFO:
+	 [Node] Running "ica_aroma_confound_extraction" ("fmriprep.interfaces.confounds.ICAConfounds")
+190115-16:50:11,829 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.ica_aroma_confound_extraction".
+190115-16:50:14,437 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.aroma_confounds" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_01_wf/aroma_confounds".
+190115-16:50:14,518 nipype.workflow INFO:
+	 [Node] Running "aroma_confounds" ("fmriprep.interfaces.utils.JoinTSVColumns")
+190115-16:50:14,620 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.aroma_confounds".
+190115-16:50:58,678 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.add_nonsteady".
+190115-16:57:16,310 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.melodic".
+190115-16:57:17,287 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.ica_aroma" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/ica_aroma".
+190115-16:57:17,306 nipype.workflow INFO:
+	 [Node] Running "ica_aroma" ("niworkflows.interfaces.segmentation.ICA_AROMARPT"), a CommandLine Interface with command:
+ICA_AROMA.py -tr 0.780 -den nonaggr -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/smooth/vol0000_xform-00000_merged_cut_smooth.nii.gz -m /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_corrected_brain_mask_maths_trans.nii.gz -meldir /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/melodic -mc /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_hmc_wf/normalize_motion/motion_params.txt -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/ica_aroma/out
+190115-17:01:33,876 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.ica_aroma".
+190115-17:01:35,870 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.add_nonsteady" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/add_nonsteady".
+190115-17:01:35,872 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.ica_aroma_confound_extraction" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/ica_aroma_confound_extraction".
+190115-17:01:35,881 nipype.workflow INFO:
+	 [Node] Running "add_nonsteady" ("nipype.interfaces.utility.wrappers.Function")
+190115-17:01:35,885 nipype.workflow INFO:
+	 [Node] Running "ica_aroma_confound_extraction" ("fmriprep.interfaces.confounds.ICAConfounds")
+190115-17:01:36,176 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.ica_aroma_confound_extraction".
+190115-17:01:38,861 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.aroma_confounds" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH177_wf/func_preproc_ses_1_task_rest_run_02_wf/aroma_confounds".
+190115-17:01:38,991 nipype.workflow INFO:
+	 [Node] Running "aroma_confounds" ("fmriprep.interfaces.utils.JoinTSVColumns")
+190115-17:01:39,98 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.aroma_confounds".
+190115-17:01:59,951 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH177_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.add_nonsteady".
+
+
+
+done
+
+-------------------------------
