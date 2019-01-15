@@ -14,12 +14,5 @@ group_dir=/projects/adapt_lab/shared/
 container=containers/fmriprep-1.2.4.simg
 study="SHARP"
 
-# Set subject list
-#SUBJLIST=`cat sublist_restw2_n84.txt`
-SUBJLIST=`cat subject_list_test.txt`
 
-# 
-for SUBJ in $SUBJLIST; do
-
-
-sbatch --export ALL,subid=${SUBJ} --job-name xcpAnat_"${SUBJ}" --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/"${SUBJ}"_xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/"${SUBJ}"_xcp_anat_error.txt xcp_anat.sh
+sbatch --export ALL,subid=${SUBJ} --job-name xcpAnat --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
