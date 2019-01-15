@@ -9,9 +9,9 @@ module load prl
 module load R
 module load python3
 
+cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
-singularity run -B /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine \
-	/projects/adapt_lab/shared/containers/xcpEngine.simg \
+singularity run /projects/adapt_lab/shared/containers/xcpEngine.simg \
 	-d anat-Complete+_201901151515.dsn \
 	-c anat_cohort.csv \
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
