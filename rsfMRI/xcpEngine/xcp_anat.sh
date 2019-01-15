@@ -1,5 +1,8 @@
 #!/bin/bash
 #
+
+module load singularity
+
 HOME=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/
 
 singularity run -B ${DATA_ROOT}:${HOME}xcpEngine  \
