@@ -3457,3 +3457,235 @@ fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmr
 	 [Node] Finished "fmriprep_wf.single_subject_SH258_wf.func_preproc_ses_1_task_rest_run_03_wf.bold_surf_wf.update_metadata".
 190115-17:51:05,980 nipype.workflow INFO:
 	 [Node] Finished "_midthickness1".
+190115-17:55:11,700 nipype.workflow INFO:
+	 [Node] Finished "_midthickness0".
+190115-17:55:13,431 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.midthickness" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness".
+190115-17:55:13,554 nipype.workflow INFO:
+	 [Node] Setting-up "_midthickness0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness/mapflow/_midthickness0".
+190115-17:55:13,555 nipype.workflow INFO:
+	 [Node] Cached "_midthickness0" - collecting precomputed outputs
+190115-17:55:13,555 nipype.workflow INFO:
+	 [Node] "_midthickness0" found cached.
+190115-17:55:13,556 nipype.workflow INFO:
+	 [Node] Setting-up "_midthickness1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness/mapflow/_midthickness1".
+190115-17:55:13,557 nipype.workflow INFO:
+	 [Node] Cached "_midthickness1" - collecting precomputed outputs
+190115-17:55:13,557 nipype.workflow INFO:
+	 [Node] "_midthickness1" found cached.
+190115-17:55:13,622 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.midthickness".
+190115-17:55:15,176 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.save_midthickness" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/save_midthickness".
+190115-17:55:15,306 nipype.workflow INFO:
+	 [Node] Running "save_midthickness" ("nipype.interfaces.io.DataSink")
+190115-17:55:15,418 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.save_midthickness".
+190115-17:55:22,672 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0".
+190115-17:55:22,674 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1".
+190115-17:55:22,703 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2".
+190115-17:55:22,704 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3".
+190115-17:55:22,705 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4".
+190115-17:55:22,706 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5".
+190115-17:55:22,706 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6".
+190115-17:55:22,707 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7".
+190115-17:55:22,736 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii0" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/rh.smoothwm /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0/rh.smoothwm_converted.gii
+190115-17:55:22,743 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii1" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/lh.smoothwm /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1/lh.smoothwm_converted.gii
+190115-17:55:22,762 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii7" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/lh.midthickness /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7/lh.midthickness_converted.gii
+190115-17:55:22,769 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii5" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/lh.inflated /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5/lh.inflated_converted.gii
+190115-17:55:22,777 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii2" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/rh.pial /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2/rh.pial_converted.gii
+190115-17:55:22,786 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii4" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/rh.inflated /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4/rh.inflated_converted.gii
+190115-17:55:22,786 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii3" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/lh.pial /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3/lh.pial_converted.gii
+190115-17:55:22,786 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii6" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH258/surf/rh.midthickness /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6/rh.midthickness_converted.gii
+190115-17:55:50,190 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii0".
+190115-17:55:50,191 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii4".
+190115-17:55:50,225 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii2".
+190115-17:55:50,407 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii6".
+190115-17:55:50,661 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii7".
+190115-17:55:50,808 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii3".
+190115-17:55:50,824 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii1".
+190115-17:55:50,838 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii5".
+190115-17:55:53,187 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fs_2_gii" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii".
+190115-17:55:53,304 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0".
+190115-17:55:53,305 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii0" - collecting precomputed outputs
+190115-17:55:53,305 nipype.workflow INFO:
+	 [Node] "_fs_2_gii0" found cached.
+190115-17:55:53,306 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1".
+190115-17:55:53,307 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii1" - collecting precomputed outputs
+190115-17:55:53,307 nipype.workflow INFO:
+	 [Node] "_fs_2_gii1" found cached.
+190115-17:55:53,308 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2".
+190115-17:55:53,309 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii2" - collecting precomputed outputs
+190115-17:55:53,309 nipype.workflow INFO:
+	 [Node] "_fs_2_gii2" found cached.
+190115-17:55:53,310 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3".
+190115-17:55:53,311 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii3" - collecting precomputed outputs
+190115-17:55:53,311 nipype.workflow INFO:
+	 [Node] "_fs_2_gii3" found cached.
+190115-17:55:53,312 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4".
+190115-17:55:53,335 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii4" - collecting precomputed outputs
+190115-17:55:53,335 nipype.workflow INFO:
+	 [Node] "_fs_2_gii4" found cached.
+190115-17:55:53,336 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5".
+190115-17:55:53,337 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii5" - collecting precomputed outputs
+190115-17:55:53,337 nipype.workflow INFO:
+	 [Node] "_fs_2_gii5" found cached.
+190115-17:55:53,338 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6".
+190115-17:55:53,339 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii6" - collecting precomputed outputs
+190115-17:55:53,339 nipype.workflow INFO:
+	 [Node] "_fs_2_gii6" found cached.
+190115-17:55:53,340 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7".
+190115-17:55:53,341 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii7" - collecting precomputed outputs
+190115-17:55:53,341 nipype.workflow INFO:
+	 [Node] "_fs_2_gii7" found cached.
+190115-17:55:53,528 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fs_2_gii".
+190115-17:55:57,92 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs0".
+190115-17:55:57,94 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs1".
+190115-17:55:57,185 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs2".
+190115-17:55:57,185 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs3".
+190115-17:55:57,186 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs4".
+190115-17:55:57,187 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs5".
+190115-17:55:57,187 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs6".
+190115-17:55:57,188 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs7".
+190115-17:55:57,198 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs0" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,199 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs1" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,235 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs5" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,238 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs2" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,240 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs4" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,242 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs3" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,265 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs6" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:55:57,299 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs7" ("fmriprep.interfaces.surf.NormalizeSurf")
+190115-17:56:04,156 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs0".
+190115-17:56:04,157 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs4".
+190115-17:56:04,170 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs6".
+190115-17:56:04,304 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs2".
+190115-17:56:04,378 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs5".
+190115-17:56:04,378 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs3".
+190115-17:56:04,449 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs1".
+190115-17:56:04,534 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs7".
+190115-17:56:06,889 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fix_surfs" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs".
+190115-17:56:07,11 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs0".
+190115-17:56:07,12 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs0" - collecting precomputed outputs
+190115-17:56:07,12 nipype.workflow INFO:
+	 [Node] "_fix_surfs0" found cached.
+190115-17:56:07,13 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs1".
+190115-17:56:07,14 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs1" - collecting precomputed outputs
+190115-17:56:07,14 nipype.workflow INFO:
+	 [Node] "_fix_surfs1" found cached.
+190115-17:56:07,14 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs2".
+190115-17:56:07,15 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs2" - collecting precomputed outputs
+190115-17:56:07,15 nipype.workflow INFO:
+	 [Node] "_fix_surfs2" found cached.
+190115-17:56:07,16 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs3".
+190115-17:56:07,17 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs3" - collecting precomputed outputs
+190115-17:56:07,17 nipype.workflow INFO:
+	 [Node] "_fix_surfs3" found cached.
+190115-17:56:07,18 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs4".
+190115-17:56:07,19 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs4" - collecting precomputed outputs
+190115-17:56:07,19 nipype.workflow INFO:
+	 [Node] "_fix_surfs4" found cached.
+190115-17:56:07,42 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs5".
+190115-17:56:07,43 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs5" - collecting precomputed outputs
+190115-17:56:07,43 nipype.workflow INFO:
+	 [Node] "_fix_surfs5" found cached.
+190115-17:56:07,44 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs6".
+190115-17:56:07,45 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs6" - collecting precomputed outputs
+190115-17:56:07,45 nipype.workflow INFO:
+	 [Node] "_fix_surfs6" found cached.
+190115-17:56:07,45 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH258_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs7".
+190115-17:56:07,46 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs7" - collecting precomputed outputs
+190115-17:56:07,46 nipype.workflow INFO:
+	 [Node] "_fix_surfs7" found cached.
+190115-17:56:07,187 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH258_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fix_surfs".

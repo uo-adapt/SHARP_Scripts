@@ -2871,3 +2871,15 @@ fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working
 	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
 190115-17:00:44,551 nipype.workflow INFO:
 	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190115-17:57:27,108 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.bold_to_mni_transform".
+190115-17:57:30,439 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH250_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH250_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/merge".
+190115-17:57:30,478 nipype.workflow INFO:
+	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")
+190115-17:57:32,798 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH250_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.bold_to_mni_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH250_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/bold_to_mni_transform".
+190115-17:57:32,826 nipype.workflow INFO:
+	 [Node] Running "bold_to_mni_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190115-18:01:32,145 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH250_wf.anat_preproc_wf.mni_mask".
