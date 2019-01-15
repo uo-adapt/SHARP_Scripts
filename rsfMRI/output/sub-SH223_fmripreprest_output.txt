@@ -202,3 +202,826 @@ to workflows in *fMRIPrep*'s documentation](https://fmriprep.readthedocs.io/en/l
 	 [Node] Finished "_t1_conform1".
 190114-19:03:24,82 nipype.workflow INFO:
 	 [Node] Finished "_t1_conform0".
+190114-19:03:39,143 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_conform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform".
+190114-19:03:39,255 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform/mapflow/_t1_conform0".
+190114-19:03:39,257 nipype.workflow INFO:
+	 [Node] Cached "_t1_conform0" - collecting precomputed outputs
+190114-19:03:39,259 nipype.workflow INFO:
+	 [Node] "_t1_conform0" found cached.
+190114-19:03:39,260 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform/mapflow/_t1_conform1".
+190114-19:03:39,263 nipype.workflow INFO:
+	 [Node] Cached "_t1_conform1" - collecting precomputed outputs
+190114-19:03:39,263 nipype.workflow INFO:
+	 [Node] "_t1_conform1" found cached.
+190114-19:03:39,306 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_conform".
+190114-19:03:55,556 nipype.workflow INFO:
+	 [Node] Setting-up "_n4_correct0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct0".
+190114-19:03:55,625 nipype.workflow INFO:
+	 [Node] Setting-up "_n4_correct1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct1".
+190114-19:03:55,751 nipype.workflow INFO:
+	 [Node] Running "_n4_correct0" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-01_T1w.nii.gz --output sub-SH223_ses-1_run-01_T1w_corrected.nii.gz
+190114-19:03:55,762 nipype.workflow INFO:
+	 [Node] Running "_n4_correct1" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-02_T1w.nii.gz --output sub-SH223_ses-1_run-02_T1w_corrected.nii.gz
+190114-19:03:56,138 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.validate".
+190114-19:03:56,252 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.validate".
+190114-19:04:06,391 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform_xfm1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm1".
+190114-19:04:06,392 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform_xfm0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm0".
+190114-19:04:06,577 nipype.workflow INFO:
+	 [Node] Running "_t1_conform_xfm0" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta identity.nofile --outlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm0/out.lta --src /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-01_T1w.nii.gz --trg /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-01_T1w.nii.gz
+190114-19:04:06,590 nipype.workflow INFO:
+	 [Node] Running "_t1_conform_xfm1" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta identity.nofile --outlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm1/out.lta --src /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-02_T1w.nii.gz --trg /projects/adapt_lab/shared/SHARP/bids_data/sub-SH223/ses-1/anat/sub-SH223_ses-1_run-02_T1w.nii.gz
+190114-19:04:08,182 nipype.workflow INFO:
+	 [Node] Finished "_t1_conform_xfm1".
+190114-19:04:08,194 nipype.workflow INFO:
+	 [Node] Finished "_t1_conform_xfm0".
+190114-19:04:20,871 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/gen_ref".
+190114-19:04:21,38 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190114-19:04:23,141 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/gen_ref".
+190114-19:04:23,317 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190114-19:04:31,366 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.gen_ref".
+190114-19:04:31,978 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_conform_xfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm".
+190114-19:04:32,33 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform_xfm0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm0".
+190114-19:04:32,37 nipype.workflow INFO:
+	 [Node] Cached "_t1_conform_xfm0" - collecting precomputed outputs
+190114-19:04:32,38 nipype.workflow INFO:
+	 [Node] "_t1_conform_xfm0" found cached.
+190114-19:04:32,40 nipype.workflow INFO:
+	 [Node] Setting-up "_t1_conform_xfm1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm1".
+190114-19:04:32,71 nipype.workflow INFO:
+	 [Node] Cached "_t1_conform_xfm1" - collecting precomputed outputs
+190114-19:04:32,71 nipype.workflow INFO:
+	 [Node] "_t1_conform_xfm1" found cached.
+190114-19:04:32,132 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_conform_xfm".
+190114-19:04:32,836 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.gen_ref".
+190114-19:04:47,615 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_stc_wf.slice_timing_correction" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_stc_wf/slice_timing_correction".
+190114-19:04:47,695 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_stc_wf.slice_timing_correction" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_stc_wf/slice_timing_correction".
+190114-19:04:47,851 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 3 -prefix sub-SH223_ses-1_task-rest_run-02_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 0.78s /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_stc_wf/slice_timing_correction/sub-SH223_ses-1_task-rest_run-02_bold_valid.nii.gz
+190114-19:04:47,908 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 3 -prefix sub-SH223_ses-1_task-rest_run-01_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 0.78s /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_stc_wf/slice_timing_correction/sub-SH223_ses-1_task-rest_run-01_bold_valid.nii.gz
+190114-19:04:59,893 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.validate_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref".
+190114-19:04:59,895 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.validate_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref".
+190114-19:05:00,15 nipype.workflow INFO:
+	 [Node] Running "validate_ref" ("fmriprep.interfaces.images.ValidateImage")
+190114-19:05:00,54 nipype.workflow INFO:
+	 [Node] Running "validate_ref" ("fmriprep.interfaces.images.ValidateImage")
+190114-19:05:01,235 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.validate_ref".
+190114-19:05:01,248 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.validate_ref".
+190114-19:05:21,368 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.mcflirt" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_hmc_wf/mcflirt".
+190114-19:05:21,410 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.mcflirt" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_hmc_wf/mcflirt".
+190114-19:05:21,604 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate/sub-SH223_ses-1_task-rest_run-02_bold_valid.nii.gz -out /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_hmc_wf/mcflirt/sub-SH223_ses-1_task-rest_run-02_bold_valid_mcf.nii.gz -reffile /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz -mats -plots
+190114-19:05:21,615 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate/sub-SH223_ses-1_task-rest_run-01_bold_valid.nii.gz -out /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_hmc_wf/mcflirt/sub-SH223_ses-1_task-rest_run-01_bold_valid_mcf.nii.gz -reffile /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz -mats -plots
+190114-19:05:34,655 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff".
+190114-19:05:34,731 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff".
+190114-19:05:34,926 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("niworkflows.interfaces.ants.AI"), a CommandLine Interface with command:
+antsAI -c [10,0.000001,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz -m Mattes[/templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz,/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz,32,Regular,0.200000] -o initialization.mat -p 0 -s [20.000000,0.120000] -t Affine[0.100000] -v 1
+190114-19:05:34,950 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("niworkflows.interfaces.ants.AI"), a CommandLine Interface with command:
+antsAI -c [10,0.000001,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz -m Mattes[/templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz,/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz,32,Regular,0.200000] -o initialization.mat -p 0 -s [20.000000,0.120000] -t Affine[0.100000] -v 1
+190114-19:08:17,351 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff".
+190114-19:08:17,411 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff".
+190114-19:08:51,26 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm".
+190114-19:08:51,74 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm".
+190114-19:08:51,204 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz, /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+190114-19:08:51,253 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz, /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+190114-19:09:29,368 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm".
+190114-19:09:33,891 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm".
+190114-19:10:04,462 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask".
+190114-19:10:04,657 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm/transform0GenericAffine.mat, 1 ]
+190114-19:10:08,548 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask".
+190114-19:10:08,721 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm/transform0GenericAffine.mat, 1 ]
+190114-19:12:32,546 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask".
+190114-19:12:36,461 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask".
+190114-19:12:38,119 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190114-19:12:38,288 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil.nii.gz
+190114-19:12:45,699 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190114-19:12:51,869 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+190114-19:12:52,57 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil_hdr.nii.gz --output ref_image_valid_corrected.nii.gz
+190114-19:12:52,351 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190114-19:12:52,511 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil.nii.gz
+190114-19:12:59,374 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190114-19:13:05,842 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+190114-19:13:06,14 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil_hdr.nii.gz --output ref_image_valid_corrected.nii.gz
+190114-19:13:49,428 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190114-19:13:51,373 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190114-19:13:51,548 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_valid_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -f 0.20 -m
+190114-19:14:01,633 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190114-19:14:03,459 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190114-19:14:03,643 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_valid_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -f 0.20 -m
+190114-19:14:24,55 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+190114-19:14:25,506 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+190114-19:14:25,679 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz
+190114-19:14:36,168 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+190114-19:14:39,561 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+190114-19:14:39,750 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz
+190114-19:14:52,385 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+190114-19:14:55,566 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+190114-19:14:55,747 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_image_valid_corrected_brain_masked.nii.gz
+190114-19:14:58,494 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask".
+190114-19:15:01,592 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize".
+190114-19:15:01,674 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize/ref_image_valid_corrected_brain_masked.nii.gz
+190114-19:15:06,342 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+190114-19:15:09,622 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+190114-19:15:09,811 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_image_valid_corrected_brain_masked.nii.gz
+190114-19:15:12,110 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask".
+190114-19:15:13,683 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize".
+190114-19:15:13,877 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize/ref_image_valid_corrected_brain_masked.nii.gz
+190114-19:15:14,124 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_stc_wf.slice_timing_correction".
+190114-19:15:14,211 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_stc_wf.slice_timing_correction".
+190114-19:15:15,455 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_stc_wf.copy_xform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_stc_wf/copy_xform".
+190114-19:15:15,464 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_stc_wf.copy_xform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_stc_wf/copy_xform".
+190114-19:15:15,477 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:15:15,524 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:16:01,484 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize".
+190114-19:16:03,706 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize".
+190114-19:16:03,861 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:16:05,84 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize".
+190114-19:16:07,801 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass".
+190114-19:16:07,993 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass/uni_xform.nii.gz
+190114-19:16:12,209 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass".
+190114-19:16:13,536 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize".
+190114-19:16:13,709 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2".
+190114-19:16:13,861 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:16:14,481 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2".
+190114-19:16:15,631 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize".
+190114-19:16:15,656 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:16:16,834 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize".
+190114-19:16:17,593 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks".
+190114-19:16:17,782 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz
+190114-19:16:19,345 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks".
+190114-19:16:19,687 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass".
+190114-19:16:19,888 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass/uni_xform.nii.gz
+190114-19:16:21,849 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask".
+190114-19:16:22,17 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize/uni_xform.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask/uni_xform_masked.nii.gz
+190114-19:16:23,755 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass".
+190114-19:16:24,157 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask".
+190114-19:16:25,613 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2".
+190114-19:16:25,768 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+190114-19:16:26,269 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2".
+190114-19:16:27,629 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks".
+190114-19:16:27,813 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz
+190114-19:16:29,449 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks".
+190114-19:16:32,23 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask".
+190114-19:16:32,211 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize/uni_xform.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask/uni_xform_masked.nii.gz
+190114-19:16:33,844 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask".
+190114-19:17:38,366 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_stc_wf.copy_xform".
+190114-19:17:38,958 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_stc_wf.copy_xform".
+190114-19:17:39,506 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_split" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_split".
+190114-19:17:39,564 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_stc_wf/copy_xform/sub-SH223_ses-1_task-rest_run-02_bold_valid_tshift_xform.nii.gz -t
+190114-19:17:42,597 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_split" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_split".
+190114-19:17:42,829 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_stc_wf/copy_xform/sub-SH223_ses-1_task-rest_run-01_bold_valid_tshift_xform.nii.gz -t
+190114-19:22:46,46 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_split".
+190114-19:22:47,864 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_split".
+190114-19:22:48,200 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/gen_ref".
+190114-19:22:48,251 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+190114-19:22:48,271 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/gen_ref".
+190114-19:22:48,426 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+190114-19:22:50,549 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/gen_ref".
+190114-19:22:50,562 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/gen_ref".
+190114-19:22:50,576 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+190114-19:22:50,682 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+190114-19:22:53,700 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.gen_ref".
+190114-19:22:53,701 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.gen_ref".
+190114-19:22:55,600 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.gen_ref".
+190114-19:22:55,702 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.gen_ref".
+190114-19:26:06,769 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.mcflirt".
+190114-19:26:08,665 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.normalize_motion" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_hmc_wf/normalize_motion".
+190114-19:26:08,821 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+190114-19:26:08,957 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.fsl2itk" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_hmc_wf/fsl2itk".
+190114-19:26:08,981 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.normalize_motion".
+190114-19:26:09,173 nipype.workflow INFO:
+	 [Node] Running "fsl2itk" ("fmriprep.interfaces.itk.MCFLIRT2ITK")
+190114-19:26:13,377 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_confounds_wf.fdisp" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_confounds_wf/fdisp".
+190114-19:26:13,397 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+190114-19:26:13,553 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_confounds_wf.fdisp".
+190114-19:26:41,768 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.mcflirt".
+190114-19:26:45,885 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.fsl2itk" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_hmc_wf/fsl2itk".
+190114-19:26:46,134 nipype.workflow INFO:
+	 [Node] Running "fsl2itk" ("fmriprep.interfaces.itk.MCFLIRT2ITK")
+190114-19:26:59,421 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.normalize_motion" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_hmc_wf/normalize_motion".
+190114-19:26:59,541 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+190114-19:26:59,672 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.normalize_motion".
+190114-19:27:03,914 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_confounds_wf.fdisp" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_confounds_wf/fdisp".
+190114-19:27:03,931 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+190114-19:27:04,182 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_confounds_wf.fdisp".
+190114-19:30:26,384 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_hmc_wf.fsl2itk".
+190114-19:30:31,640 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_transform".
+190114-19:30:31,871 nipype.workflow INFO:
+	 [Node] Running "bold_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190114-19:31:35,721 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_hmc_wf.fsl2itk".
+190114-19:31:47,855 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_transform".
+190114-19:31:48,242 nipype.workflow INFO:
+	 [Node] Running "bold_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190114-20:53:47,139 nipype.workflow INFO:
+	 [Node] Finished "_n4_correct1".
+190114-20:53:50,359 nipype.workflow INFO:
+	 [Node] Finished "_n4_correct0".
+190114-20:53:53,460 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct".
+190114-20:53:53,471 nipype.workflow INFO:
+	 [Node] Setting-up "_n4_correct0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct0".
+190114-20:53:53,473 nipype.workflow INFO:
+	 [Node] Cached "_n4_correct0" - collecting precomputed outputs
+190114-20:53:53,474 nipype.workflow INFO:
+	 [Node] "_n4_correct0" found cached.
+190114-20:53:53,476 nipype.workflow INFO:
+	 [Node] Setting-up "_n4_correct1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct1".
+190114-20:53:53,478 nipype.workflow INFO:
+	 [Node] Cached "_n4_correct1" - collecting precomputed outputs
+190114-20:53:53,478 nipype.workflow INFO:
+	 [Node] "_n4_correct1" found cached.
+190114-20:53:53,703 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.n4_correct".
+190114-20:54:05,373 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge".
+190114-20:54:05,743 nipype.workflow INFO:
+	 [Node] Running "t1_merge" ("fmriprep.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+mri_robust_template --satit --fixtp --mov /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct0/sub-SH223_ses-1_run-01_T1w_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/n4_correct/mapflow/_n4_correct1/sub-SH223_ses-1_run-02_T1w_corrected.nii.gz --inittp 1 --iscale --noit --template sub-SH223_ses-1_run-01_T1w_template.nii.gz --subsample 200 --lta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/tp1.lta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/tp2.lta
+190114-21:11:09,788 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_transform".
+190114-21:11:15,686 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/merge".
+190114-21:11:16,50 nipype.workflow INFO:
+	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")
+190114-21:12:05,251 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_transform".
+190114-21:12:08,757 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.merge" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/merge".
+190114-21:12:08,946 nipype.workflow INFO:
+	 [Node] Running "merge" ("fmriprep.interfaces.nilearn.Merge")
+190114-21:15:51,46 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.merge".
+190114-21:15:53,137 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.validate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate".
+190114-21:15:53,273 nipype.workflow INFO:
+	 [Node] Running "validate" ("fmriprep.interfaces.images.ValidateImage")
+190114-21:16:15,531 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.merge".
+190114-21:16:17,213 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.validate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate".
+190114-21:16:17,360 nipype.workflow INFO:
+	 [Node] Running "validate" ("fmriprep.interfaces.images.ValidateImage")
+190114-21:17:11,658 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.validate".
+190114-21:17:12,326 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/gen_ref".
+190114-21:17:12,444 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190114-21:17:19,356 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.gen_ref".
+190114-21:17:28,111 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.validate_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref".
+190114-21:17:28,278 nipype.workflow INFO:
+	 [Node] Running "validate_ref" ("fmriprep.interfaces.images.ValidateImage")
+190114-21:17:29,159 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.validate_ref".
+190114-21:17:30,532 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff".
+190114-21:17:30,727 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("niworkflows.interfaces.ants.AI"), a CommandLine Interface with command:
+antsAI -c [10,0.000001,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz -m Mattes[/templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz,/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz,32,Regular,0.200000] -o initialization.mat -p 0 -s [20.000000,0.120000] -t Affine[0.100000] -v 1
+190114-21:17:42,533 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.validate".
+190114-21:17:44,918 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.gen_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/gen_ref".
+190114-21:17:45,2 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+190114-21:17:57,602 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.gen_ref".
+190114-21:17:58,895 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.validate_ref" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref".
+190114-21:17:58,995 nipype.workflow INFO:
+	 [Node] Running "validate_ref" ("fmriprep.interfaces.images.ValidateImage")
+190114-21:17:59,941 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.validate_ref".
+190114-21:18:11,446 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff".
+190114-21:18:11,579 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("niworkflows.interfaces.ants.AI"), a CommandLine Interface with command:
+antsAI -c [10,0.000001,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz -m Mattes[/templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz,/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz,32,Regular,0.200000] -o initialization.mat -p 0 -s [20.000000,0.120000] -t Affine[0.100000] -v 1
+190114-21:19:00,713 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff".
+190114-21:19:02,850 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm".
+190114-21:19:02,939 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz, /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+190114-21:19:28,88 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_merge".
+190114-21:19:31,123 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_reorient" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_reorient".
+190114-21:19:31,184 nipype.workflow INFO:
+	 [Node] Running "t1_reorient" ("nipype.interfaces.image.Reorient")
+190114-21:19:31,450 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.t1_reorient".
+190114-21:19:33,61 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.recon_config" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/recon_config".
+190114-21:19:33,63 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.skullstrip_ants_wf.t1_skull_strip" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/skullstrip_ants_wf/t1_skull_strip".
+190114-21:19:33,75 nipype.workflow INFO:
+	 [Node] Setting-up "_concat_affines1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines1".
+190114-21:19:33,146 nipype.workflow INFO:
+	 [Node] Running "recon_config" ("fmriprep.interfaces.freesurfer.FSDetectInputs")
+190114-21:19:33,171 nipype.workflow INFO:
+	 [Node] Running "_concat_affines1" ("fmriprep.interfaces.freesurfer.PatchedConcatenateLTA"), a CommandLine Interface with command:
+mri_concatenate_lta -invertout -out_type 1 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm1/out.lta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/tp2.lta out_concat.lta
+190114-21:19:33,204 nipype.workflow INFO:
+	 [Node] Running "t1_skull_strip" ("nipype.interfaces.ants.segmentation.BrainExtraction"), a CommandLine Interface with command:
+antsBrainExtraction.sh -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/sub-SH223_ses-1_run-01_T1w_template.nii.gz -m /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/skullstrip_ants_wf/t1_skull_strip/tpl-OASIS30ANTs_res-01_class-brainmask_probtissue.nii.gz -e /templateflow/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_T1w.nii.gz -d 3 -f /templateflow/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_label-BrainCerebellumExtraction_roi.nii.gz -s nii.gz -k 1 -o highres001_ -q 1 -u 1
+190114-21:19:33,556 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.recon_config".
+190114-21:19:35,607 nipype.workflow INFO:
+	 [Node] Finished "_concat_affines1".
+190114-21:19:37,254 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm".
+190114-21:19:40,220 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon1".
+190114-21:19:40,414 nipype.workflow INFO:
+	 [Node] Running "autorecon1" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon1 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/sub-SH223_ses-1_run-01_T1w_template.nii.gz -noskullstrip -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer
+190114-21:19:42,259 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.init_aff".
+190114-21:19:44,270 nipype.workflow INFO:
+	 [Node] Setting-up "_concat_affines0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines0".
+190114-21:19:44,421 nipype.workflow INFO:
+	 [Node] Running "_concat_affines0" ("fmriprep.interfaces.freesurfer.PatchedConcatenateLTA"), a CommandLine Interface with command:
+mri_concatenate_lta -invertout -out_type 1 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_conform_xfm/mapflow/_t1_conform_xfm0/out.lta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/tp1.lta out_concat.lta
+190114-21:19:44,898 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm".
+190114-21:19:44,985 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-fMRIPrep/tpl-fMRIPrep_space-MNI_res-02_boldref.nii.gz, /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+190114-21:19:45,261 nipype.workflow INFO:
+	 [Node] Finished "_concat_affines0".
+190114-21:19:46,120 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask".
+190114-21:19:46,326 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm/transform0GenericAffine.mat, 1 ]
+190114-21:19:48,230 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.concat_affines" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines".
+190114-21:19:48,320 nipype.workflow INFO:
+	 [Node] Setting-up "_concat_affines0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines0".
+190114-21:19:48,323 nipype.workflow INFO:
+	 [Node] Cached "_concat_affines0" - collecting precomputed outputs
+190114-21:19:48,324 nipype.workflow INFO:
+	 [Node] "_concat_affines0" found cached.
+190114-21:19:48,326 nipype.workflow INFO:
+	 [Node] Setting-up "_concat_affines1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines1".
+190114-21:19:48,328 nipype.workflow INFO:
+	 [Node] Cached "_concat_affines1" - collecting precomputed outputs
+190114-21:19:48,328 nipype.workflow INFO:
+	 [Node] "_concat_affines1" found cached.
+190114-21:19:48,447 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.concat_affines".
+190114-21:19:53,369 nipype.workflow INFO:
+	 [Node] Setting-up "_lta_to_itk0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk0".
+190114-21:19:53,370 nipype.workflow INFO:
+	 [Node] Setting-up "_lta_to_itk1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk1".
+190114-21:19:53,446 nipype.workflow INFO:
+	 [Node] Running "_lta_to_itk0" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines0/out_concat.lta --outitk /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk0/out.txt
+190114-21:19:53,457 nipype.workflow INFO:
+	 [Node] Running "_lta_to_itk1" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/concat_affines/mapflow/_concat_affines1/out_concat.lta --outitk /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk1/out.txt
+190114-21:19:54,892 nipype.workflow INFO:
+	 [Node] Finished "_lta_to_itk0".
+190114-21:19:54,893 nipype.workflow INFO:
+	 [Node] Finished "_lta_to_itk1".
+190114-21:20:11,377 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.lta_to_itk" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk".
+190114-21:20:11,523 nipype.workflow INFO:
+	 [Node] Setting-up "_lta_to_itk0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk0".
+190114-21:20:11,525 nipype.workflow INFO:
+	 [Node] Cached "_lta_to_itk0" - collecting precomputed outputs
+190114-21:20:11,526 nipype.workflow INFO:
+	 [Node] "_lta_to_itk0" found cached.
+190114-21:20:11,528 nipype.workflow INFO:
+	 [Node] Setting-up "_lta_to_itk1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/lta_to_itk/mapflow/_lta_to_itk1".
+190114-21:20:11,530 nipype.workflow INFO:
+	 [Node] Cached "_lta_to_itk1" - collecting precomputed outputs
+190114-21:20:11,530 nipype.workflow INFO:
+	 [Node] "_lta_to_itk1" found cached.
+190114-21:20:11,619 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_template_wf.lta_to_itk".
+190114-21:20:24,273 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.norm".
+190114-21:20:35,586 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask".
+190114-21:20:35,689 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --transform [ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/norm/transform0GenericAffine.mat, 1 ]
+190114-21:21:41,494 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask".
+190114-21:21:44,378 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190114-21:21:44,543 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil.nii.gz
+190114-21:21:51,49 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190114-21:21:56,318 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+190114-21:21:56,495 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil_hdr.nii.gz --output ref_image_valid_corrected.nii.gz
+190114-21:22:41,744 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.map_brainmask".
+190114-21:22:43,805 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190114-21:22:45,75 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190114-21:22:45,264 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/map_brainmask/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil.nii.gz
+190114-21:22:46,559 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190114-21:22:46,714 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_valid_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -f 0.20 -m
+190114-21:22:51,443 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190114-21:22:57,845 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+190114-21:22:57,880 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("nipype.interfaces.ants.segmentation.N4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection -d 3 --input-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/validate_ref/ref_image_valid.nii.gz --mask-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/check_hdr/tpl-MNI152NLin2009cAsym_space-MNI_res-02_brainmask_trans_dil_hdr.nii.gz --output ref_image_valid_corrected.nii.gz
+190114-21:23:15,808 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+190114-21:23:18,518 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+190114-21:23:18,708 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz
+190114-21:23:43,105 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+190114-21:23:44,700 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+190114-21:23:46,569 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+190114-21:23:46,575 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+190114-21:23:46,640 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_image_valid_corrected_brain_masked.nii.gz
+190114-21:23:46,662 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_image_valid_corrected.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -f 0.20 -m
+190114-21:23:48,599 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask".
+190114-21:23:50,396 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize".
+190114-21:23:50,592 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize/ref_image_valid_corrected_brain_masked.nii.gz
+190114-21:24:15,749 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+190114-21:24:17,570 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+190114-21:24:17,694 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz
+190114-21:24:42,149 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+190114-21:24:43,463 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize".
+190114-21:24:44,507 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+190114-21:24:44,681 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_image_valid_corrected_brain_mask_dil.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_image_valid_corrected_brain_masked.nii.gz
+190114-21:24:45,852 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize".
+190114-21:24:45,909 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+190114-21:24:45,912 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask".
+190114-21:24:46,715 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize".
+190114-21:24:48,704 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass".
+190114-21:24:48,705 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize".
+190114-21:24:48,828 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/unifize/ref_image_valid_corrected_brain_masked.nii.gz
+190114-21:24:48,839 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass/uni_xform.nii.gz
+190114-21:24:52,68 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass".
+190114-21:24:54,3 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2".
+190114-21:24:54,76 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+190114-21:24:54,436 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2".
+190114-21:24:56,720 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks".
+190114-21:24:56,885 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz
+190114-21:24:58,568 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks".
+190114-21:25:00,131 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_confounds_wf.dvars" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_confounds_wf/dvars".
+190114-21:25:00,132 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask".
+190114-21:25:00,207 nipype.workflow INFO:
+	 [Node] Running "dvars" ("nipype.algorithms.confounds.ComputeDVARS")
+190114-21:25:00,216 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize/uni_xform.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask/uni_xform_masked.nii.gz
+190114-21:25:02,975 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask".
+190114-21:25:41,908 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.unifize".
+190114-21:25:45,699 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize".
+190114-21:25:45,710 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+190114-21:25:46,767 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_unifize".
+190114-21:25:49,924 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass".
+190114-21:25:49,952 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_second_pass/uni_xform.nii.gz
+190114-21:25:53,374 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.skullstrip_second_pass".
+190114-21:25:55,333 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2".
+190114-21:25:55,448 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+190114-21:25:56,21 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.fixhdr_skullstrip2".
+190114-21:25:59,425 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks".
+190114-21:25:59,447 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_image_valid_corrected_brain_mask.nii.gz -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz
+190114-21:26:00,626 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.combine_masks".
+190114-21:26:03,786 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_confounds_wf.dvars" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_confounds_wf/dvars".
+190114-21:26:03,793 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask".
+190114-21:26:03,802 nipype.workflow INFO:
+	 [Node] Running "dvars" ("nipype.algorithms.confounds.ComputeDVARS")
+190114-21:26:03,951 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/fixhdr_unifize/uni_xform.nii.gz -mas /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/apply_mask/uni_xform_masked.nii.gz
+190114-21:26:05,603 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_bold_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.apply_mask".
+190114-21:35:05,471 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_confounds_wf.dvars".
+190114-21:35:56,252 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_confounds_wf.dvars".
+190114-22:18:07,550 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon1".
+190114-22:18:13,633 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.fsnative_2_t1_xfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/fsnative_2_t1_xfm".
+190114-22:18:13,876 nipype.workflow INFO:
+	 [Node] Running "fsnative_2_t1_xfm" ("fmriprep.interfaces.freesurfer.PatchedRobustRegister"), a CommandLine Interface with command:
+mri_robust_register --satit --iscale --lta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/fsnative_2_t1_xfm/T1_robustreg.lta --mov /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/mri/T1.mgz --dst /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_template_wf/t1_merge/sub-SH223_ses-1_run-01_T1w_template.nii.gz
+190114-22:33:10,818 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.fsnative_2_t1_xfm".
+190114-22:33:11,841 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.t1_2_fsnative_xfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/t1_2_fsnative_xfm".
+190114-22:33:11,857 nipype.workflow INFO:
+	 [Node] Running "t1_2_fsnative_xfm" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/fsnative_2_t1_xfm/T1_robustreg.lta --invert --outlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/t1_2_fsnative_xfm/out.lta
+190114-22:33:12,168 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.t1_2_fsnative_xfm".
+190114-22:33:13,830 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_derivatives_wf.lta_2_itk" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_derivatives_wf/lta_2_itk".
+190114-22:33:13,845 nipype.workflow INFO:
+	 [Node] Running "lta_2_itk" ("fmriprep.interfaces.freesurfer.PatchedLTAConvert"), a CommandLine Interface with command:
+lta_convert --inlta /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/t1_2_fsnative_xfm/out.lta --outitk /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/anat_derivatives_wf/lta_2_itk/out.txt
+190114-22:33:14,71 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.anat_derivatives_wf.lta_2_itk".
+190115-01:30:07,536 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.skullstrip_ants_wf.t1_skull_strip".
+190115-01:30:08,640 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.skull_strip_extern" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/skull_strip_extern".
+190115-01:30:08,647 nipype.workflow INFO:
+	 [Node] Running "skull_strip_extern" ("fmriprep.interfaces.freesurfer.FSInjectBrainExtracted")
+190115-01:30:14,630 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.skull_strip_extern".
+190115-01:30:16,366 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon_resume_wf.autorecon2_vol" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon2_vol".
+190115-01:30:16,381 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon2-volonly -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-01:30:16,383 nipype.workflow INFO:
+	 [Node] Running "autorecon2_vol" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon2-volonly -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-01:30:16,387 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon2-volonly -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:56,159 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.autorecon_resume_wf.autorecon2_vol".
+190115-10:03:58,685 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs0".
+190115-10:03:58,687 nipype.workflow INFO:
+	 [Node] Setting-up "_autorecon_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/autorecon_resume_wf/autorecon_surfs/mapflow/_autorecon_surfs1".
+190115-10:03:58,709 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi lh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:58,714 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi rh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:58,726 nipype.workflow INFO:
+	 [Node] Running "_autorecon_surfs0" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon-hemi lh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:58,731 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi lh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:58,738 nipype.workflow INFO:
+	 [Node] Running "_autorecon_surfs1" ("nipype.interfaces.freesurfer.preprocess.ReconAll"), a CommandLine Interface with command:
+recon-all -autorecon-hemi rh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 
+190115-10:03:58,743 nipype.interface INFO:
+	 resume recon-all : recon-all -autorecon-hemi rh -noparcstats -nocortparc2 -noparcstats2 -nocortparc3 -noparcstats3 -nopctsurfcon -nohyporelabel -noaparc2aseg -noapas2aseg -nosegstats -nowmparc -nobalabels -openmp 8 -subjid sub-SH223 -sd /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer 

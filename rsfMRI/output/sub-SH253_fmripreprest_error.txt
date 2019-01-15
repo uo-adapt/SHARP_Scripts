@@ -15,9 +15,9 @@
   self.description = json.load(open(target, 'r'))
 /usr/local/miniconda/lib/python3.6/site-packages/grabbit/core.py:436: ResourceWarning: unclosed file <_io.TextIOWrapper name='/usr/local/miniconda/lib/python3.6/site-packages/bids/layout/config/bids.json' mode='r' encoding='UTF-8'>
   domain = json.load(open(domain, 'r'))
-/usr/local/miniconda/lib/python3.6/site-packages/bids/layout/bids_layout.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='/projects/adapt_lab/shared/SHARP/bids_data/sub-SH225/ses-1/func/sub-SH225_ses-1_task-rest_run-01_bold.json' mode='r' encoding='utf-8'>
+/usr/local/miniconda/lib/python3.6/site-packages/bids/layout/bids_layout.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='/projects/adapt_lab/shared/SHARP/bids_data/sub-SH253/ses-1/func/sub-SH253_ses-1_task-rest_run-01_bold.json' mode='r' encoding='utf-8'>
   encoding='utf-8'))
-/usr/local/miniconda/lib/python3.6/site-packages/bids/layout/bids_layout.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='/projects/adapt_lab/shared/SHARP/bids_data/sub-SH225/ses-1/func/sub-SH225_ses-1_task-rest_run-02_bold.json' mode='r' encoding='utf-8'>
+/usr/local/miniconda/lib/python3.6/site-packages/bids/layout/bids_layout.py:208: ResourceWarning: unclosed file <_io.TextIOWrapper name='/projects/adapt_lab/shared/SHARP/bids_data/sub-SH253/ses-1/func/sub-SH253_ses-1_task-rest_run-02_bold.json' mode='r' encoding='utf-8'>
   encoding='utf-8'))
 Captured warning (<class 'ImportWarning'>): can't resolve package from __spec__ or __package__, falling back on __name__ and __path__
 Captured warning (<class 'ResourceWarning'>): unclosed file <_io.TextIOWrapper name='/usr/local/miniconda/lib/python3.6/site-packages/pytest.py' mode='r' encoding='utf-8'>
