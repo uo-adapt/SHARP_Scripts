@@ -14,4 +14,4 @@ group_dir=/projects/adapt_lab/shared/
 study="SHARP"
 
 
-sbatch --job-name xcpAnat --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
+sbatch --job-name xcpAnat --partition=short --time=24:00:00 --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
