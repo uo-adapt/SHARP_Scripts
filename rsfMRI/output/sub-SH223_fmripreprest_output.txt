@@ -2476,3 +2476,398 @@ fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmr
 	 [Node] "_update_metadata3" found cached.
 190116-03:19:47,800 nipype.workflow INFO:
 	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_surf_wf.update_metadata".
+190116-08:23:20,0 nipype.workflow INFO:
+	 [Node] Finished "_midthickness0".
+190116-09:01:56,174 nipype.workflow INFO:
+	 [Node] Finished "_midthickness1".
+190116-09:01:57,651 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.midthickness" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness".
+190116-09:01:57,778 nipype.workflow INFO:
+	 [Node] Setting-up "_midthickness0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness/mapflow/_midthickness0".
+190116-09:01:57,781 nipype.workflow INFO:
+	 [Node] Cached "_midthickness0" - collecting precomputed outputs
+190116-09:01:57,781 nipype.workflow INFO:
+	 [Node] "_midthickness0" found cached.
+190116-09:01:57,783 nipype.workflow INFO:
+	 [Node] Setting-up "_midthickness1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/midthickness/mapflow/_midthickness1".
+190116-09:01:57,786 nipype.workflow INFO:
+	 [Node] Cached "_midthickness1" - collecting precomputed outputs
+190116-09:01:57,786 nipype.workflow INFO:
+	 [Node] "_midthickness1" found cached.
+190116-09:01:57,879 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.midthickness".
+190116-09:02:00,370 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.save_midthickness" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/save_midthickness".
+190116-09:02:00,514 nipype.workflow INFO:
+	 [Node] Running "save_midthickness" ("nipype.interfaces.io.DataSink")
+190116-09:02:00,646 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.save_midthickness".
+190116-09:02:10,405 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0".
+190116-09:02:10,486 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii0" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/rh.smoothwm /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0/rh.smoothwm_converted.gii
+190116-09:02:10,616 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1".
+190116-09:02:10,617 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2".
+190116-09:02:10,619 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3".
+190116-09:02:10,621 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4".
+190116-09:02:10,622 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5".
+190116-09:02:10,626 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6".
+190116-09:02:10,666 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii1" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/lh.smoothwm /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1/lh.smoothwm_converted.gii
+190116-09:02:10,676 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii4" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/rh.inflated /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4/rh.inflated_converted.gii
+190116-09:02:10,687 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii5" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/lh.inflated /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5/lh.inflated_converted.gii
+190116-09:02:10,698 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii3" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/lh.pial /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3/lh.pial_converted.gii
+190116-09:02:10,698 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii2" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/rh.pial /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2/rh.pial_converted.gii
+190116-09:02:10,752 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii6" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/rh.midthickness /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6/rh.midthickness_converted.gii
+190116-09:02:10,840 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7".
+190116-09:02:10,972 nipype.workflow INFO:
+	 [Node] Running "_fs_2_gii7" ("nipype.interfaces.freesurfer.utils.MRIsConvert"), a CommandLine Interface with command:
+mris_convert /projects/adapt_lab/shared/SHARP/bids_data/derivatives/freesurfer/sub-SH223/surf/lh.midthickness /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7/lh.midthickness_converted.gii
+190116-09:03:15,179 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii1".
+190116-09:03:15,259 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii5".
+190116-09:03:15,425 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii3".
+190116-09:03:15,449 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii4".
+190116-09:03:15,568 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii0".
+190116-09:03:15,569 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii7".
+190116-09:03:15,602 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii6".
+190116-09:03:15,740 nipype.workflow INFO:
+	 [Node] Finished "_fs_2_gii2".
+190116-09:03:19,311 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fs_2_gii" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii".
+190116-09:03:19,409 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii0".
+190116-09:03:19,412 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii0" - collecting precomputed outputs
+190116-09:03:19,412 nipype.workflow INFO:
+	 [Node] "_fs_2_gii0" found cached.
+190116-09:03:19,414 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii1".
+190116-09:03:19,417 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii1" - collecting precomputed outputs
+190116-09:03:19,417 nipype.workflow INFO:
+	 [Node] "_fs_2_gii1" found cached.
+190116-09:03:19,426 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii2".
+190116-09:03:19,450 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii2" - collecting precomputed outputs
+190116-09:03:19,450 nipype.workflow INFO:
+	 [Node] "_fs_2_gii2" found cached.
+190116-09:03:19,452 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii3".
+190116-09:03:19,455 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii3" - collecting precomputed outputs
+190116-09:03:19,455 nipype.workflow INFO:
+	 [Node] "_fs_2_gii3" found cached.
+190116-09:03:19,457 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii4".
+190116-09:03:19,548 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii4" - collecting precomputed outputs
+190116-09:03:19,548 nipype.workflow INFO:
+	 [Node] "_fs_2_gii4" found cached.
+190116-09:03:19,550 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii5".
+190116-09:03:19,553 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii5" - collecting precomputed outputs
+190116-09:03:19,553 nipype.workflow INFO:
+	 [Node] "_fs_2_gii5" found cached.
+190116-09:03:19,555 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii6".
+190116-09:03:19,645 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii6" - collecting precomputed outputs
+190116-09:03:19,646 nipype.workflow INFO:
+	 [Node] "_fs_2_gii6" found cached.
+190116-09:03:19,648 nipype.workflow INFO:
+	 [Node] Setting-up "_fs_2_gii7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fs_2_gii/mapflow/_fs_2_gii7".
+190116-09:03:19,650 nipype.workflow INFO:
+	 [Node] Cached "_fs_2_gii7" - collecting precomputed outputs
+190116-09:03:19,650 nipype.workflow INFO:
+	 [Node] "_fs_2_gii7" found cached.
+190116-09:03:19,989 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fs_2_gii".
+190116-09:03:25,403 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs0".
+190116-09:03:25,407 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs1".
+190116-09:03:25,415 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs2".
+190116-09:03:25,417 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs0" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,425 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs1" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,431 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs3".
+190116-09:03:25,433 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs2" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,441 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs4".
+190116-09:03:25,471 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs3" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,475 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs4" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,930 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs5".
+190116-09:03:25,931 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs6".
+190116-09:03:25,933 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs7".
+190116-09:03:25,976 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs6" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,980 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs5" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:25,995 nipype.workflow INFO:
+	 [Node] Running "_fix_surfs7" ("fmriprep.interfaces.surf.NormalizeSurf")
+190116-09:03:44,660 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs0".
+190116-09:03:44,663 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs4".
+190116-09:03:44,696 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs3".
+190116-09:03:44,748 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs1".
+190116-09:03:44,887 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs2".
+190116-09:03:45,17 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs7".
+190116-09:03:45,78 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs5".
+190116-09:03:45,228 nipype.workflow INFO:
+	 [Node] Finished "_fix_surfs6".
+190116-09:03:48,397 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fix_surfs" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs".
+190116-09:03:48,474 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs0".
+190116-09:03:48,476 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs0" - collecting precomputed outputs
+190116-09:03:48,476 nipype.workflow INFO:
+	 [Node] "_fix_surfs0" found cached.
+190116-09:03:48,478 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs1".
+190116-09:03:48,480 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs1" - collecting precomputed outputs
+190116-09:03:48,481 nipype.workflow INFO:
+	 [Node] "_fix_surfs1" found cached.
+190116-09:03:48,501 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs2".
+190116-09:03:48,514 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs2" - collecting precomputed outputs
+190116-09:03:48,514 nipype.workflow INFO:
+	 [Node] "_fix_surfs2" found cached.
+190116-09:03:48,538 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs3" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs3".
+190116-09:03:48,540 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs3" - collecting precomputed outputs
+190116-09:03:48,540 nipype.workflow INFO:
+	 [Node] "_fix_surfs3" found cached.
+190116-09:03:48,542 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs4" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs4".
+190116-09:03:48,544 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs4" - collecting precomputed outputs
+190116-09:03:48,545 nipype.workflow INFO:
+	 [Node] "_fix_surfs4" found cached.
+190116-09:03:48,546 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs5" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs5".
+190116-09:03:48,626 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs5" - collecting precomputed outputs
+190116-09:03:48,626 nipype.workflow INFO:
+	 [Node] "_fix_surfs5" found cached.
+190116-09:03:48,628 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs6" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs6".
+190116-09:03:48,630 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs6" - collecting precomputed outputs
+190116-09:03:48,631 nipype.workflow INFO:
+	 [Node] "_fix_surfs6" found cached.
+190116-09:03:48,632 nipype.workflow INFO:
+	 [Node] Setting-up "_fix_surfs7" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/gifti_surface_wf/fix_surfs/mapflow/_fix_surfs7".
+190116-09:03:48,635 nipype.workflow INFO:
+	 [Node] Cached "_fix_surfs7" - collecting precomputed outputs
+190116-09:03:48,734 nipype.workflow INFO:
+	 [Node] "_fix_surfs7" found cached.
+190116-09:03:49,7 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.surface_recon_wf.gifti_surface_wf.fix_surfs".
+190116-13:23:22,447 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.t1_2_mni".
+190116-13:23:25,15 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.mni_mask" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_mask".
+190116-13:23:25,25 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.mrg_xfms" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/carpetplot_wf/mrg_xfms".
+190116-13:23:25,40 nipype.workflow INFO:
+	 [Node] Running "mrg_xfms" ("nipype.interfaces.utility.base.Merge")
+190116-13:23:25,54 nipype.workflow INFO:
+	 [Node] Running "mni_mask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/surface_recon_wf/refine/highres001_N4Corrected0_rbrainmask.nii.gz --interpolation MultiLabel --output highres001_N4Corrected0_rbrainmask_trans.nii.gz --reference-image /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5
+190116-13:23:25,63 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.mrg_xfms".
+190116-13:23:27,376 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.mrg_xfms" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/carpetplot_wf/mrg_xfms".
+190116-13:23:27,492 nipype.workflow INFO:
+	 [Node] Running "mrg_xfms" ("nipype.interfaces.utility.base.Merge")
+190116-13:23:27,570 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.mrg_xfms".
+190116-13:23:29,999 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.mni_seg" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_seg".
+190116-13:23:30,164 nipype.workflow INFO:
+	 [Node] Running "mni_seg" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_seg/highres001_N4Corrected0_masked_seg.nii.gz --interpolation MultiLabel --output highres001_N4Corrected0_masked_seg_trans.nii.gz --reference-image /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5
+190116-13:23:30,605 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.resample_parc" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/carpetplot_wf/resample_parc".
+190116-13:23:30,613 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.mask_mni_tfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm".
+190116-13:23:30,627 nipype.workflow INFO:
+	 [Node] Running "mask_mni_tfm" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --interpolation MultiLabel --output ref_image_valid_corrected_brain_mask_maths_trans.nii.gz --reference-image /templateflow/tpl-MNI152Lin/tpl-MNI152Lin_space-MNI_res-02_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5 --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reg_wf/bbreg_wf/fsl2itk_fwd/affine.txt
+190116-13:23:30,643 nipype.workflow INFO:
+	 [Node] Running "resample_parc" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_label-carpet_atlas.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-01_label-carpet_atlas_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reg_wf/bbreg_wf/fsl2itk_inv/affine.txt --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniInverseComposite.h5
+190116-13:23:30,990 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_to_mni_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_to_mni_transform".
+190116-13:23:31,4 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.mask_mni_tfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/mask_mni_tfm".
+190116-13:23:31,36 nipype.workflow INFO:
+	 [Node] Running "mask_mni_tfm" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --interpolation MultiLabel --output ref_image_valid_corrected_brain_mask_maths_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/gen_ref/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w_reference.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5 --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_reg_wf/bbreg_wf/fsl2itk_fwd/affine.txt
+190116-13:23:31,160 nipype.workflow INFO:
+	 [Node] Running "bold_to_mni_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190116-13:23:31,617 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.bold_to_mni_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_to_mni_transform".
+190116-13:23:31,619 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.resample_parc" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/carpetplot_wf/resample_parc".
+190116-13:23:31,656 nipype.workflow INFO:
+	 [Node] Running "resample_parc" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_label-carpet_atlas.nii.gz --interpolation MultiLabel --output tpl-MNI152NLin2009cAsym_space-MNI_res-01_label-carpet_atlas_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reg_wf/bbreg_wf/fsl2itk_inv/affine.txt --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniInverseComposite.h5
+190116-13:23:31,747 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.mask_mni_tfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm".
+190116-13:23:31,749 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.mask_mni_tfm" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/mask_mni_tfm".
+190116-13:23:31,751 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms0".
+190116-13:23:31,758 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms1".
+190116-13:23:31,760 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms2".
+190116-13:23:31,810 nipype.workflow INFO:
+	 [Node] Running "mask_mni_tfm" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --interpolation MultiLabel --output ref_image_valid_corrected_brain_mask_maths_trans.nii.gz --reference-image /templateflow/tpl-MNI152Lin/tpl-MNI152Lin_space-MNI_res-02_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5 --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reg_wf/bbreg_wf/fsl2itk_fwd/affine.txt
+190116-13:23:31,822 nipype.workflow INFO:
+	 [Node] Running "mask_mni_tfm" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_bold_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/combine_masks/ref_image_valid_corrected_brain_mask_maths.nii.gz --interpolation MultiLabel --output ref_image_valid_corrected_brain_mask_maths_trans.nii.gz --reference-image /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/gen_ref/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w_reference.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5 --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_reg_wf/bbreg_wf/fsl2itk_fwd/affine.txt
+190116-13:23:31,822 nipype.workflow INFO:
+	 [Node] Running "_mni_tpms0" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_seg/highres001_N4Corrected0_masked_prob_0.nii.gz --interpolation Linear --output highres001_N4Corrected0_masked_prob_0_trans.nii.gz --reference-image /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5
+190116-13:23:31,823 nipype.workflow INFO:
+	 [Node] Running "_mni_tpms1" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_seg/highres001_N4Corrected0_masked_prob_1.nii.gz --interpolation Linear --output highres001_N4Corrected0_masked_prob_1_trans.nii.gz --reference-image /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5
+190116-13:23:31,823 nipype.workflow INFO:
+	 [Node] Running "_mni_tpms2" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_seg/highres001_N4Corrected0_masked_prob_2.nii.gz --interpolation Linear --output highres001_N4Corrected0_masked_prob_2_trans.nii.gz --reference-image /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_space-MNI_res-01_T1w.nii.gz --transform /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/t1_2_mni/ants_t1_to_mniComposite.h5
+190116-13:23:31,971 nipype.workflow INFO:
+	 [Node] Running "bold_to_mni_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190116-13:27:00,679 nipype.workflow INFO:
+	 [Node] Finished "_mni_tpms0".
+190116-13:27:02,111 nipype.workflow INFO:
+	 [Node] Finished "_mni_tpms1".
+190116-13:27:09,254 nipype.workflow INFO:
+	 [Node] Finished "_mni_tpms2".
+190116-13:27:15,621 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.mni_tpms" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms".
+190116-13:27:15,747 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms0" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms0".
+190116-13:27:15,750 nipype.workflow INFO:
+	 [Node] Cached "_mni_tpms0" - collecting precomputed outputs
+190116-13:27:15,751 nipype.workflow INFO:
+	 [Node] "_mni_tpms0" found cached.
+190116-13:27:15,753 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms1" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms1".
+190116-13:27:15,789 nipype.workflow INFO:
+	 [Node] Cached "_mni_tpms1" - collecting precomputed outputs
+190116-13:27:15,789 nipype.workflow INFO:
+	 [Node] "_mni_tpms1" found cached.
+190116-13:27:15,792 nipype.workflow INFO:
+	 [Node] Setting-up "_mni_tpms2" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/anat_preproc_wf/mni_tpms/mapflow/_mni_tpms2".
+190116-13:27:15,795 nipype.workflow INFO:
+	 [Node] Cached "_mni_tpms2" - collecting precomputed outputs
+190116-13:27:15,795 nipype.workflow INFO:
+	 [Node] "_mni_tpms2" found cached.
+190116-13:27:16,238 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.anat_preproc_wf.mni_tpms".
+190116-13:30:59,125 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.resample_parc".
+190116-13:30:59,538 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.resample_parc".
+190116-13:31:04,821 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.conf_plot" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/carpetplot_wf/conf_plot".
+190116-13:31:04,852 nipype.workflow INFO:
+	 [Node] Running "conf_plot" ("fmriprep.interfaces.confounds.FMRISummary")
+190116-13:31:09,604 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.conf_plot" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/carpetplot_wf/conf_plot".
+190116-13:31:09,713 nipype.workflow INFO:
+	 [Node] Running "conf_plot" ("fmriprep.interfaces.confounds.FMRISummary")
+190116-13:33:47,426 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.mask_mni_tfm".
+190116-13:33:48,802 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.mask_mni_tfm".
+190116-13:34:02,456 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190116-13:34:02,645 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/ref_image_valid_corrected_brain_mask_maths_trans_dil.nii.gz
+190116-13:34:08,265 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190116-13:34:08,328 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/ref_image_valid_corrected_brain_mask_maths_trans_dil.nii.gz
+190116-13:34:29,768 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190116-13:34:35,110 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190116-13:36:22,257 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.carpetplot_wf.conf_plot".
+190116-13:36:30,357 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.carpetplot_wf.conf_plot".
+190116-13:36:42,596 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_to_mni_transform" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_to_mni_transform".
+190116-13:36:43,153 nipype.workflow INFO:
+	 [Node] Running "bold_to_mni_transform" ("fmriprep.interfaces.itk.MultiApplyTransforms")
+190116-13:41:05,277 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.mask_mni_tfm".
+190116-13:41:07,499 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.mask_mni_tfm".
+190116-13:41:13,45 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190116-13:41:13,77 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_02_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/ref_image_valid_corrected_brain_mask_maths_trans_dil.nii.gz
+190116-13:41:18,743 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+190116-13:41:18,818 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/mask_mni_tfm/ref_image_valid_corrected_brain_mask_maths_trans.nii.gz -kernel sphere 3.0000 -dilF /projects/adapt_lab/shared/SHARP/bids_data/derivatives/working_bids_fmripreprest/fmriprep_wf/single_subject_SH223_wf/func_preproc_ses_1_task_rest_run_01_wf/ica_aroma_wf/bold_mni_trans_wf/bold_reference_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/ref_image_valid_corrected_brain_mask_maths_trans_dil.nii.gz
+190116-13:42:46,906 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_02_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+190116-13:42:52,202 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_SH223_wf.func_preproc_ses_1_task_rest_run_01_wf.ica_aroma_wf.bold_mni_trans_wf.bold_reference_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".

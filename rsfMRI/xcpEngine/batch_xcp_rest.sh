@@ -14,4 +14,4 @@ group_dir=/projects/adapt_lab/shared/
 study="SHARP"
 
 
-sbatch --job-name xcprest --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_rest_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_rest_error.txt xcp_rest.sh
+sbatch --job-name xcprest --partition=short --time=24:00:00 --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_rest_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_rest_error.txt xcp_rest.sh
