@@ -122,7 +122,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -143,7 +143,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -164,7 +164,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -185,7 +185,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -206,7 +206,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -227,7 +227,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -248,7 +248,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -269,7 +269,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
@@ -290,7 +290,7 @@ Module Workflow Map
 ····································································
 · [Module failure occurred in a number of subjects. They have been]
 · [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· · [sub-SH212_ses-1 removed from analysis]
 ····································································
 
 
