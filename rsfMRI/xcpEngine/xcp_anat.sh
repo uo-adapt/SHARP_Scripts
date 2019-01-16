@@ -5,7 +5,7 @@ module load singularity
 module load afni
 module load ants
 module load fsl
-module load c3p
+module load c3d
 module load R
 module load python3
 
