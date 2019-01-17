@@ -33,9 +33,9 @@
 ###################################################################
 
 analysis=fc_$(whoami)
-design=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn
+design=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn
 sequence=anatomical
-standard=MNI%1x1x1
+standard=MNI_via_OASIS
 
 ###################################################################
 # PIPELINE
@@ -47,7 +47,7 @@ pipeline=prestats,confound2,regress,fcon,reho,alff,seed,roiquant,norm
 # 1 PRESTATS
 ###################################################################
 
-prestats_rerun[1]=1
+prestats_rerun[1]=0
 prestats_cleanup[1]=1
 prestats_process[1]=DVO-MPR-STM-MCO-BXT
 
@@ -59,7 +59,7 @@ confound2_rps[2]=0
 confound2_rms[2]=0
 confound2_wm[2]=1
 confound2_csf[2]=1
-confound2_gsr[2]=1
+confound2_gsr[2]=0
 confound2_acompcor[2]=0
 confound2_tcompcor[2]=0
 confound2_aroma[2]=1
@@ -137,7 +137,6 @@ seed_sptf[7]=susan
 seed_smo[7]=4
 seed_rerun[7]=1
 seed_cleanup[7]=1
-
 ###################################################################
 # 8 ROIQUANT
 ###################################################################

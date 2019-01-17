@@ -1,8 +1,8 @@
--d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
+-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
 Constructing a pipeline based on user specifications
 ····································································
-· [D][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn]
+· [D][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn]
 · [C][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv]
 · [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data]
 · [M][Executing serially]
@@ -65,7 +65,7 @@ Checking module-specific dependencies
 #                                                                 #
 #  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
 ###################################################################
-source space map '' is not an image
+fixed '' is not an image
 ····································································
 Processing step complete:
 Localising subject metadata...
@@ -108,7 +108,7 @@ Localiser complete
 
 [I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz]
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats]
-NATIVE:LPI TEMPLATE:RPI
+NATIVE:LPI TEMPLATE:
 
 Usage: fslroi <input> <output> <xmin> <xsize> <ymin> <ysize> <zmin> <zsize>
        fslroi <input> <output> <tmin> <tsize>
@@ -146,11 +146,11 @@ Module Workflow Map
 · [An error occurred while processing module prestats.]
 · [The error was detected at signpost @1.4.]
 · [The most recent command logged was]
-· [fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI_DVO.nii.gz]
+· [fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~__DVO.nii.gz]
 · [For additional details, view the processing log. For improved]
 · [diagnostics, increment verbosity using the -t option.]
 · []
-· [Processing failed to produce required output: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI_DVO.nii.gz]
+· [Processing failed to produce required output: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~__DVO.nii.gz]
 · []
 · [stream abort]
 ····································································

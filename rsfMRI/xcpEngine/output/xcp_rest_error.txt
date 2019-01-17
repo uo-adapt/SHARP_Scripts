@@ -21,6 +21,7 @@ Current processing step:
 · @1.5 Ingress
 · @1.5.1 [Native space: sub-SH212_ses-1_run-01_anatomical]
 · @1.5.2a [Standard space: MNI]
+· @1.5.2d [Space not found: OASIS]
 · @1.5.3a [Anatomical space: sub-SH212_ses-1_run-01_anatomical]
 · @1.5 [Priming analytic audit]
 · @1.6 [Priming quality assessment]
@@ -40,9 +41,7 @@ Current processing step:
 ····································································
 · @3.1 [Writing localised design]
 · @3.2 [Evaluating subject variables]
-/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.dsn: line 176: complete.[9001]=: command not found
-                             -   -   -
->> rm -rf /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~*
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.dsn: line 175: complete.[9001]=: command not found
                              -   -   -
 >> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
                              -   -   -
@@ -56,17 +55,17 @@ Current processing step:
 @0 Ensure matching orientation
 ····································································
 · @0.1a Input: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
-· @0.1b Template: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz
+· @0.1b Template:
 · @0.1c Output root:
 · @0.1d checking the orientation of img and template
                              -   -   -
 >> 3dinfo -orient /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
                              -   -   -
->> 3dinfo -orient /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz
+>> 3dinfo -orient
 · @0.1e img and template orientation are not the same
-· @0.1f make it: LPI -> RPI
+· @0.1f make it: LPI -> 
                              -   -   -
->> 3dresample -orient RPI -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI.nii.gz
+>> 3dresample -orient -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz
 · @0.1 
 
 
@@ -75,8 +74,8 @@ Current processing step:
 @1 Discarding volumes
 ····································································
                              -   -   -
->> fslnvols /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI.nii.gz
-· @1.1 [Total original volumes = 270]
+>> fslnvols /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz
+· @1.1 [Total original volumes = 0]
 · @1.4 [Primary analyte image]
                              -   -   -
->> fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI_DVO.nii.gz
+>> fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~__DVO.nii.gz
