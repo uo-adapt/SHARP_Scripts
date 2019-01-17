@@ -1,4 +1,4 @@
--d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
+-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1
 
 Constructing a pipeline based on user specifications
 ····································································
@@ -65,44 +65,18 @@ Checking module-specific dependencies
 #                                                                 #
 #  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
 ###################################################################
-
-· [A major error has occurred.]
-· [The processing stream will now abort.]
-· [Preparing diagnostics]
 ····································································
-
-
-
-Module Workflow Map
+Processing step complete:
+Localising subject metadata...
 ····································································
-
-· @1
-· @1.1
-· @1.1a
-· @1.1b
-· @1.2
-· @1.3
-· @1.4
-· @1.5
-· ERROR
+Processing step complete:
+Localising image
 ····································································
+Processing step complete:
+Localising design
 
 
-
-····································································
-· [An error occurred while processing module localiser.]
-· [The error was detected at signpost @1.5.]
-· [The most recent command logged was]
-· []
-· [For additional details, view the processing log. For improved]
-· [diagnostics, increment verbosity using the -t option.]
-· []
-· [Invalid path provided for antsct[9001]]
-· []
-· [stream abort]
-····································································
-
-
+Localiser complete
 
 
 
@@ -119,11 +93,36 @@ Module Workflow Map
 
 [Delegating control to module]
 
+
+
+###################################################################
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#                                                                 #
+#  ☭                 FMRI PREPROCESSING MODULE                 ☭  #
+#                                                                 #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats]
+
+
+
+prestats has already run to completion.
+Writing outputs...
+
+
+
+Module Workflow Map
 ····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+· START
+· FINISH
 ····································································
+
+
+Module complete
 
 
 
@@ -140,11 +139,50 @@ Module Workflow Map
 
 [Delegating control to module]
 
+
+
+###################################################################
+#  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  #
+#                                                                 #
+#  ·                   CONFOUND MODEL MODULE                   ·  #
+#                                                                 #
+#  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  ·  #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/confound2]
 ····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+Processing step complete:
+Generating confound matrix
 ····································································
+Processing step complete:
+Validating confound model
+
+
+
+Module Workflow Map
+····································································
+· START
+· @1
+· @1.1
+· @1.1.1
+· @1.1.3
+· @1.1.5
+· @1.1.6
+· @1.2
+· @1.3
+· @1.5
+· @1.8
+· @1.6
+· @2
+· @2.1a
+· FINISH
+····································································
+
+
+Module complete
 
 
 
@@ -161,144 +199,17 @@ Module Workflow Map
 
 [Delegating control to module]
 
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
 
 
 ###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
 #                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m fcon [0;31m★[0m                             
+#  ☭                CONFOUND REGRESSION MODULE                 ☭  #
 #                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
 ###################################################################
 
 
 
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m reho [0;31m★[0m                             
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
-
-
-
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m alff [0;31m★[0m                             
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
-
-
-
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m seed [0;31m★[0m                             
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
-
-
-
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m roiquant [0;31m★[0m                             
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
-
-
-
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-                  CURRENTLY PROCESSING MODULE:                     
-                         [0;31m★[0m norm [0;31m★[0m                             
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
-
-
-
-[Delegating control to module]
-
-····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
-····································································
-
-
-
-###################################################################
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-#                                                                 #
-#  [0;31m☭[0m                     ANALYSIS COMPLETE                     [0;31m☭[0m  #
-#                                                                 #
-#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
-###################################################################
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/regress]
