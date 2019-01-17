@@ -1,4 +1,4 @@
--d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 3 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
+-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
 Constructing a pipeline based on user specifications
 ····································································
@@ -65,44 +65,19 @@ Checking module-specific dependencies
 #                                                                 #
 #  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
 ###################################################################
-
-· [A major error has occurred.]
-· [The processing stream will now abort.]
-· [Preparing diagnostics]
+source space map '' is not an image
 ····································································
-
-
-
-Module Workflow Map
+Processing step complete:
+Localising subject metadata...
 ····································································
-
-· @1
-· @1.1
-· @1.1a
-· @1.1b
-· @1.2
-· @1.3
-· @1.4
-· @1.5
-· ERROR
+Processing step complete:
+Localising image
 ····································································
+Processing step complete:
+Localising design
 
 
-
-····································································
-· [An error occurred while processing module localiser.]
-· [The error was detected at signpost @1.5.]
-· [The most recent command logged was]
-· []
-· [For additional details, view the processing log. For improved]
-· [diagnostics, increment verbosity using the -t option.]
-· []
-· [Invalid path provided for antsct[9001]]
-· []
-· [stream abort]
-····································································
-
-
+Localiser complete
 
 
 
@@ -119,11 +94,68 @@ Module Workflow Map
 
 [Delegating control to module]
 
+
+
+###################################################################
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#                                                                 #
+#  ☭                 FMRI PREPROCESSING MODULE                 ☭  #
+#                                                                 #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats]
+NATIVE:LPI TEMPLATE:RPI
+
+Usage: fslroi <input> <output> <xmin> <xsize> <ymin> <ysize> <zmin> <zsize>
+       fslroi <input> <output> <tmin> <tsize>
+
+       fslroi <input> <output> <xmin> <xsize> <ymin> <ysize> <zmin> <zsize> <tmin> <tsize>
+Note: indexing (in both time and space) starts with 0 not 1! Inputting -1 for a size will set it to the full image extent for that dimension.
+
+· [A major error has occurred.]
+· [The processing stream will now abort.]
+· [Preparing diagnostics]
 ····································································
-· [Module failure occurred in a number of subjects. They have been]
-· [removed from further analysis.]
-· · [sub-SH212_ses-1_run-01 removed from analysis]
+
+
+
+Module Workflow Map
 ····································································
+· START
+· @0
+· @0.1a
+· @0.1b
+· @0.1c
+· @0.1d
+· @0.1e
+· @0.1f
+· @0.1
+· @1
+· @1.1
+· @1.4
+· ERROR
+····································································
+
+
+
+····································································
+· [An error occurred while processing module prestats.]
+· [The error was detected at signpost @1.4.]
+· [The most recent command logged was]
+· [fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI_DVO.nii.gz]
+· [For additional details, view the processing log. For improved]
+· [diagnostics, increment verbosity using the -t option.]
+· []
+· [Processing failed to produce required output: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_RPI_DVO.nii.gz]
+· []
+· [stream abort]
+····································································
+
+
 
 
 
