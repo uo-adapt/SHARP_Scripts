@@ -1224,3 +1224,46 @@ Current processing step:
 · @1.3 [Applying composite diffeomorphism to primary dataset]
                              -   -   -
 >> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.4 [Applying composite diffeomorphism to derivative images:]
+· @1.5 [alff]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/alff/sub-SH212_ses-1_run-01_alff.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_alffStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/alff/sub-SH212_ses-1_run-01_alffZ.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_alffZStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/alff/sub-SH212_ses-1_run-01_alffZ_sm4.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_alffZ_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alff_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/alff/sub-SH212_ses-1_run-01_alff_sm4.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_alff_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [img_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/regress/sub-SH212_ses-1_run-01_img_sm4.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_img_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [reho]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/reho/sub-SH212_ses-1_run-01_reho.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_rehoStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [rehoZ]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/reho/sub-SH212_ses-1_run-01_rehoZ.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_rehoZStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [rehoZ_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/reho/sub-SH212_ses-1_run-01_rehoZ_sm4.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_rehoZ_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [reho_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/reho/sub-SH212_ses-1_run-01_reho_sm4.nii.gz -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_reho_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc/sub-SH212_ses-1_SubjectToTemplate0GenericAffine.mat
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/norm/sub-SH212_ses-1_run-01_std.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz
+                             -   -   -
+>> 12-11-1
+                             -   -   -
+>> 12-1
