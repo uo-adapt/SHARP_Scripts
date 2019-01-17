@@ -297,3 +297,6 @@ Functional connectome: gordon333
 ····································································
 Processing step complete:
 Functional connectome: power264
+····································································
+Processing step complete:
+Functional connectome: schaefer100
