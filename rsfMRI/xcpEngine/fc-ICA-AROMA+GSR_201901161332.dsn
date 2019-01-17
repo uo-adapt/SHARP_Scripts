@@ -32,7 +32,7 @@
 # ANALYSIS VARIABLES
 ###################################################################
 
-analysis=fc_aromagsr
+analysis=fc_$(whoami)
 design=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA+GSR_201901161332.dsn
 sequence=anatomical
 standard=MNI%1x1x1
