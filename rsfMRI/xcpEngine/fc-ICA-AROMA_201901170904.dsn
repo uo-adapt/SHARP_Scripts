@@ -48,9 +48,8 @@ pipeline=prestats,confound2,regress,fcon,reho,alff,seed,roiquant,norm
 ###################################################################
 
 prestats_rerun[1]=1
-prestats_dvo=2
 prestats_cleanup[1]=1
-prestats_process[1]=FMP-DVO
+prestats_process[1]=FMP
 
 ###################################################################
 # 2 CONFOUND2
