@@ -4,8 +4,12 @@ Note that the PRL tree is NOT supported by RACS.
 
 Please contact user at sameer@cs.uoregon.edu for questions regarding this tree.
 
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/subject_parse: line 19: complete.[9001]=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/subject_parse: line 19: complete.[9001]=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/struc: No such file or directory
+
+
+Note that the PRL tree is NOT supported by RACS.
+
+Please contact user at sameer@cs.uoregon.edu for questions regarding this tree.
+
 
 
 
@@ -19,63 +23,3 @@ Current processing step:
 · @1.3 [Initialising derivative maps]
 · @1.4 [Initialising atlas system]
 · @1.5 Ingress
-· @1.5.1 [Native space: sub-SH212_ses-1_run-01_anatomical]
-· @1.5.2a [Standard space: MNI]
-· @1.5.2d [Space not found: OASIS]
-· @1.5.3a [Anatomical space: sub-SH212_ses-1_run-01_anatomical]
-· @1.5 [Priming analytic audit]
-· @1.6 [Priming quality assessment]
-
-
-
-Current processing step:
-@2 Localising image
-····································································
-· @2.1 [Verifying that images are present]
-· @2.2 [Conforming and localising images]
-
-
-
-Current processing step:
-@3 Localising design
-····································································
-· @3.1 [Writing localised design]
-· @3.2 [Evaluating subject variables]
-/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.dsn: line 175: complete.[9001]=: command not found
-                             -   -   -
->> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/sub-SH212_ses-1_run-01.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
-                             -   -   -
->> 13-11-1
-                             -   -   -
->> 13-1
-
-
-
-Current processing step:
-@0 Ensure matching orientation
-····································································
-· @0.1a Input: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
-· @0.1b Template:
-· @0.1c Output root:
-· @0.1d checking the orientation of img and template
-                             -   -   -
->> 3dinfo -orient /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz
-                             -   -   -
->> 3dinfo -orient
-· @0.1e img and template orientation are not the same
-· @0.1f make it: LPI -> 
-                             -   -   -
->> 3dresample -orient -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~.nii.gz -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz
-· @0.1 
-
-
-
-Current processing step:
-@1 Discarding volumes
-····································································
-                             -   -   -
->> fslnvols /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz
-· @1.1 [Total original volumes = 0]
-· @1.4 [Primary analyte image]
-                             -   -   -
->> fslroi /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~_.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-01/prestats/sub-SH212_ses-1_run-01~TEMP~__DVO.nii.gz
