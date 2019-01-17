@@ -35,7 +35,7 @@
 analysis=fc_$(whoami)
 design=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn
 sequence=anatomical
-standard=MNI%1x1x1
+standard=MNI_via_OASIS
 
 ###################################################################
 # PIPELINE
@@ -47,10 +47,9 @@ pipeline=prestats,confound2,regress,fcon,reho,alff,seed,roiquant,norm
 # 1 PRESTATS
 ###################################################################
 
-prestats_rerun[1]=1
-prestats_dvo=2
+prestats_rerun[1]=0
 prestats_cleanup[1]=1
-prestats_process[1]=FMP-DVO
+prestats_process[1]=DVO-MPR-STM-MCO-BXT
 
 ###################################################################
 # 2 CONFOUND2
