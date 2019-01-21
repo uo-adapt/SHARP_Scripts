@@ -24,10 +24,10 @@ TEMP_COHORT=\${FULL_COHORT}.\${SGE_TASK_ID}.csv
 echo \$HEADER > \$TEMP_COHORT
 echo \$LINE >> \$TEMP_COHORT
 
-singularity run -B /data:/home/user/data \$SIMG \\
-  -c /home/user\${TEMP_COHORT} \\
-  -d /home/user/data/study/my_design.dsn \\
-  -o /home/user/data/study/output \\
+singularity run -B /data:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \$SIMG \\
+  -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine\${TEMP_COHORT} \\
+  -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \\
+  -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \\
   -i \$TMPDIR
 
 EOF
