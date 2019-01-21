@@ -11,6 +11,13 @@ cat << EOF > xcpParallel.sh
 #$ -t 1-${NJOBS}
 
 module load singularity
+module load afni
+module load ants
+module load fsl
+module load c3d
+module load R
+module load python3
+
 
 # Adjust these so they work on your system
 SIMG=/projects/adapt_lab/shared/containers/xcpEngine.simg
