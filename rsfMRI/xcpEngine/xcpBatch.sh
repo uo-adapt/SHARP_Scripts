@@ -14,6 +14,7 @@ module load singularity
 module load afni
 module load ants
 module load fsl
+module load perl
 module load c3d
 module load R
 module load python3
