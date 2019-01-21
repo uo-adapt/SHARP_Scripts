@@ -10,6 +10,11 @@ cat << EOF > xcpParallel.sh
 #$ -V
 #$ -t 1-${NJOBS}
 
+#SBATCH --partition=long        ### Partition (like a queue in PBS)
+#SBATCH --job-name=xcpAnat      ### Job Name
+#SBATCH --nodes=1               ### Number of nodes needed for the job
+
+
 module load singularity
 module load afni
 module load ants
@@ -39,4 +44,4 @@ singularity run -B /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEng
   -i \$TMPDIR
 
 EOF
-qsub xcpParallel.sh
+sbatch xcpParallel.sh
