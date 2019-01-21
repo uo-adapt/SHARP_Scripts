@@ -47,4 +47,4 @@ bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngin
 	-i \$TMPDIR
 
 EOF
-sbatch xcpParallel.sh
+qsub xcpParallel.sh
