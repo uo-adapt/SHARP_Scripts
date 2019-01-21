@@ -7,6 +7,7 @@ if [[ ${NJOBS} == 0 ]]; then
 fi
 
 cat << EOF > xcpParallel.sh
+#!/bin/bash
 #$ -V
 #$ -t 1-${NJOBS}
 
