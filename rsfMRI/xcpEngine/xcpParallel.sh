@@ -1,7 +1,21 @@
+#!/bin/bash
 #$ -V
 #$ -t 1-3
 
+#SBATCH --partition=long        ### Partition (like a queue in PBS)
+#SBATCH --job-name=xcpAnat      ### Job Name
+#SBATCH --nodes=1               ### Number of nodes needed for the job
+
+
 module load singularity
+module load afni
+module load ants
+module load fsl
+module load perl
+module load c3d
+module load R
+module load python3
+
 
 # Adjust these so they work on your system
 SIMG=/projects/adapt_lab/shared/containers/xcpEngine.simg
@@ -15,9 +29,9 @@ TEMP_COHORT=${FULL_COHORT}.${SGE_TASK_ID}.csv
 echo $HEADER > $TEMP_COHORT
 echo $LINE >> $TEMP_COHORT
 
-singularity run -B /data:/home/user/data $SIMG \
-  -c /home/user${TEMP_COHORT} \
-  -d /home/user/data/study/my_design.dsn \
-  -o /home/user/data/study/output \
+singularity run -B /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data $SIMG \
+  -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine${TEMP_COHORT} \
+  -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \
+  -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
   -i $TMPDIR
 
