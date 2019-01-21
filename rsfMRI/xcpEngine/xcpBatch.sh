@@ -38,6 +38,8 @@ TEMP_COHORT=\${FULL_COHORT}.\${SGE_TASK_ID}.csv
 echo \$HEADER > \$TEMP_COHORT
 echo \$LINE >> \$TEMP_COHORT
 
+cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
+
 bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \
 	-c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine\${TEMP_COHORT} \\
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
