@@ -5,7 +5,7 @@
 #SBATCH --partition=long        ### Partition (like a queue in PBS)
 #SBATCH --job-name=xcpAnat      ### Job Name
 #SBATCH --nodes=1               ### Number of nodes needed for the job
-
+#SBATCH --mem=100G
 
 module load singularity
 module load afni
@@ -29,9 +29,6 @@ TEMP_COHORT=${FULL_COHORT}.${SGE_TASK_ID}.csv
 echo $HEADER > $TEMP_COHORT
 echo $LINE >> $TEMP_COHORT
 
-singularity run -B /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data $SIMG \
-  -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine${TEMP_COHORT} \
-  -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \
-  -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
-  -i $TMPDIR
+bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn 	-c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine${TEMP_COHORT} \
+	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data 	-t 1 	-i $TMPDIR
 
