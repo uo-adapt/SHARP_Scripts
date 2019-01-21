@@ -6,6 +6,8 @@ if [[ ${NJOBS} == 0 ]]; then
     exit 0
 fi
 
+module load perl
+
 cat << EOF > xcpParallel.sh
 #!/bin/bash
 #$ -V
