@@ -12,6 +12,9 @@ module load python3
 cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
 bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
-	-c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv \
+	-c "${TEMP_COHORT}",${ses},${run} \
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
-	-t 1 
+	-t 1 \
+	-i \$TMPDIR
+
+rm "${TEMP_COHORT}",${ses},${run}

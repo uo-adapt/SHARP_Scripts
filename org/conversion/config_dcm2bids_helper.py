@@ -11,10 +11,10 @@
 import os
 # Set study info (may need to change for your study)
 # These variables are used only in this file for paths. Can omit if wanted.
-group = "adapt_lab"
-study = "SHARP"
-PI = "Allen"
-scriptsFolder = "SHARP_Scripts"
+group = 
+study = 
+PI = 
+scriptsFolder = 
 
 # The following variables are used in the main script and need to be defined here. 
 # They need to exist prior to running the script
@@ -31,7 +31,7 @@ outputlog = os.path.join(logdir, "outputlog_helper.txt")
 errorlog = os.path.join(logdir, "errorlog_helper.txt")
 
 # Test subject
-test_subject = "SH220_20160307" # Name of a directory that contains DICOMS for one participant
+test_subject =  # Name of a directory that contains DICOMS for one participant
 
 # Run on local machine (run_local = True) or high performance cluster with slurm (run_local = False)
 run_local = False
