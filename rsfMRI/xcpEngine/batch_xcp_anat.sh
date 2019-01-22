@@ -21,6 +21,4 @@ echo $LINE >> $TEMP_COHORT
 
 sbatch --export ALL,ID=${ID},TEMP_COHORT=${TEMP_COHORT} --job-name xcp_anat_"${ID}" --partition=short --time=02:00:00 --mem=10G -o rm "${ID}"_xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/"${ID}"_xcp_anat_error.txt xcp_anat.sh
 
-echo ${TEMP_COHORT}
-
 done
