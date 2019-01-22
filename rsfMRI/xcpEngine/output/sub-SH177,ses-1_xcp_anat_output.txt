@@ -1,60 +1,223 @@
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv.sub-SH177
--d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv.sub-SH177 -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine -i $TMPDIR
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv.sub-SH177,ses-1.csv
+-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv.sub-SH177,ses-1.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 2 -r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine -i $TMPDIR
 
 Constructing a pipeline based on user specifications
 ····································································
 · [D][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn]
 · [I][$TMPDIR]
-· [C]Missing or empty cohort file
-· [C]Aborting
-___________________________________________________________________
+· [C][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv.sub-SH177,ses-1.csv]
+· [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data]
+· [M][Executing serially]
+····································································
+
+Checking general dependencies
+····································································
+· Version AFNI           AFNI_18.2.04) 
+· Version ANTs           2.1.0.post763-g961ac 
+· Version FSL            5.0.10 
+· [Warning: Convert3D version unknown]
+· Version JQ             jq-1.5
+· Version XCP Engine     xcpEngine-v0.7.0-prerelease
+· R version              3.5.1 
+· R scripting front-end  3.5.1 
+· · RNifti version       0.8.1
+· · optparse version     1.6.0
+· · pracma version       2.1.5
+· · signal version       0.7.6
+····································································
+All general dependencies are present.
+
+Checking environment
+All environmental variables are defined.
+
+Checking module-specific dependencies
 
 
-   Usage: xcpEngine -d <design> <options>
-
-   Compulsory arguments:
-    -d : Primary design file for pipeline:
-         The design file specifies the pipeline modules to
-         be included in the current analysis and configures
-         any parameters necessary to run the modules.
-    -c : Cohort file for pipeline input:
-         A comma-separated catalogue of the analytic sample.
-         Each row corresponds to a subject, and each column
-         corresponds either to an identifier or to an input.
-    -o : Parent directory for pipeline output:
-         A valid path on the current filesystem specifying
-         the directory wherein all output from the current
-         analysis will be written.
-
-   Optional arguments:
-    -m : Execution mode:
-         Input can either be 's' (for serial execution on a
-         single machine)[default], 'c' (for execution on a
-         computing cluster) or a path to a file (for execution
-         on a computing cluster, subject to the specifications
-         defined in the file).
-    -i : Scratch space for pipeline intermediates:
-         Some systems operate more quickly when temporary
-         files are written in a dedicated scratch space. This
-         argument enables a scratch space for intermediates.
-    -r : Root directory for inputs:
-         If all paths defined in the cohort file are defined
-         relative to a root directory, then this argument will
-         define the root directory. Otherwise, all paths will
-         be treated as absolute.
-    -t : Trace:
-         Integer value ( 0 - 3 ) that indicates the level
-         of verbosity during module execution. Higher
-         levels reduce readability but provide useful
-         information for troubleshooting.
-         0  [default]: Human-readable explanations of
-            processing steps and error traces only.
-         1: Explicitly trace module-level computations.
-            Print a workflow map when execution completes.
-         2: Explicitly trace module- and utility-level
-            computations.
-         3: All commands called by the module and all
-            children are traced and explicitly replicated
-            in a log file.
 
 
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+#  [0;31m☭[0m                      XCP [0;31m★ ★ ★[0m ENGINE                     [0;31m☭[0m  #
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
+
+
+
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:                     
+                         [0;31m★[0m LOCALISER [0;31m★[0m                             
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+
+
+
+###################################################################
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#                                                                 #
+#  ☭                   XCP ENGINE LOCALISER                    ☭  #
+#                                                                 #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+###################################################################
+source space map '' is not an image
+····································································
+Processing step complete:
+Localising subject metadata...
+····································································
+Processing step complete:
+Localising image
+····································································
+Processing step complete:
+Localising design
+
+
+Localiser complete
+
+
+
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:                     
+                         [0;31m★[0m struc [0;31m★[0m                             
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+###################################################################
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+#                                                                 #
+#  ☭               STRUCTURAL PROCESSING MODULE                ☭  #
+#                                                                 #
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/sub-SH166_ses-1.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc]
+NATIVE:LPI TEMPLATE:RPI
+WM[4]
+WM 4
+---------------------  Running antsCorticalThickness.sh on n089  ---------------------
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/packages/ants/2.1.0/bin/antsBrainExtraction.sh -d 3 -a /tmp/sub-SH166_ses-1-struc-341479453~TEMP~_RPI.nii.gz -e /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1Head.nii.gz -f /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1MaskDilated.nii.gz -m /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/space/MNI/MNI-1x1x1BrainPrior.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ -k 0 -s nii.gz -q 0 -u 0 -z 0
+---------------------  Running antsBrainExtraction.sh on n089  ---------------------
+
+--------------------------------------------------------------------------------------
+ Bias correction of anatomical images (pre brain extraction)
+   1) pre-process by truncating the image intensities
+   2) run N4
+--------------------------------------------------------------------------------------
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/packages/ants/2.1.0/bin/ImageMath 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_N4Truncated0.nii.gz TruncateImageIntensity /tmp/sub-SH166_ses-1-struc-341479453~TEMP~_RPI.nii.gz 0.01 0.999 256
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/packages/ants/2.1.0/bin/N4BiasFieldCorrection -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_N4Truncated0.nii.gz -s 4 -c [50x50x50x50,0.0000001] -b [200] -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_N4Corrected0.nii.gz --verbose 1
+
+Running N4 for 3-dimensional images.
+
+Mask not read.  Using the entire image as the mask.
+
+Specified spline distance: 200mm
+  original image size:  [176, 256, 256]
+  padded image size:  [201, 401, 401]
+  number of control points:  [4, 5, 5]
+
+Current level = 1
+  Iteration 1 (of 50).   Current convergence value = 0.00040261 (threshold = 1e-07)
+  Iteration 2 (of 50).   Current convergence value = 0.000381617 (threshold = 1e-07)
+  Iteration 3 (of 50).   Current convergence value = 0.000363272 (threshold = 1e-07)
+  Iteration 4 (of 50).   Current convergence value = 0.000346895 (threshold = 1e-07)
+  Iteration 5 (of 50).   Current convergence value = 0.000332408 (threshold = 1e-07)
+  Iteration 6 (of 50).   Current convergence value = 0.00031733 (threshold = 1e-07)
+  Iteration 7 (of 50).   Current convergence value = 0.000295841 (threshold = 1e-07)
+  Iteration 8 (of 50).   Current convergence value = 0.000270252 (threshold = 1e-07)
+  Iteration 9 (of 50).   Current convergence value = 0.000247823 (threshold = 1e-07)
+  Iteration 10 (of 50).   Current convergence value = 0.000227647 (threshold = 1e-07)
+  Iteration 11 (of 50).   Current convergence value = 0.000209592 (threshold = 1e-07)
+  Iteration 12 (of 50).   Current convergence value = 0.000193516 (threshold = 1e-07)
+  Iteration 13 (of 50).   Current convergence value = 0.000179038 (threshold = 1e-07)
+  Iteration 14 (of 50).   Current convergence value = 0.000166153 (threshold = 1e-07)
+  Iteration 15 (of 50).   Current convergence value = 0.000154417 (threshold = 1e-07)
+  Iteration 16 (of 50).   Current convergence value = 0.000143953 (threshold = 1e-07)
+  Iteration 17 (of 50).   Current convergence value = 0.000134458 (threshold = 1e-07)
+  Iteration 18 (of 50).   Current convergence value = 0.000125725 (threshold = 1e-07)
+  Iteration 19 (of 50).   Current convergence value = 0.000117897 (threshold = 1e-07)
+  Iteration 20 (of 50).   Current convergence value = 0.000111043 (threshold = 1e-07)
+  Iteration 21 (of 50).   Current convergence value = 0.000104991 (threshold = 1e-07)
+  Iteration 22 (of 50).   Current convergence value = 9.95337e-05 (threshold = 1e-07)
+  Iteration 23 (of 50).   Current convergence value = 9.52667e-05 (threshold = 1e-07)
+  Iteration 24 (of 50).   Current convergence value = 9.13808e-05 (threshold = 1e-07)
+  Iteration 25 (of 50).   Current convergence value = 8.79754e-05 (threshold = 1e-07)
+  Iteration 26 (of 50).   Current convergence value = 8.47357e-05 (threshold = 1e-07)
+  Iteration 27 (of 50).   Current convergence value = 8.18637e-05 (threshold = 1e-07)
+  Iteration 28 (of 50).   Current convergence value = 7.90824e-05 (threshold = 1e-07)
+  Iteration 29 (of 50).   Current convergence value = 7.6565e-05 (threshold = 1e-07)
+  Iteration 30 (of 50).   Current convergence value = 7.42085e-05 (threshold = 1e-07)
+  Iteration 31 (of 50).   Current convergence value = 7.19091e-05 (threshold = 1e-07)
+  Iteration 32 (of 50).   Current convergence value = 7.00102e-05 (threshold = 1e-07)
+  Iteration 33 (of 50).   Current convergence value = 6.88177e-05 (threshold = 1e-07)
+  Iteration 34 (of 50).   Current convergence value = 6.76113e-05 (threshold = 1e-07)
+  Iteration 35 (of 50).   Current convergence value = 6.65505e-05 (threshold = 1e-07)
+  Iteration 36 (of 50).   Current convergence value = 6.54165e-05 (threshold = 1e-07)
+  Iteration 37 (of 50).   Current convergence value = 6.43725e-05 (threshold = 1e-07)
+  Iteration 38 (of 50).   Current convergence value = 6.33684e-05 (threshold = 1e-07)
+  Iteration 39 (of 50).   Current convergence value = 6.24413e-05 (threshold = 1e-07)
+  Iteration 40 (of 50).   Current convergence value = 6.15408e-05 (threshold = 1e-07)
+  Iteration 41 (of 50).   Current convergence value = 6.05995e-05 (threshold = 1e-07)
+  Iteration 42 (of 50).   Current convergence value = 5.97882e-05 (threshold = 1e-07)
+  Iteration 43 (of 50).   Current convergence value = 5.90728e-05 (threshold = 1e-07)
+  Iteration 44 (of 50).   Current convergence value = 5.82426e-05 (threshold = 1e-07)
+  Iteration 45 (of 50).   Current convergence value = 5.7537e-05 (threshold = 1e-07)
+  Iteration 46 (of 50).   Current convergence value = 5.68147e-05 (threshold = 1e-07)
+  Iteration 47 (of 50).   Current convergence value = 5.62263e-05 (threshold = 1e-07)
+  Iteration 48 (of 50).   Current convergence value = 5.55788e-05 (threshold = 1e-07)
+  Iteration 49 (of 50).   Current convergence value = 5.49109e-05 (threshold = 1e-07)
+  Iteration 50 (of 50).   Current convergence value = 5.43439e-05 (threshold = 1e-07)
+Current level = 2
+  Iteration 1 (of 50).   Current convergence value = 0.000200661 (threshold = 1e-07)
+  Iteration 2 (of 50).   Current convergence value = 0.000184584 (threshold = 1e-07)
+  Iteration 3 (of 50).   Current convergence value = 0.000180366 (threshold = 1e-07)
+  Iteration 4 (of 50).   Current convergence value = 0.000182386 (threshold = 1e-07)
+  Iteration 5 (of 50).   Current convergence value = 0.000187604 (threshold = 1e-07)
+  Iteration 6 (of 50).   Current convergence value = 0.000194531 (threshold = 1e-07)
+  Iteration 7 (of 50).   Current convergence value = 0.000202218 (threshold = 1e-07)
+  Iteration 8 (of 50).   Current convergence value = 0.000209951 (threshold = 1e-07)
+  Iteration 9 (of 50).   Current convergence value = 0.00021808 (threshold = 1e-07)
+  Iteration 10 (of 50).   Current convergence value = 0.000225394 (threshold = 1e-07)
+  Iteration 11 (of 50).   Current convergence value = 0.000235004 (threshold = 1e-07)
+  Iteration 12 (of 50).   Current convergence value = 0.00024631 (threshold = 1e-07)
+  Iteration 13 (of 50).   Current convergence value = 0.000257588 (threshold = 1e-07)
+  Iteration 14 (of 50).   Current convergence value = 0.000257568 (threshold = 1e-07)
+  Iteration 15 (of 50).   Current convergence value = 0.000236773 (threshold = 1e-07)
+  Iteration 16 (of 50).   Current convergence value = 0.000206519 (threshold = 1e-07)
+  Iteration 17 (of 50).   Current convergence value = 0.000174352 (threshold = 1e-07)
+  Iteration 18 (of 50).   Current convergence value = 0.000149665 (threshold = 1e-07)
+  Iteration 19 (of 50).   Current convergence value = 0.000132308 (threshold = 1e-07)
+  Iteration 20 (of 50).   Current convergence value = 0.000119809 (threshold = 1e-07)
+  Iteration 21 (of 50).   Current convergence value = 0.000111232 (threshold = 1e-07)
+  Iteration 22 (of 50).   Current convergence value = 0.000105153 (threshold = 1e-07)
+  Iteration 23 (of 50).   Current convergence value = 0.000100677 (threshold = 1e-07)
+  Iteration 24 (of 50).   Current convergence value = 9.98868e-05 (threshold = 1e-07)
+  Iteration 25 (of 50).   Current convergence value = 0.000100175 (threshold = 1e-07)
+  Iteration 26 (of 50).   Current convergence value = 0.000100198 (threshold = 1e-07)
+  Iteration 27 (of 50).   Current convergence value = 0.000100138 (threshold = 1e-07)
+  Iteration 28 (of 50).   Current convergence value = 0.000100065 (threshold = 1e-07)
+  Iteration 29 (of 50).   Current convergence value = 9.95993e-05 (threshold = 1e-07)
+  Iteration 30 (of 50).   Current convergence value = 9.90919e-05 (threshold = 1e-07)
+  Iteration 31 (of 50).   Current convergence value = 9.84066e-05 (threshold = 1e-07)
