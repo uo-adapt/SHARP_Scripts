@@ -14,7 +14,7 @@ for SUBJ in $(seq 1 $(cat anat_cohort.csv | wc -l)); do
 
 ID=${SUBJLIST[SUBJ]%%,/*}
 HEADER=$(head -n 1 $FULL_COHORT)
-LINE=$(awk "NR==$SUBJ" $FULL_COHORT + 1)
+LINE=$(awk "NR==$(expr $SUBJ + 1)" $FULL_COHORT )
 TEMP_COHORT=${FULL_COHORT}.${ID}.csv
 echo $HEADER > $TEMP_COHORT
 echo $LINE >> $TEMP_COHORT
