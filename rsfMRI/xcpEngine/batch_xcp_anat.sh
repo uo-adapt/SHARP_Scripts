@@ -1,17 +1,25 @@
-#/bin/bash
-#
-# This batch file calls on your subject
-# list (named subject_list.txt). And 
-# runs the job_fmriprep.sh file for 
-# each subject. It saves the ouput
-# and error files in their specified
-# directories.
-#
-# Set your directories
+#!/bin/bash
 
 group_dir=/projects/adapt_lab/shared/
-#container=BIDS/SingularityContainers/poldracklab_fmriprep_latest-2017-07-20-dd77d76c5e14.img
 study="SHARP"
 
+FULL_COHORT=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv
 
-sbatch --job-name xcpAnat --partition=long --mem=100G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/xcp_anat_error.txt xcp_anat.sh
+readarray SUBJLIST < anat_cohort.csv
+
+
+for SUBJ in $(seq 1 $(cat anat_cohort.csv | wc -l)); do
+
+# Create a temp cohort file with 1 line
+
+ID=${SUBJLIST[SUBJ]%%,/*}
+HEADER=$(head -n 1 $FULL_COHORT)
+LINE=$(awk "NR==$SUBJ" $FULL_COHORT)
+TEMP_COHORT=${FULL_COHORT}.${ID}.csv
+echo $HEADER > $TEMP_COHORT
+echo $LINE >> $TEMP_COHORT
+
+sbatch --export ALL,ID=${ID},TEMP_COHORT=${TEMP_COHORT} --job-name xcp_anat_"${ID}" --partition=short --time=02:00:00 --mem=10G -o "${group_dir}"/"${study}"/SHARP_Scripts/xcpEngine/output/"${ID}"_xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/xcpEngine/output/"${ID}"_xcp_anat_error.txt xcp_anat.sh
+
+
+done
