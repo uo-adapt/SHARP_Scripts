@@ -1,6 +1,6 @@
 #!/bin/bash
 
-group_dir=/projects/adapt_lab/shared/
+group_dir=/projects/adapt_lab/shared
 study="SHARP"
 
 FULL_COHORT=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat_cohort.csv
