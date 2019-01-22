@@ -12,7 +12,7 @@ for SUBJ in $(seq 1 $(cat anat_cohort.csv | wc -l)); do
 
 # Create a temp cohort file with 1 line
 
-ID=${SUBJLIST[SUBJ]%%,/*}
+ID=${SUBJLIST[SUBJ]%%/*}
 HEADER=$(head -n 1 $FULL_COHORT)
 LINE=$(awk "NR==$SUBJ" $FULL_COHORT)
 TEMP_COHORT=${FULL_COHORT}.${ID}.csv
