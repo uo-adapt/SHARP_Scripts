@@ -19,3 +19,5 @@ bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngin
 	-t 2 \
 	-r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine \
 	-i \$TMPDIR
+
+rm "${TEMP_COHORT}",${ses}
