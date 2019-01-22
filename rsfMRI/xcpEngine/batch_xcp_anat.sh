@@ -20,6 +20,7 @@ echo $HEADER > $TEMP_COHORT
 echo $LINE >> $TEMP_COHORT
 
 ses=${TEMP_COHORT#*,}
+echo $ID
 
 sbatch --export ALL,ID=${ID},TEMP_COHORT=${TEMP_COHORT},ses=${ses} --job-name xcp_anat_"${ID}" --partition=short --time=02:00:00 --mem=10G -o "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/"${ID}"_xcp_anat_output.txt -e "${group_dir}"/"${study}"/SHARP_Scripts/rsfMRI/xcpEngine/output/"${ID}"_xcp_anat_error.txt xcp_anat.sh
 
