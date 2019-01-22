@@ -12,12 +12,9 @@ module load python3
 cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
 
-
 bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/anat-Complete+_201901151515.dsn \
 	-c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/${TEMP_COHORT} \
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
 	-t 1 \
 	-r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine \
 	-i \$TMPDIR
-
-rm ${TEMP_COHORT}
