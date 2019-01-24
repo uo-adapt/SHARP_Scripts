@@ -39,7 +39,7 @@ subjectdir_contents.sort()
 for task in tasks:
 	with open(os.path.join(codedir, task + '_cohort.csv'),'w') as f1:
 		writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
-		head = ["id0,id1,img,antsct"]
+		head = ["id0,id1,id2,img,antsct"]
 		writer.writerow(head)
 		for subject in subjectdir_contents:
 			subjectpath = os.path.join(fmriprepdir,subject)
@@ -51,5 +51,5 @@ for task in tasks:
 							filepath = os.path.join(wavepath,preproc,subject + "_" + wave + "_task-" + task + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
 							print(filepath)
 							if os.path.isfile(filepath):
-								row = [subject + "," + wave + "," + filepath, "," + os.path.join(xcpdir,subject,wave,"struc")]
+								row = [subject + "," + wave + "," + run + "," + filepath, "," + os.path.join(xcpdir,subject,wave,"struc")]
 								writer.writerow(row)
