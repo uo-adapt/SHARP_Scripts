@@ -17,7 +17,7 @@ scriptsFolder = "SHARP_Scripts"
 parentdir = os.path.join(os.sep, "projects", group, "shared", study) 
 codedir = os.path.join(parentdir, scriptsFolder, "rsfMRI", "xcpEngine") 
 fmriprepdir = os.path.join(parentdir,"bids_data","derivatives","fmriprep")
-
+xcpdir = os.path.join(parentdir,"bids_data","derivatives","xcpEngine","data")
 
 # Each wave that should be represented. It should be noted that this script assumes the same number and type of 
 # scans are the same throughout each run. If this is not the case...good luck coding!
@@ -30,7 +30,7 @@ tasks = {"rest"}
 # Change this to either be anatomical (anat) or functional (rest)
 preproc= "rest"
 
-subjectdir_contents = os.listdir(fmriprepdir)
+subjectdir_contents = os.listdir(xcpdir)
 
 subjectdir_contents = list(filter(lambda k: 'sub-' in k, subjectdir_contents))
 subjectdir_contents = [x for x in subjectdir_contents if not '.html' in x]
