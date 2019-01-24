@@ -19,4 +19,3 @@ xcpEngine: line 234: printx: command not found
 xcpEngine: line 247: printx: command not found
 xcpEngine: line 387: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/terminatePipeline: Permission denied
 xcpEngine: line 388: printx: command not found
-rm: cannot remove ‘/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv,/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv,/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv’: No such file or directory
