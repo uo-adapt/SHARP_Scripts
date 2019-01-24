@@ -1,22 +1,22 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "c3d"
+   Try: "module spider c3d" to see how to load the module(s).
 
 
-Note that the PRL tree is NOT supported by RACS.
 
-Please contact user at sameer@cs.uoregon.edu for questions regarding this tree.
-
-xcpEngine: line 66: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/constants: Permission denied
-xcpEngine: line 67: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/library.sh: Permission denied
-xcpEngine: line 68: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/cluster_submit: Permission denied
-xcpEngine: line 185: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateDesign: Permission denied
-xcpEngine: line 186: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateIntermediate: Permission denied
-xcpEngine: line 187: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateCohort: Permission denied
-xcpEngine: line 188: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateOutput: Permission denied
-xcpEngine: line 189: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateMode: Permission denied
-xcpEngine: line 215: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/checkDependenciesXCP: Permission denied
+xcpEngine: line 66: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/constants: No such file or directory
+xcpEngine: line 67: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/library.sh: No such file or directory
+xcpEngine: line 68: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/cluster_submit: No such file or directory
+xcpEngine: line 185: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateDesign: No such file or directory
+xcpEngine: line 186: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateIntermediate: No such file or directory
+xcpEngine: line 187: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateCohort: No such file or directory
+xcpEngine: line 188: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateOutput: No such file or directory
+xcpEngine: line 189: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateMode: No such file or directory
+xcpEngine: line 215: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/checkDependenciesXCP: No such file or directory
 mkdir: cannot create directory ‘/dependencies’: Permission denied
-xcpEngine: line 221: /dependencies/_201901241339_pipelineDescription.json: No such file or directory
+xcpEngine: line 221: /dependencies/_201901241347_pipelineDescription.json: No such file or directory
 xcpEngine: line 234: printx: command not found
 xcpEngine: line 247: printx: command not found
-xcpEngine: line 387: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/terminatePipeline: Permission denied
+xcpEngine: line 387: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/terminatePipeline: No such file or directory
 xcpEngine: line 388: printx: command not found
 rm: cannot remove ‘/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv,/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv,/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv..csv’: No such file or directory
