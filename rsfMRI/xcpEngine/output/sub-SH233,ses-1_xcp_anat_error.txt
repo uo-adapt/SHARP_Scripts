@@ -286,3 +286,125 @@ Current processing step:
                              -   -   -
 >> antsJointLabelFusion.sh -d 3 -q 1 -f 0 -j 2 -k 0 -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH233/ses-1/sub-SH233_ses-1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH233/ses-1/jlf/sub-SH233_ses-1_ -c 0 -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1000.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1000.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1001.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1001.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1002.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1002.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1003.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1003.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1004.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1004.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1005.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1005.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1006.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1006.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1007.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1007.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1009.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1009.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1010.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1010.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1013.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1013.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1015.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1015.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1017.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1017.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1019.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1019.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1036.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1036.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1104.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1104.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1113.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1113.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1116.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1116.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1119.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1119.nii.gz -g /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/Brains/1122.nii.gz -l /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1122.nii.gz
 mkdir: cannot create directory ‘/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH233/ses-1/jlf’: File exists
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/routine_end: line 4: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_ROUTINE_END: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/routine: line 10: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_ROUTINE_BEGIN: No such file or directory
+
+· @2.1 Generating non-CSF mask
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+· @2.2 Generating ventricular CSF mask
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+· @2.3 Generating ventral diencephalon mask
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+· @2.4 Dilating ventricular CSF mask
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+· @2.5 Union of vCSF, VDC, and non-CSF masks
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+· @2.6 Excising extraventricular CSF from labels
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_COMMAND: No such file or directory
+
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/routine_end: line 4: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_ROUTINE_END: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/jlf/jlf.mod: line 43: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/auditComplete: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/jlf/jlf.mod: line 44: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/updateQuality: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/jlf/jlf.mod: line 45: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/moduleEnd: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_MODULE_SUBMIT: No such file or directory
+xcpEngine: line 309: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateSubjects: No such file or directory
+xcpEngine: line 321: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/defineDesign: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 18: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/constants: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 19: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/library.sh: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 20: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/parseArgsMod: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 45: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 86: rerun: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 95: == 1 : syntax error: operand expected (error token is "== 1 ")
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 31: write_atlas: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 33: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/auditComplete: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 34: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/updateQuality: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.mod: line 35: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/moduleEnd: No such file or directory
+xcpEngine: line 362: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateGroup: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.g.mod: line 18: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/constants: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.g.mod: line 19: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/library.sh: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/roiquant/roiquant.g.mod: line 20: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/parseArgsGroup: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_MODULE_SUBMIT: No such file or directory
+xcpEngine: line 309: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateSubjects: No such file or directory
+xcpEngine: line 321: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/defineDesign: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 18: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/constants: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 19: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/library.sh: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 20: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/parseArgsMod: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 38: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 39: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 40: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 41: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 42: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 43: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 44: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 45: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 46: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 47: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 48: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 50: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 51: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 52: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 53: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 54: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 55: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 56: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 57: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 58: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 59: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 60: qc: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 62: input: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 105: routine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 121: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 121: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 121: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 121: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 148: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 149: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 163: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 164: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 166: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 167: exec_fsl: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 169: exec_fsl: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 171: define: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 176: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 178: exec_ants: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 186: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 187: exec_xcp: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 191: exec_xcp: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 195: exec_xcp: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 201: routine_end: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 208: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 211: routine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 212: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 213: exec_sys: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 214: warpspace: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 218: warpspace: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 223: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 225: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 226: exec_ants: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 244: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 246: exec_ants: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 254: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 255: exec_ants: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 272: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 273: exec_xcp: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 281: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 282: exec_fsl: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 286: exec_ants: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 288: exec_fsl: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 291: exec_fsl: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 294: routine_end: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 300: routine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 301: is_image: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 311: exec_xcp: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 312: subroutine: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 326: routine_end: command not found
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 26: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/auditComplete: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 27: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/updateQuality: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/modules/qcanat/qcanat.mod: line 28: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/moduleEnd: No such file or directory
+xcpEngine: line 387: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/terminatePipeline: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/CONSOLE_FOOTER: No such file or directory

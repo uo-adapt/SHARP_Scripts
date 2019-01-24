@@ -1,0 +1,44 @@
+
+
+Note that the PRL tree is NOT supported by RACS.
+
+Please contact user at sameer@cs.uoregon.edu for questions regarding this tree.
+
+
+
+Note that the PRL tree is NOT supported by RACS.
+
+Please contact user at sameer@cs.uoregon.edu for questions regarding this tree.
+
+xcpEngine: line 66: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/constants: Permission denied
+xcpEngine: line 67: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/library.sh: Permission denied
+xcpEngine: line 68: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/cluster_submit: Permission denied
+xcpEngine: line 185: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateDesign: Permission denied
+xcpEngine: line 186: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateIntermediate: Permission denied
+xcpEngine: line 187: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateCohort: Permission denied
+xcpEngine: line 188: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateOutput: Permission denied
+xcpEngine: line 189: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateMode: Permission denied
+xcpEngine: line 215: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/checkDependenciesXCP: Permission denied
+mkdir: cannot create directory ‘/dependencies’: Permission denied
+xcpEngine: line 221: /dependencies/_201901241315_pipelineDescription.json: No such file or directory
+xcpEngine: line 234: printx: command not found
+xcpEngine: line 247: printx: command not found
+xcpEngine: line 387: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/terminatePipeline: Permission denied
+xcpEngine: line 388: printx: command not found
+rm: cannot remove ‘/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH219,ses-1.csv,ses-1.csv’: No such file or directory
+xcpEngine: line 66: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/constants: Permission denied
+xcpEngine: line 67: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/library.sh: Permission denied
+xcpEngine: line 68: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/functions/cluster_submit: Permission denied
+xcpEngine: line 185: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateDesign: Permission denied
+xcpEngine: line 186: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateIntermediate: Permission denied
+xcpEngine: line 187: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateCohort: Permission denied
+xcpEngine: line 188: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateOutput: Permission denied
+xcpEngine: line 189: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/validateMode: Permission denied
+xcpEngine: line 215: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/checkDependenciesXCP: Permission denied
+mkdir: cannot create directory ‘/dependencies’: Permission denied
+xcpEngine: line 221: /dependencies/_201901241315_pipelineDescription.json: No such file or directory
+xcpEngine: line 234: printx: command not found
+xcpEngine: line 247: printx: command not found
+xcpEngine: line 387: /projects/dsnlab/shared/tag/TAG_scripts/rsfMRI/xcpEngine/core/terminatePipeline: Permission denied
+xcpEngine: line 388: printx: command not found
+rm: cannot remove ‘/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH219,ses-1.csv,ses-1.csv’: No such file or directory
