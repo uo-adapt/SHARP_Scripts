@@ -22,7 +22,7 @@ for SUBJ in $(seq 1 $(cat rest_cohort.csv | wc -l)); do
 
 # This will create a temporary .csv file for each participant which can be called in the job script 
 
-ID=${SUBJLIST[SUBJ]%%,/*} # This just gives us the ID of the participant (including wave)
+ID=${SUBJLIST[SUBJ]%%%,/*} # This just gives us the ID of the participant (including wave)
 HEADER=$(head -n 1 $FULL_COHORT) # This pulls the first row of the .csv file above (id0,id1,img)
 LINE=$(awk "NR==$(expr $SUBJ + 1)" $FULL_COHORT ) # gets the row corresponding to our specific sub
 TEMP_COHORT=${FULL_COHORT}.${ID}.csv # creates the csv file
