@@ -48,7 +48,7 @@ with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
                 if os.path.isdir(wavepath):
                     for task in tasks:
                         for run in runs:
-                            filepath = os.path.join(wavepath,preproc,subject + "_" + wave + "_task-" + preproc + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
+                            filepath = os.path.join(wavepath,task,subject + "_" + wave + "_task-" + preproc + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
                             print(filepath)
                             if os.path.isfile(filepath):
                                 row = [subject + "," + wave + "," + filepath]
