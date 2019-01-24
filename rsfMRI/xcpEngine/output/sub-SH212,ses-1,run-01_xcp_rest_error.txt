@@ -4,18 +4,24 @@ loaded as requested: "c3d"
 
 
 
-xcpEngine: line 66: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/constants: No such file or directory
-xcpEngine: line 67: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/library.sh: No such file or directory
-xcpEngine: line 68: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/cluster_submit: No such file or directory
-xcpEngine: line 185: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateDesign: No such file or directory
-xcpEngine: line 186: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateIntermediate: No such file or directory
-xcpEngine: line 187: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateCohort: No such file or directory
-xcpEngine: line 188: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateOutput: No such file or directory
-xcpEngine: line 189: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateMode: No such file or directory
-xcpEngine: line 215: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/checkDependenciesXCP: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateDesign: line 43: /core/assignDirect: No such file or directory
+xcpEngine: line 186: /core/validateIntermediate: No such file or directory
+xcpEngine: line 187: /core/validateCohort: No such file or directory
+xcpEngine: line 188: /core/validateOutput: No such file or directory
+xcpEngine: line 189: /core/validateMode: No such file or directory
+xcpEngine: line 215: /core/checkDependenciesXCP: No such file or directory
 mkdir: cannot create directory ‘/dependencies’: Permission denied
-xcpEngine: line 221: /dependencies/_201901241346_pipelineDescription.json: No such file or directory
-xcpEngine: line 234: printx: command not found
-xcpEngine: line 247: printx: command not found
-xcpEngine: line 387: /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/terminatePipeline: No such file or directory
-xcpEngine: line 388: printx: command not found
+xcpEngine: line 221: /dependencies/fc_pettitta_201901241357_pipelineDescription.json: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_HEADER: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
+xcpEngine: line 387: /core/terminatePipeline: No such file or directory
+/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_FOOTER: No such file or directory
