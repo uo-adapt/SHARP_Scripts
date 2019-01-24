@@ -17,6 +17,7 @@ bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngin
 	-c "${TEMP_COHORT}",${ses},${run} \
 	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
 	-t 1 \
+	-r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine \
 	-i \$TMPDIR
 
 rm "${TEMP_COHORT}",${ses},${run}
