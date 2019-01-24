@@ -23,12 +23,12 @@ xcpdir = os.path.join(parentdir,"bids_data","derivatives","xcpEngine","data")
 # scans are the same throughout each run. If this is not the case...good luck coding!
 waves = {"ses-1"}
 runs = {"run-01","run-02"}
-tasks = {"func"}
+tasks = {"rest"}
 
 
 
 # Change this to either be anatomical (anat) or functional (rest)
-preproc= "rest"
+preproc= "func"
 
 subjectdir_contents = os.listdir(xcpdir)
 
@@ -36,20 +36,20 @@ subjectdir_contents = list(filter(lambda k: 'sub-' in k, subjectdir_contents))
 subjectdir_contents = [x for x in subjectdir_contents if not '.html' in x]
 subjectdir_contents.sort()
 
-with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
-    writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
-    head = ["id0,id1,img"]
-    writer.writerow(head)
-    for subject in subjectdir_contents:
-        subjectpath = os.path.join(fmriprepdir,subject)
-        if os.path.isdir(subjectpath):
-            for wave in waves:
-                wavepath = os.path.join(subjectpath,wave)
-                if os.path.isdir(wavepath):
-                    for task in tasks:
-                        for run in runs:
-                            filepath = os.path.join(wavepath,task,subject + "_" + wave + "_task-" + preproc + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
-                            print(filepath)
-                            if os.path.isfile(filepath):
-                                row = [subject + "," + wave + "," + filepath]
-                                writer.writerow(row)
+for task in tasks:
+	with open(os.path.join(codedir, task + '_cohort.csv'),'w') as f1:
+		writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
+		head = ["id0,id1,img"]
+		writer.writerow(head)
+		for subject in subjectdir_contents:
+			subjectpath = os.path.join(fmriprepdir,subject)
+			if os.path.isdir(subjectpath):
+				for wave in waves:
+					wavepath = os.path.join(subjectpath,wave)
+					if os.path.isdir(wavepath):
+						for run in runs:
+							filepath = os.path.join(wavepath,preproc,subject + "_" + wave + "_task-" + task + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
+							print(filepath)
+							if os.path.isfile(filepath):
+								row = [subject + "," + wave + "," + filepath]
+								writer.writerow(row)
