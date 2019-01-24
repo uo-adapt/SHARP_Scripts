@@ -23,7 +23,7 @@ xcpdir = os.path.join(parentdir,"bids_data","derivatives","xcpEngine","data")
 # scans are the same throughout each run. If this is not the case...good luck coding!
 waves = {"ses-1"}
 runs = {"run-01","run-02"}
-tasks = {"rest"}
+tasks = {"func"}
 
 
 
@@ -41,7 +41,7 @@ with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
     head = ["id0,id1,img"]
     writer.writerow(head)
     for subject in subjectdir_contents:
-        subjectpath = os.path.join(fmriprepdir,subject)
+        subjectpath = os.path.join(fmriprep,subject)
         if os.path.isdir(subjectpath):
             for wave in waves:
                 wavepath = os.path.join(subjectpath,wave)
