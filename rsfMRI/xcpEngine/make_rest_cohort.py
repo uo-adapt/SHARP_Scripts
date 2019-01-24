@@ -41,7 +41,7 @@ with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
     head = ["id0,id1,img"]
     writer.writerow(head)
     for subject in subjectdir_contents:
-        subjectpath = os.path.join(fmriprep,subject)
+        subjectpath = os.path.join(fmriprepdir,subject)
         if os.path.isdir(subjectpath):
             for wave in waves:
                 wavepath = os.path.join(subjectpath,wave)
