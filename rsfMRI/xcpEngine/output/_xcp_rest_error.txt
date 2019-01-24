@@ -11,7 +11,7 @@ xcpEngine: line 188: /core/validateOutput: No such file or directory
 xcpEngine: line 189: /core/validateMode: No such file or directory
 xcpEngine: line 215: /core/checkDependenciesXCP: No such file or directory
 mkdir: cannot create directory ‘/dependencies’: Permission denied
-xcpEngine: line 221: /dependencies/fc_pettitta_201901241433_pipelineDescription.json: No such file or directory
+xcpEngine: line 221: /dependencies/fc_pettitta_201901241435_pipelineDescription.json: No such file or directory
 /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_HEADER: No such file or directory
 /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
 /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
