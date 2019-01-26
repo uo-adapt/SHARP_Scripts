@@ -35,12 +35,12 @@ subjectdir_contents = [x for x in subjectdir_contents if not '.html' in x]
 subjectdir_contents.sort()
 
 with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
-    writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
-    head = ["id0,id1,img"]
-    writer.writerow(head)
-    for subject, wave in [(subject,wave) for subject in subjectdir_contents for wave in waves]:
-    	subjectpath = os.path.join(fmriprepdir,subject)
-    	if os.path.isdir(subjectpath):
+	writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
+	head = ["id0,id1,img"]
+	writer.writerow(head)
+	for subject, wave in [(subject,wave) for subject in subjectdir_contents for wave in waves]:
+		subjectpath = os.path.join(fmriprepdir,subject)
+		if os.path.isdir(subjectpath):
 			filepath = os.path.join(subjectpath,preproc,subject + "_desc-preproc_T1w.nii.gz")
 			if os.path.isfile(filepath):
 				row = [subject + "," + wave + "," + filepath]
