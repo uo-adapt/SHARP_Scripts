@@ -16,7 +16,7 @@ XCPEDIR=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 singularity run -B ${DATA_ROOT}:${HOME}  \
    /projects/adapt_lab/shared/containers/xcpEngine.simg \
    -d ${HOME}/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
-   -c "${TEMP_COHORT}" \
+   -c "${TEMP_COHORT}",${ses},${run} \
    -o ${HOME}/bids_data/derivatives/xcpEngine/data \
    -t 1 \
    -i \$TMPDIR
