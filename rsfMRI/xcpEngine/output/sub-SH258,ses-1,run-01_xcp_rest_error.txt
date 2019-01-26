@@ -86,7 +86,7 @@ ls: cannot access '/projects/adapt_lab/shared/SHARP/bids_data/derivatives/fmripr
 >> fslmaths /tmp/imgmask.nii.gz -mul /tmp/structmask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/prestats/sub-SH258_ses-1_run-01_mask.nii.gz
 Image Exception : #22 :: ERROR: Could not open image /tmp/structmask
 terminate called after throwing an instance of 'RBD_COMMON::BaseException'
-/xcpEngine-master/core/functions/exec_fsl: line 1: 167097 Aborted                 (core dumped) ${FSLDIR}/bin/"${@}"
+/xcpEngine-master/core/functions/exec_fsl: line 1: 127609 Aborted                 (core dumped) ${FSLDIR}/bin/"${@}"
                              -   -   -
 >> 3dresample -master /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/prestats/sub-SH258_ses-1_run-01_mask.nii.gz -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/struc/sub-SH258_ses-1_BrainSegmentation.nii.gz -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/prestats/sub-SH258_ses-1_run-01_segmentation.nii.gz
                              -   -   -

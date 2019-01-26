@@ -39,7 +39,7 @@ Current processing step:
 · @3.1 [Writing localised design]
 · @3.2 [Evaluating subject variables]
                              -   -   -
->> rm -rf /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02~TEMP~.nii.gz
+>> rm -rf /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02~TEMP~*
                              -   -   -
 >> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02~TEMP~.nii.gz
                              -   -   -
@@ -86,7 +86,7 @@ ls: cannot access '/projects/adapt_lab/shared/SHARP/bids_data/derivatives/fmripr
 >> fslmaths /tmp/imgmask.nii.gz -mul /tmp/structmask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02_mask.nii.gz
 Image Exception : #22 :: ERROR: Could not open image /tmp/structmask
 terminate called after throwing an instance of 'RBD_COMMON::BaseException'
-/xcpEngine-master/core/functions/exec_fsl: line 1: 93201 Aborted                 (core dumped) ${FSLDIR}/bin/"${@}"
+/xcpEngine-master/core/functions/exec_fsl: line 1: 157128 Aborted                 (core dumped) ${FSLDIR}/bin/"${@}"
                              -   -   -
 >> 3dresample -master /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02_mask.nii.gz -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation.nii.gz -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/prestats/sub-SH166_ses-1_run-02_segmentation.nii.gz
                              -   -   -
@@ -1180,3 +1180,27 @@ Current processing step:
 · @1.3 [Applying composite diffeomorphism to primary dataset]
                              -   -   -
 >> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+/xcpEngine-master/core/functions/exec_ants: line 1: 46915 Killed                  ${ANTSPATH}/"${@}"
+· @1.4 [Applying composite diffeomorphism to derivative images:]
+· @1.5 [alff]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/alff/sub-SH166_ses-1_run-02_alff.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_alffStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/alff/sub-SH166_ses-1_run-02_alffZ.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_alffZStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/alff/sub-SH166_ses-1_run-02_alffZ_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_alffZ_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alff_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/alff/sub-SH166_ses-1_run-02_alff_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_alff_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [img_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/regress/sub-SH166_ses-1_run-02_img_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm/sub-SH166_ses-1_run-02_img_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat
+slurmstepd: error: *** JOB 3176182 ON n042 CANCELLED AT 2019-01-26T15:11:17 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 1 oom-kill event(s) in step 3176182.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
