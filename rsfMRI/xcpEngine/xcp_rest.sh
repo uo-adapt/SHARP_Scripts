@@ -13,11 +13,12 @@ cd /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
 XCPEDIR=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 
-bash xcpEngine -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
-	-c "${TEMP_COHORT}",${ses},${run} \
-	-o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data \
-	-t 1 \
-	-r /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine \
-	-i \$TMPDIR
+singularity run -B ${DATA_ROOT}:${HOME}  \
+   /projects/adapt_lab/shared/containers/xcpEngine.simg \
+   -d ${HOME}/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
+   -c "${TEMP_COHORT}" \
+   -o ${HOME}/bids_data/derivatives/xcpEngine/data \
+   -t 1 \
+   -i \$TMPDIR
 
 rm "${TEMP_COHORT}",${ses},${run}
