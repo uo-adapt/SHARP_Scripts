@@ -305,3 +305,18 @@ Module complete
 ····································································
 Processing step complete:
 Functional connectome: aal116
+····································································
+Processing step complete:
+Functional connectome: glasser360
+····································································
+Processing step complete:
+Functional connectome: gordon333
+····································································
+Processing step complete:
+Functional connectome: power264
+····································································
+Processing step complete:
+Functional connectome: schaefer100
+····································································
+Processing step complete:
+Functional connectome: schaefer200
