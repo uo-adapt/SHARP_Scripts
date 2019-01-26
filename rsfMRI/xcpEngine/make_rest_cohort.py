@@ -37,16 +37,16 @@ subjectdir_contents = [x for x in subjectdir_contents if not '.html' in x]
 subjectdir_contents.sort()
 
 for task in tasks:
-    with open(os.path.join(codedir, task + '_cohort.csv'),'w') as f1:
-        writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
-        head = ["id0,id1,id2,img,antsct"]
-        writer.writerow(head)
-        for subject, wave, run in [(subject,wave,run) for subject in subjectdir_contents for wave in waves for run in runs]:
-            subjectpath = os.path.join(fmriprepdir,subject)
-            if os.path.isdir(subjectpath):
-                wavepath = os.path.join(subjectpath,wave)
-                if os.path.isdir(wavepath):
-                        filepath = os.path.join(wavepath,preproc,subject + "_" + wave + "_task-" + task + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
-                        if os.path.isfile(filepath):
-                            row = [subject + "," + wave + "," + run + "," + filepath + "," + os.path.join(xcpdir,subject,wave,"struc")]
-                            writer.writerow(row)
+	with open(os.path.join(codedir, task + '_cohort.csv'),'w') as f1:
+		writer=csv.writer(f1, delimiter='\t',lineterminator='\n',)
+		head = ["id0,id1,id2,img,antsct"]
+		writer.writerow(head)
+		for subject, wave, run in [(subject,wave,run) for subject in subjectdir_contents for wave in waves for run in runs]:
+			subjectpath = os.path.join(fmriprepdir,subject)
+			if os.path.isdir(subjectpath):
+				wavepath = os.path.join(subjectpath,wave)
+				if os.path.isdir(wavepath):
+						filepath = os.path.join(wavepath,preproc,subject + "_" + wave + "_task-" + task + "_"+ run + "_space-T1w_desc-preproc_bold.nii.gz")
+						if os.path.isfile(filepath):
+							row = [subject + "," + wave + "," + run + "," + filepath + "," + os.path.join(xcpdir,subject,wave,"struc")]
+							writer.writerow(row)
