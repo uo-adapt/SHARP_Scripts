@@ -36,7 +36,7 @@ scan_type_list = {"anat","func","dwi"}
 
 # Copy and paste the tail of each file (i.e., everything after `sub-xxx_ses-wavex_`) into their respective variable 
 d = {'anat': ["run-01_T1w.json","run-01_T1w.nii.gz","run-02_T1w.json","run-02_T1w.nii.gz"], \
-	'func': ["task-rest1_bold.json","task-rest1_bold.nii.gz","task-rest2_bold.json","task-rest2_bold.nii.gz"], \
+	'func': ["task-rest_run-01_bold.json","task-rest_run-01_bold.nii.gz","task-rest_run-02_bold.json","task-rest_run-02_bold.nii.gz"], \
 	'dwi': ["acq-lr_dwi.bval","acq-lr_dwi.bvec","acq-lr_dwi.json","acq-lr_dwi.nii.gz","acq-rl_dwi.bval","acq-rl_dwi.bvec","acq-rl_dwi.json","acq-rl_dwi.nii.gz"]}
 
 # turns the dictionary above (`d`) into a dataframe
