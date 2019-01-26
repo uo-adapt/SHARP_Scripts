@@ -338,3 +338,322 @@ Current processing step:
 >> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/glasser360/sub-SH187_ses-1_run-01_glasser360_tsEdge.1D
                              -   -   -
 >> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/glasser360/sub-SH187_ses-1_run-01_glasser360_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: gordon333
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/gordon333/gordon333MNI.nii.gz -R
+                             -   -   -
+>> 333.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/gordon333/gordon333MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_gordon333.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_gordon333.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_gordon333.nii.gz -l /xcpEngine-master/atlas/gordon333/gordon333NodeIndex.1D
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/gordon333/sub-SH187_ses-1_run-01_gordon333_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: power264
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/power264/power264MNI.nii.gz -R
+                             -   -   -
+>> 264.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/power264/power264MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_power264.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_power264.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_power264.nii.gz -l /xcpEngine-master/atlas/power264/power264NodeIndex.1D
+Warning message:
+Warning: node  142  contains one voxel
+ 
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/power264/sub-SH187_ses-1_run-01_power264_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: schaefer100
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/schaefer100/schaefer100MNI.nii.gz -R
+                             -   -   -
+>> 100.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/schaefer100/schaefer100MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer100.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer100.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer100.nii.gz -l /xcpEngine-master/atlas/schaefer100/schaefer100NodeIndex.1D
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer100/sub-SH187_ses-1_run-01_schaefer100_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: schaefer200
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/schaefer200/schaefer200MNI.nii.gz -R
+                             -   -   -
+>> 200.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/schaefer200/schaefer200MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer200.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer200.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer200.nii.gz -l /xcpEngine-master/atlas/schaefer200/schaefer200NodeIndex.1D
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer200/sub-SH187_ses-1_run-01_schaefer200_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: schaefer400
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/schaefer400/schaefer400MNI.nii.gz -R
+                             -   -   -
+>> 400.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/schaefer400/schaefer400MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer400.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/struc/sub-SH187_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer400.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01_atlas/sub-SH187_ses-1_run-01_schaefer400.nii.gz -l /xcpEngine-master/atlas/schaefer400/schaefer400NodeIndex.1D
+Warning messages:
+1: Warning: node  243  contains one voxel
+ 
+2: Warning: node  303  contains one voxel
+ 
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/fcon/schaefer400/sub-SH187_ses-1_run-01_schaefer400_ts.1D -w 10 -p FALSE
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_referenceVolume.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_referenceVolume.nii.gz
+                             -   -   -
+>> 13-11-1
+                             -   -   -
+>> 13-1
+
+
+
+Current processing step:
+@1 Computing voxelwise ReHo
+····································································
+· @1.1 Determining voxel neighbourhood
+· @1.2c Vertices
+· @1.3 Computing regional homogeneity (ReHo)
+                             -   -   -
+>> 3dReHo -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho.nii.gz -inset /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz -nneigh 27
+· @1.4 Standardising ReHo values
+                             -   -   -
+>> fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho.nii.gz -M
+                             -   -   -
+>> fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho.nii.gz -S
+                             -   -   -
+>> fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho.nii.gz -sub 0.090107 -div 0.065161 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_rehoZ.nii.gz
+
+
+
+Current processing step:
+@2 Spatially filtering ReHo map
+····································································
+· @2.1a Filter: susan
+· @2.2b Smoothing kernel: 4 mm
+· @2.3 Generating a mask using 3dAutomask
+                             -   -   -
+>> 3dAutomask -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01~TEMP~_fmask.nii.gz -dilate 3 -q /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz
+· @2.4 
+· @2.4.3 
+                             -   -   -
+>> ${XCPEDIR}/utils/sfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho_sm4.nii.gz -s uniform -k 4 -m /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01~TEMP~_fmask.nii.gz
+· @2.5 Standardising ReHo values
+                             -   -   -
+>> fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho_sm4.nii.gz -M
+                             -   -   -
+>> fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho_sm4.nii.gz -S
+                             -   -   -
+>> fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_reho_sm4.nii.gz -sub 0.090107 -div 0.065161 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/reho/sub-SH187_ses-1_run-01_rehoZ_sm4.nii.gz
+· @0.1 
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/prestats/sub-SH187_ses-1_run-01_referenceVolume.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01_referenceVolume.nii.gz
+                             -   -   -
+>> 13-11-1
+                             -   -   -
+>> 13-1
+
+
+
+Current processing step:
+@1 Spatially filtering image
+····································································
+· @1.2 [Configuring SUSAN]
+· @1.4 
+· @1.6 
+· @1.7a 
+
+
+
+Current processing step:
+@2 Amplitude of low-frequency fluctuations
+····································································
+· @2.0 At smoothness 0 mm
+· @2.1 Ensuring integer periods
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~EVEN.nii.gz
+                             -   -   -
+>> fslnvols /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz
+                             -   -   -
+>> fslval /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz pixdim4
+· @2.3 
+                             -   -   -
+>> ln -s /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/sub-SH187_ses-1_run-01.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~EVEN.nii.gz
+· @2.4 Computing power spectrum
+                             -   -   -
+>> fslpspec /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~EVEN.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~PS.nii.gz
+· @2.5 Computing square root of amplitudes
+                             -   -   -
+>> fslmaths /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~PS.nii.gz -sqrt /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-01/alff/sub-SH187_ses-1_run-01~TEMP~PS-SQRT.nii.gz
