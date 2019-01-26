@@ -200,3 +200,19 @@ Current processing step:
 · @2.12c [Low pass frequency: 0.08]
                              -   -   -
 >> ${XCPEDIR}/utils/tfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02~TEMP~.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02~TEMP~_TMP.nii.gz -f butterworth -h 0.01 -l 0.08 -r 1 -d 2 -1 confmat:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/confound2/sub-SH212_ses-1_run-02_confmat.1D
+
+
+
+Current processing step:
+@4 Converting BOLD timeseries to confound residuals
+····································································
+· @4.2 
+· @4.3 
+                             -   -   -
+>> mv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02~TEMP~_TMP_confmat.1D /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02_confmat.1D
+· @4.5 [Computing confound correlations]
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02_confmat.1D
+· @4.6 [Executing detrend]
+                             -   -   -
+>> 3dTproject -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02~TEMP~_TMP.nii.gz -ort /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02_confmat.1D -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH212/ses-1/run-02/regress/sub-SH212_ses-1_run-02~TEMP~_TMP_REG.nii.gz
