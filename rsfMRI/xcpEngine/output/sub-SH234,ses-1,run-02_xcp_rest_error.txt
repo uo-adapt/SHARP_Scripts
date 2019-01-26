@@ -374,3 +374,12 @@ Current processing step:
 >> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon/gordon333/sub-SH234_ses-1_run-02_gordon333_ts.1D
                              -   -   -
 >> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon/gordon333/sub-SH234_ses-1_run-02_gordon333_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon/gordon333/sub-SH234_ses-1_run-02_gordon333_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon/gordon333/sub-SH234_ses-1_run-02_gordon333_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon/gordon333/sub-SH234_ses-1_run-02_gordon333_ts.1D -w 10 -p FALSE

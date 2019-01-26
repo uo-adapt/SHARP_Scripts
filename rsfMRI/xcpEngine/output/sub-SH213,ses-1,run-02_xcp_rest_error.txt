@@ -341,3 +341,48 @@ Warning: node  103  contains one voxel
 >> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/glasser360/sub-SH213_ses-1_run-02_glasser360_tsEdge.1D
                              -   -   -
 >> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/glasser360/sub-SH213_ses-1_run-02_glasser360_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: gordon333
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/gordon333/gordon333MNI.nii.gz -R
+                             -   -   -
+>> 333.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/gordon333/gordon333MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/prestats/sub-SH213_ses-1_run-02_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/sub-SH213_ses-1_run-02_atlas/sub-SH213_ses-1_run-02_gordon333.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/struc/sub-SH213_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/struc/sub-SH213_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/sub-SH213_ses-1_run-02_atlas/sub-SH213_ses-1_run-02_gordon333.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/sub-SH213_ses-1_run-02.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/sub-SH213_ses-1_run-02_atlas/sub-SH213_ses-1_run-02_gordon333.nii.gz -l /xcpEngine-master/atlas/gordon333/gordon333NodeIndex.1D
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH213/ses-1/run-02/fcon/gordon333/sub-SH213_ses-1_run-02_gordon333_ts.1D -w 10 -p FALSE

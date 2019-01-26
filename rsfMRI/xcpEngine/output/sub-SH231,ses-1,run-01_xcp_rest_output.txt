@@ -302,3 +302,6 @@ Module complete
 
 [I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH231/ses-1/run-01/sub-SH231_ses-1_run-01.nii.gz]
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH231/ses-1/run-01/fcon]
+····································································
+Processing step complete:
+Functional connectome: aal116
