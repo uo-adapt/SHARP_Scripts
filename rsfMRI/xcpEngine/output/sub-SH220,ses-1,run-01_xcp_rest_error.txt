@@ -4,24 +4,6 @@ loaded as requested: "c3d"
 
 
 
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/validateDesign: line 43: /core/assignDirect: No such file or directory
-xcpEngine: line 186: /core/validateIntermediate: No such file or directory
-xcpEngine: line 187: /core/validateCohort: No such file or directory
-xcpEngine: line 188: /core/validateOutput: No such file or directory
-xcpEngine: line 189: /core/validateMode: No such file or directory
-xcpEngine: line 215: /core/checkDependenciesXCP: No such file or directory
-mkdir: cannot create directory ‘/dependencies’: Permission denied
-xcpEngine: line 221: /dependencies/fc_pettitta_201901241435_pipelineDescription.json: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_HEADER: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_MODULE_SUBMIT: No such file or directory
-xcpEngine: line 387: /core/terminatePipeline: No such file or directory
-/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/core/functions/printx: line 2: /core/CONSOLE_FOOTER: No such file or directory
+[91mERROR  : Image path /data/applications/xcpEngine.simg doesn't exist: No such file or directory
+[0m[31mABORT  : Retval = 255
+[0m/cm/local/apps/slurm/var/spool/job3173016/slurm_script: line 21: -d: command not found
