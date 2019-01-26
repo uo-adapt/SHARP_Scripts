@@ -1104,3 +1104,122 @@ Execution halted
 >> atlas_set schaefer400 RegionalMeanRehoZ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/schaefer400/sub-SH234_ses-1_run-01_schaefer400_mean_rehoZ.csv
 · @1.3.5 
 · @1.3.6 
+· @1.3.7 
+· @1.3.8 
+
+
+
+Current processing step:
+@1 Regional quantification: segmentation
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> 13-10-1
+                             -   -   -
+>> 13-1
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3.3 
+                             -   -   -
+>> ${XCPEDIR}/utils/nodeCoverage.R -i -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz -x /xcpEngine-master/atlas/segmentation6/segmentation6NodeIndex.1D -n /xcpEngine-master/atlas/segmentation6/segmentation6NodeNames.txt
+Error in parse_args(OptionParser(option_list = option_list)) : 
+  Error in getopt(spec = spec, opt = args) : flag "i" requires an argument
+Execution halted
+· @1.3.4 Computing atlas statistics
+                             -   -   -
+>> ${XCPEDIR}/utils/quantifyAtlas -v /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alff.nii.gz -s mean -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_alff.csv -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_mean_alff -d anatomical_alff -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz -n segmentation -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_idx.1D -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_names.1D -p sub-SH234,ses-1,run-01 -w 0
+· Mean anatomical alff over segmentation
+Error in read.table(input, header = T) : no lines available in input
+Execution halted
+                             -   -   -
+>> ${XCPEDIR}/utils/quantifyAtlas -v /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alffZ.nii.gz -s mean -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_alffZ.csv -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_mean_alffZ -d anatomical_alffZ -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz -n segmentation -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_idx.1D -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_names.1D -p sub-SH234,ses-1,run-01 -w 0
+· Mean anatomical alffZ over segmentation
+Error in read.table(input, header = T) : no lines available in input
+Execution halted
+                             -   -   -
+>> ${XCPEDIR}/utils/quantifyAtlas -v /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_reho.nii.gz -s mean -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_reho.csv -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_mean_reho -d anatomical_reho -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz -n segmentation -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_idx.1D -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_names.1D -p sub-SH234,ses-1,run-01 -w 0
+· Mean anatomical reho over segmentation
+Error in read.table(input, header = T) : no lines available in input
+Execution halted
+                             -   -   -
+>> ${XCPEDIR}/utils/quantifyAtlas -v /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_rehoZ.nii.gz -s mean -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_rehoZ.csv -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_mean_rehoZ -d anatomical_rehoZ -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01_atlas/sub-SH234_ses-1_run-01_segmentation.nii.gz -n segmentation -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_idx.1D -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/sub-SH234_ses-1_run-01~TEMP~_segmentation_names.1D -p sub-SH234,ses-1,run-01 -w 0
+· Mean anatomical rehoZ over segmentation
+Error in read.table(input, header = T) : no lines available in input
+Execution halted
+                             -   -   -
+>> atlas_set segmentation RegionalMeanAlff /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_alff.csv
+                             -   -   -
+>> atlas_set segmentation RegionalMeanAlffZ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_alffZ.csv
+                             -   -   -
+>> atlas_set segmentation RegionalMeanReho /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_reho.csv
+                             -   -   -
+>> atlas_set segmentation RegionalMeanRehoZ /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/roiquant/segmentation/sub-SH234_ses-1_run-01_segmentation_mean_rehoZ.csv
+· @1.3.5 
+· @1.3.6 
+· @1.3.7 
+· @1.3.8 
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01~TEMP~.nii.gz
+                             -   -   -
+>> 13-11-1
+                             -   -   -
+>> 13-1
+
+
+
+Current processing step:
+@1 Normalising using ANTs
+····································································
+· @1.1 [Selecting transforms to apply]
+· @1.2 [Normalising primary dataset]
+· @1.3 [Applying composite diffeomorphism to primary dataset]
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.4 [Applying composite diffeomorphism to derivative images:]
+· @1.5 [alff]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alff.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_alffStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alffZ.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_alffZStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alffZ_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alffZ_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_alffZ_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [alff_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/alff/sub-SH234_ses-1_run-01_alff_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_alff_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [img_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/regress/sub-SH234_ses-1_run-01_img_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_img_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [reho]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_reho.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_rehoStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [rehoZ]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_rehoZ.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_rehoZStd.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [rehoZ_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_rehoZ_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_rehoZ_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+· @1.5 [reho_sm4]
+· @1.8 
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/reho/sub-SH234_ses-1_run-01_reho_sm4.nii.gz -r /xcpEngine-master/space/MNI/MNI-1x1x1.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_reho_sm4Std.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/struc/sub-SH234_ses-1_SubjectToTemplate0GenericAffine.mat
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/norm/sub-SH234_ses-1_run-01_std.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-01/sub-SH234_ses-1_run-01.nii.gz
+                             -   -   -
+>> 12-11-1
+                             -   -   -
+>> 12-1

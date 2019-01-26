@@ -200,3 +200,144 @@ Current processing step:
 · @2.12c [Low pass frequency: 0.08]
                              -   -   -
 >> ${XCPEDIR}/utils/tfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~_TMP.nii.gz -f butterworth -h 0.01 -l 0.08 -r 1 -d 2 -1 confmat:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/confound2/sub-SH219_ses-1_run-02_confmat.1D
+
+
+
+Current processing step:
+@4 Converting BOLD timeseries to confound residuals
+····································································
+· @4.2 
+· @4.3 
+                             -   -   -
+>> mv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~_TMP_confmat.1D /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_confmat.1D
+· @4.5 [Computing confound correlations]
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_confmat.1D
+· @4.6 [Executing detrend]
+                             -   -   -
+>> 3dTproject -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~_TMP.nii.gz -ort /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_confmat.1D -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~_TMP_REG.nii.gz
+· @0.2 
+                             -   -   -
+>> immv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02~TEMP~_TMP_REG.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_residualised.nii.gz
+
+
+
+Current processing step:
+@6 Spatially filtering image
+····································································
+· @6.2 [Configuring SUSAN]
+· @6.4 
+· @6.6 
+· @6.10a [Filter: susan]
+· @6.10b [Smoothing kernel: 4 mm]
+· @6.11 
+                             -   -   -
+>> ${XCPEDIR}/utils/sfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_residualised.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_img_sm4.nii.gz -s susan -k 4 -u /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/prestats/sub-SH219_ses-1_run-02_referenceVolume.nii.gz
+Image Exception : #22 :: ERROR: Could not open image -p
+(standard_in) 1: syntax error
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/regress/sub-SH219_ses-1_run-02_residualised.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02.nii.gz
+                             -   -   -
+>> 12-11-1
+                             -   -   -
+>> 12-1
+· @0.1 
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/prestats/sub-SH219_ses-1_run-02_referenceVolume.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/sub-SH219_ses-1_run-02_referenceVolume.nii.gz
+                             -   -   -
+>> 13-11-1
+                             -   -   -
+>> 13-1
+
+
+
+Current processing step:
+@1 Functional connectome: aal116
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/aal116/aal116MNI.nii.gz -R
+                             -   -   -
+>> 9170.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/aal116/aal116MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/prestats/sub-SH219_ses-1_run-02_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_aal116.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/struc/sub-SH219_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/struc/sub-SH219_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_aal116.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_aal116.nii.gz -l /xcpEngine-master/atlas/aal116/aal116NodeIndex.1D
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/aal116/sub-SH219_ses-1_run-02_aal116_ts.1D -w 10 -p FALSE
+
+
+
+Current processing step:
+@1 Functional connectome: glasser360
+····································································
+· @1.2 Mapping network to image space
+· @1.2.2 
+                             -   -   -
+>> fslstats /xcpEngine-master/atlas/glasser360/glasser360MNI.nii.gz -R
+                             -   -   -
+>> 360.000000<=1
+                             -   -   -
+>> antsApplyTransforms -e 3 -d 3 -i /xcpEngine-master/atlas/glasser360/glasser360MNI.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/prestats/sub-SH219_ses-1_run-02_struct.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_glasser360.nii.gz -n MultiLabel -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/struc/sub-SH219_ses-1_TemplateToSubject1GenericAffine.mat -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/struc/sub-SH219_ses-1_TemplateToSubject0Warp.nii.gz
+                             -   -   -
+>> rln /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_glasser360.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360.nii.gz
+                             -   -   -
+>> 14-11-1
+                             -   -   -
+>> 14-1
+· @1.3 Computing network timeseries
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/roi2ts.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/sub-SH219_ses-1_run-02_atlas/sub-SH219_ses-1_run-02_glasser360.nii.gz -l /xcpEngine-master/atlas/glasser360/glasser360NodeIndex.1D
+Warning message:
+Warning: node  307  contains one voxel
+ 
+· @1.4 Computing adjacency matrix
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_network.txt
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360.net
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_missing.txt
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_ts.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/adjmat2pajek.R -a /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_network.txt -t N
+· @1.5 Determining node coverage
+                             -   -   -
+>> ${XCPEDIR}/utils/missingIdx.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_network.txt
+· @1.6 Computing dynamic connectome
+· @1.6.1 Window: 10 TRs
+                             -   -   -
+>> rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_tsEdge.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/mtd.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH219/ses-1/run-02/fcon/glasser360/sub-SH219_ses-1_run-02_glasser360_ts.1D -w 10 -p FALSE

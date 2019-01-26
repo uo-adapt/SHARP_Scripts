@@ -230,3 +230,9 @@ Module complete
 
 [I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-02/sub-SH187_ses-1_run-02.nii.gz]
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH187/ses-1/run-02/regress]
+····································································
+Processing step complete:
+Temporally filtering image and confounds
+····································································
+Processing step complete:
+Converting BOLD timeseries to confound residuals

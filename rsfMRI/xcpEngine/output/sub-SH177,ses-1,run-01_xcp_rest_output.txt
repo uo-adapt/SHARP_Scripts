@@ -230,3 +230,6 @@ Module complete
 
 [I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH177/ses-1/run-01/sub-SH177_ses-1_run-01.nii.gz]
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH177/ses-1/run-01/regress]
+····································································
+Processing step complete:
+Temporally filtering image and confounds
