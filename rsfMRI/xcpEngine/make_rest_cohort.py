@@ -50,3 +50,4 @@ for task in tasks:
                     if os.path.isfile(filepath):
                         row = [subject + "," + wave + "," + run + "," + filepath + "," + os.path.join(xcpdir,subject,wave,"struc")]
                         writer.writerow(row)
+                        

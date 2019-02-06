@@ -44,9 +44,4 @@ with open(os.path.join(codedir, preproc + '_cohort.csv'),'w') as f1:
 			if os.path.isfile(filepath):
 				row = [subject + "," + wave + "," + filepath]
 				writer.writerow(row)
-
-
-
-
-
-
+				
