@@ -230,15 +230,11 @@ Module complete
 
 [I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/regress]
+
+· [A major error has occurred.]
+· [The processing stream will now abort.]
+· [Preparing diagnostics]
 ····································································
-Processing step complete:
-Temporally filtering image and confounds
-····································································
-Processing step complete:
-Converting BOLD timeseries to confound residuals
-····································································
-Processing step complete:
-Spatially filtering image
 
 
 
@@ -254,24 +250,25 @@ Module Workflow Map
 · @2.12a
 · @2.12b
 · @2.12c
-· @4
-· @4.2
-· @4.3
-· @4.5
-· @4.6
-· @0.2
-· @6
-· @6.2
-· @6.4
-· @6.6
-· @6.10a
-· @6.10b
-· @6.11
-· FINISH
+· ERROR
 ····································································
 
 
-Module complete
+
+····································································
+· [An error occurred while processing module regress.]
+· [The error was detected at signpost @2.12c.]
+· [The most recent command logged was]
+· [tfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/regress/sub-SH166_ses-1_run-02~TEMP~.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/regress/sub-SH166_ses-1_run-02~TEMP~_TMP.nii.gz -f butterworth -h 0.01 -l 0.08 -r 1 -d 2 -1 confmat:/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/confound2/sub-SH166_ses-1_run-02_confmat.1D]
+· [For additional details, view the processing log. For improved]
+· [diagnostics, increment verbosity using the -t option.]
+· []
+· [Processing failed to produce required output: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/regress/sub-SH166_ses-1_run-02~TEMP~_TMP.nii.gz]
+· []
+· [stream abort]
+····································································
+
+
 
 
 
@@ -288,109 +285,11 @@ Module complete
 
 [Delegating control to module]
 
-
-
-###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-#                                                                 #
-#  ☭               FUNCTIONAL CONNECTOME MODULE                ☭  #
-#                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/fcon]
 ····································································
-Processing step complete:
-Functional connectome: aal116
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
 ····································································
-Processing step complete:
-Functional connectome: glasser360
-····································································
-Processing step complete:
-Functional connectome: gordon333
-····································································
-Processing step complete:
-Functional connectome: power264
-····································································
-Processing step complete:
-Functional connectome: schaefer100
-····································································
-Processing step complete:
-Functional connectome: schaefer200
-····································································
-Processing step complete:
-Functional connectome: schaefer400
-
-
-
-Module Workflow Map
-····································································
-· START
-· @0.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· @1
-· @1.2
-· @1.2.2
-· @1.3
-· @1.4
-· @1.5
-· @1.6
-· @1.6.1
-· FINISH
-····································································
-
-
-Module complete
 
 
 
@@ -407,50 +306,11 @@ Module complete
 
 [Delegating control to module]
 
-
-
-###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-#                                                                 #
-#  ☭                REGIONAL HOMOGENEITY MODULE                ☭  #
-#                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/reho]
 ····································································
-Processing step complete:
-Computing voxelwise ReHo
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
 ····································································
-Processing step complete:
-Spatially filtering ReHo map
-
-
-
-Module Workflow Map
-····································································
-· START
-· @1
-· @1.1
-· @1.2c
-· @1.3
-· @1.4
-· @2
-· @2.1a
-· @2.2b
-· @2.3
-· @2.4
-· @2.4.3
-· @2.5
-· @0.1
-· FINISH
-····································································
-
-
-Module complete
 
 
 
@@ -467,68 +327,11 @@ Module complete
 
 [Delegating control to module]
 
-
-
-###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-#                                                                 #
-#  ☭      AMPLITUDE OF LOW-FREQUENCY FLUCTUATIONS MODULE       ☭  #
-#                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/alff]
 ····································································
-Processing step complete:
-Spatially filtering image
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
 ····································································
-Processing step complete:
-Amplitude of low-frequency fluctuations
-
-
-
-Module Workflow Map
-····································································
-· START
-· @1
-· @1.2
-· @1.4
-· @1.6
-· @1.7a
-· @2
-· @2.0
-· @2.1
-· @2.3
-· @2.4
-· @2.5
-· @2.6
-· @2.7a
-· @2.7b
-· @2.7d
-· @2.7e
-· @2.8
-· @2.9
-· @2.0
-· @2.1
-· @2.3
-· @2.4
-· @2.5
-· @2.6
-· @2.7a
-· @2.7b
-· @2.7d
-· @2.7e
-· @2.8
-· @2.9
-· @0.1
-· FINISH
-····································································
-
-
-Module complete
 
 
 
@@ -545,25 +348,11 @@ Module complete
 
 [Delegating control to module]
 
-
-
-###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-#                                                                 #
-#  ☭               SEED-BASED CORRELATION MODULE               ☭  #
-#                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/seed]
-
-[WARNING: Seed-based correlation analysis has been requested,]
-[but no valid seed libraries have been provided.]
-  
-[Skipping module]
+····································································
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
+····································································
 
 
 
@@ -580,135 +369,11 @@ Module complete
 
 [Delegating control to module]
 
-
-
-###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-#                                                                 #
-#  ☭             ATLAS-BASED QUANTIFICATION MODULE             ☭  #
-#                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
-###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/roiquant]
 ····································································
-Processing step complete:
-Regional quantification: aal116
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
 ····································································
-Processing step complete:
-Regional quantification: glasser360
-····································································
-Processing step complete:
-Regional quantification: gordon333
-····································································
-Processing step complete:
-Regional quantification: power264
-····································································
-Processing step complete:
-Regional quantification: schaefer100
-····································································
-Processing step complete:
-Regional quantification: schaefer200
-····································································
-Processing step complete:
-Regional quantification: schaefer400
-····································································
-Processing step complete:
-Regional quantification: segmentation
-
-
-
-Module Workflow Map
-····································································
-· START
-· @0.1
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.1
-· @1.2.7
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· @1
-· @1.2
-· @1.2.2
-· @1.3.3
-· @1.3.4
-· @1.3.5
-· @1.3.6
-· @1.3.7
-· @1.3.8
-· FINISH
-····································································
-
-
-Module complete
 
 
 
@@ -725,17 +390,18 @@ Module complete
 
 [Delegating control to module]
 
+····································································
+· [Module failure occurred in a number of subjects. They have been]
+· [removed from further analysis.]
+· · [sub-SH166_ses-1_run-02 removed from analysis]
+····································································
+
 
 
 ###################################################################
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
 #                                                                 #
-#  ☭                IMAGE NORMALISATION MODULE                 ☭  #
+#  [0;31m☭[0m                     ANALYSIS COMPLETE                     [0;31m☭[0m  #
 #                                                                 #
-#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
 ###################################################################
-
-
-
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/sub-SH166_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-02/norm]
