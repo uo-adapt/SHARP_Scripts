@@ -24,7 +24,7 @@ fmriprepdir = os.path.join(parentdir,"bids_data","derivatives","fmriprep")
 waves = {"ses-1"}
 
 
-# Change this to either be anatomical (anat) or functional (rest)
+# Change this to either be anatomical (anat) or functional (func)
 preproc= "anat"
 
 subjectdir_contents = os.listdir(fmriprepdir)
