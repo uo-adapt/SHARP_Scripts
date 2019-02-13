@@ -15,8 +15,6 @@ XCPEDIR=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine
 SIMG=/projects/adapt_lab/shared/containers/xcpEngine.simg
 HOME=/projects/adapt_lab/shared/SHARP
 
-echo "${TEMP_COHORT}",${ses},${run}
-
 singularity run -B ${DATA_ROOT}:${HOME} $SIMG \
    -d ${HOME}/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
    -c "${TEMP_COHORT}",${ses},${run} \
