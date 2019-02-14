@@ -14105,3 +14105,4 @@ Module complete
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH257/ses-1/jlf/job_1007_7.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH257/ses-1/jlf/job_1009_8.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH257/ses-1/jlf/job_1010_9.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH257/ses-1/jlf/job_1013_10.sh
