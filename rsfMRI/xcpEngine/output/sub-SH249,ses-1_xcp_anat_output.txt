@@ -12935,3 +12935,4 @@ Module complete
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH249/ses-1/jlf/job_1013_10.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH249/ses-1/jlf/job_1015_11.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH249/ses-1/jlf/job_1017_12.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH249/ses-1/jlf/job_1019_13.sh
