@@ -12764,3 +12764,336 @@ Module complete
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1019_13.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1036_14.sh
 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1104_15.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1113_16.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1116_17.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1119_18.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/job_1122_19.sh
+
+--------------------------------------------------------------------------------------
+ Starting JLF
+--------------------------------------------------------------------------------------
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1000_0_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1001_1_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1002_2_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1003_3_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1004_4_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1005_5_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1006_6_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1007_7_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1009_8_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1010_9_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1013_10_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1015_11_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1017_12_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1019_13_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1036_14_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1104_15_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1113_16_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1116_17_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1119_18_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_1122_19_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_JLF.sh
+ Otsu Thresh with 1 thresholds
+
+Running antsJointFusion for 3-dimensional images.
+
+Weighted averaging: *********10*********20*********30*********40*********50*********60*********70*********80*********90*********
+Reconstruction: *********10*********20*********30*********40*********50*********60*********70*********80*********90*********
+
+   WeightedVotingFusionImageFilter (0x1661db0)
+     RTTI typeinfo:   itk::WeightedVotingFusionImageFilter<itk::Image<float, 3u>, itk::Image<unsigned int, 3u> >
+     Reference Count: 1
+     Modified Time: 9350
+     Debug: Off
+     Object Name: 
+     Observers: 
+       ProgressEvent(Command)
+     Inputs: 
+       Primary: (0x1660220) *
+       _1: (0x1661750)
+       _10: (0x16aaeb0)
+       _11: (0x16b03d0)
+       _12: (0x16b5850)
+       _13: (0x16baa50)
+       _14: (0x16bfea0)
+       _15: (0x16c5320)
+       _16: (0x16ca550)
+       _17: (0x16cf990)
+       _18: (0x1672d20)
+       _19: (0x1674640)
+       _2: (0x1681170)
+       _20: (0x16dd000)
+       _21: (0x16605e0)
+       _22: (0x1683bb0)
+       _23: (0x1689030)
+       _24: (0x168e250)
+       _25: (0x16936d0)
+       _26: (0x1698960)
+       _27: (0x169dda0)
+       _28: (0x16a3220)
+       _29: (0x16a86a0)
+       _3: (0x16865f0)
+       _30: (0x16ad990)
+       _31: (0x16b2e10)
+       _32: (0x16b8290)
+       _33: (0x16bd460)
+       _34: (0x16c28e0)
+       _35: (0x16c7d60)
+       _36: (0x16ccf50)
+       _37: (0x16d23b0)
+       _38: (0x1674350)
+       _39: (0x16da600)
+       _4: (0x168b810)
+       _40: (0x16d9050)
+       _41: (0x16df9b0)
+       _5: (0x1690c90)
+       _6: (0x1695ee0)
+       _7: (0x169b3a0)
+       _8: (0x16a07e0)
+       _9: (0x16a5c60)
+     Indexed Inputs: 
+       0: Primary (0x1660220)
+       1: _1 (0x1661750)
+       2: _2 (0x1681170)
+       3: _3 (0x16865f0)
+       4: _4 (0x168b810)
+       5: _5 (0x1690c90)
+       6: _6 (0x1695ee0)
+       7: _7 (0x169b3a0)
+       8: _8 (0x16a07e0)
+       9: _9 (0x16a5c60)
+       10: _10 (0x16aaeb0)
+       11: _11 (0x16b03d0)
+       12: _12 (0x16b5850)
+       13: _13 (0x16baa50)
+       14: _14 (0x16bfea0)
+       15: _15 (0x16c5320)
+       16: _16 (0x16ca550)
+       17: _17 (0x16cf990)
+       18: _18 (0x1672d20)
+       19: _19 (0x1674640)
+       20: _20 (0x16dd000)
+       21: _21 (0x16605e0)
+       22: _22 (0x1683bb0)
+       23: _23 (0x1689030)
+       24: _24 (0x168e250)
+       25: _25 (0x16936d0)
+       26: _26 (0x1698960)
+       27: _27 (0x169dda0)
+       28: _28 (0x16a3220)
+       29: _29 (0x16a86a0)
+       30: _30 (0x16ad990)
+       31: _31 (0x16b2e10)
+       32: _32 (0x16b8290)
+       33: _33 (0x16bd460)
+       34: _34 (0x16c28e0)
+       35: _35 (0x16c7d60)
+       36: _36 (0x16ccf50)
+       37: _37 (0x16d23b0)
+       38: _38 (0x1674350)
+       39: _39 (0x16da600)
+       40: _40 (0x16d9050)
+       41: _41 (0x16df9b0)
+     Required Input Names: Primary
+     NumberOfRequiredInputs: 1
+     Outputs: 
+       Primary: (0x16621e0)
+     Indexed Outputs: 
+       0: Primary (0x16621e0)
+     NumberOfRequiredOutputs: 1
+     Number Of Threads: 28
+     ReleaseDataFlag: Off
+     ReleaseDataBeforeUpdateFlag: Off
+     AbortGenerateData: Off
+     Progress: 1
+     Multithreader: 
+       RTTI typeinfo:   itk::MultiThreader
+       Reference Count: 1
+       Modified Time: 344
+       Debug: Off
+       Object Name: 
+       Observers: 
+         none
+       Thread Count: 28
+       Global Maximum Number Of Threads: 128
+       Global Default Number Of Threads: 28
+     CoordinateTolerance: 1e-06
+     DirectionTolerance: 1e-06
+Using Pearson correlation to measure the patch similarity.
+     Neighborhood search radius = [3, 3, 3]
+     Neighborhood patch radius = [2, 2, 2]
+Number of atlases = 20
+Number of atlas segmentations = 20
+Number of atlas modalities = 1
+Alpha = 0.1
+Beta = 2
+Label set: 0 4 11 15 23 30 31 32 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 55 56 57 58 59 60 61 62 63 64 66 69 71 72 73 75 76 100 101 102 103 104 105 106 107 108 109 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 
+
+Writing output:
+  Writing intensity fusion image (modality 1)
+Elapsed time: 15145.6
+
+--------------------------------------------------------------------------------------
+ Done creating: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/jlf/sub-SH258_ses-1_Labels.nii.gz
+ Script executed in 27825 seconds
+ 7h 43m 45s
+--------------------------------------------------------------------------------------
+····································································
+Processing step complete:
+ANTs Joint Label Fusion
+····································································
+Processing step complete:
+Preparing grey matter intersection
+
+
+
+Module Workflow Map
+····································································
+· START
+· @1
+· @1.1
+· @1.2
+· @1.4
+· @1.5
+· @1.6a
+· @1.6b
+· @2
+· @2.1
+· @2.2
+· @2.3
+· @2.4
+· @2.5
+· @2.6
+· FINISH
+····································································
+
+
+Module complete
+
+
+
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:                     
+                         [0;31m★[0m roiquant [0;31m★[0m                             
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+
+
+
+###################################################################
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+#                                                                 #
+#  ☭             ATLAS-BASED QUANTIFICATION MODULE             ☭  #
+#                                                                 #
+#  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/sub-SH258_ses-1.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/roiquant]
+····································································
+Processing step complete:
+Regional quantification: miccai
+
+
+
+Module Workflow Map
+····································································
+· START
+· @0.1
+· @1
+· @1.2
+· @1.2.2
+· @1.3.3
+· @1.3.4
+· @1.3.5
+· @1.3.6
+· @1.3.7
+· @1.3.8
+· @1.3.9
+· FINISH
+····································································
+
+
+Module complete
+
+
+
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:                     
+                         [0;31m★[0m qcanat [0;31m★[0m                             
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+###################################################################
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+#                                                                 #
+#  ☭      VOLUMETRIC ANATOMICAL QUALITY ASSESSMENT MODULE      ☭  #
+#                                                                 #
+# ✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡✡ #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/sub-SH258_ses-1.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/qcanat]
+····································································
+Processing step complete:
+Extracting tissue masks
+····································································
+Processing step complete:
+Determining image foreground/background
+····································································
+Processing step complete:
+Computing measures of anatomical quality
+
+
+
+Module Workflow Map
+····································································
+· START
+· @1
+· @1.1a
+· @1.1b
+· @1.1a
+· @1.1b
+· @1.1a
+· @1.1b
+· @1.1a
+· @1.1b
+· @2
+· @2.1
+· @2.5
+· @2.6
+· @3
+· @3.1
+· @3.2
+· FINISH
+····································································
+
+
+Module complete
+
+
+
+###################################################################
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+#                                                                 #
+#  [0;31m☭[0m                     ANALYSIS COMPLETE                     [0;31m☭[0m  #
+#                                                                 #
+#  [0;31m☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭  ☭[0m  #
+###################################################################
