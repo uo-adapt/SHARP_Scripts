@@ -1,13 +1,13 @@
 Some packages in this Docker container are non-free
 If you are considering commercial use of this container, please consult the relevant license:
 https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence
--d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH234,ses-1,run-02.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -i $TMPDIR -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH234,ses-1,run-02.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -i $TMPDIR
+-d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH258,ses-1,run-01.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -i $TMPDIR -d /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn -c /projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH258,ses-1,run-01.csv -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data -t 1 -i $TMPDIR
 
 Constructing a pipeline based on user specifications
 ····································································
 · [D][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn]
 · [I][$TMPDIR]
-· [C][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH234,ses-1,run-02.csv]
+· [C][/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/rest_cohort.csv.sub-SH258,ses-1,run-01.csv]
 · [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data]
 · [M][Executing serially]
 ····································································
@@ -109,8 +109,8 @@ Localiser complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/prestats]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/prestats]
 NATIVE:LPI TEMPLATE:RPI
 ····································································
 Processing step complete:
@@ -167,8 +167,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/confound2]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/confound2]
 ····································································
 Processing step complete:
 Generating confound matrix
@@ -227,8 +227,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/regress]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/regress]
 ····································································
 Processing step complete:
 Temporally filtering image and confounds
@@ -299,8 +299,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/fcon]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/fcon]
 ····································································
 Processing step complete:
 Functional connectome: aal116
@@ -418,8 +418,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/reho]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/reho]
 ····································································
 Processing step complete:
 Computing voxelwise ReHo
@@ -478,8 +478,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/alff]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/alff]
 ····································································
 Processing step complete:
 Spatially filtering image
@@ -500,7 +500,7 @@ Module Workflow Map
 · @2
 · @2.0
 · @2.1
-· @2.3
+· @2.2
 · @2.4
 · @2.5
 · @2.6
@@ -512,7 +512,7 @@ Module Workflow Map
 · @2.9
 · @2.0
 · @2.1
-· @2.3
+· @2.2
 · @2.4
 · @2.5
 · @2.6
@@ -556,8 +556,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/seed]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/seed]
 
 [WARNING: Seed-based correlation analysis has been requested,]
 [but no valid seed libraries have been provided.]
@@ -591,8 +591,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/roiquant]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/roiquant]
 ····································································
 Processing step complete:
 Regional quantification: aal116
@@ -736,8 +736,8 @@ Module complete
 
 
 
-[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/sub-SH234_ses-1_run-02.nii.gz]
-[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH234/ses-1/run-02/norm]
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/sub-SH258_ses-1_run-01.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH258/ses-1/run-01/norm]
 ····································································
 Processing step complete:
 Normalising using ANTs
