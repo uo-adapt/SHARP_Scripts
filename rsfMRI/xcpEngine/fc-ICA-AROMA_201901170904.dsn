@@ -35,13 +35,13 @@
 analysis=fc_$(whoami)
 design=/projects/adapt_lab/shared/SHARP/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn
 sequence=anatomical
-standard=MNI%1x1x1
+standard=MNI%2x2x2
 
 ###################################################################
 # PIPELINE
 ###################################################################
 
-pipeline=prestats,confound2,regress,fcon,reho,alff,seed,roiquant,norm
+pipeline=prestats,confound2,regress,fcon,reho,alff,roiquant,norm,qcfc
 
 ###################################################################
 # 1 PRESTATS
@@ -87,13 +87,13 @@ regress_tmpf_ripple[3]=0.5
 regress_tmpf_ripple2[3]=20
 regress_dmdt[3]=2
 regress_1ddt[3]=1
-regress_smo[3]=4
+regress_smo[3]=2
 regress_sptf[3]=susan
 regress_usan[3]=default
 regress_usan_space[3]=
 regress_rerun[3]=0
 regress_cleanup[3]=1
-regress_process[3]=TMP-REG
+regress_process[3]=DMT-TMP-REG
 
 ###################################################################
 # 4 FCON
@@ -114,7 +114,7 @@ fcon_cleanup[4]=1
 reho_nhood[5]=vertices
 reho_roikw[5]=0 # does nothing at the moment
 reho_sptf[5]=susan
-reho_smo[5]=4
+reho_smo[5]=2
 reho_rerun[5]=0
 reho_cleanup[5]=1
 
@@ -125,33 +125,31 @@ reho_cleanup[5]=1
 alff_hipass[6]=0.01
 alff_lopass[6]=0.08
 alff_sptf[6]=susan
-alff_smo[6]=4
+alff_smo[6]=2
 alff_rerun[6]=0
 alff_cleanup[6]=1
 
 ###################################################################
-# 7 SEED
+# 7 ROIQUANT
 ###################################################################
 
-seed_lib[7]=
-seed_metric[7]=corrcoef
-seed_sptf[7]=susan
-seed_smo[7]=4
-seed_rerun[7]=1
-seed_cleanup[7]=1
-###################################################################
-# 8 ROIQUANT
-###################################################################
-
-roiquant_atlas[8]=all
-roiquant_globals[8]=1
-roiquant_vol[8]=0
-roiquant_rerun[8]=0
-roiquant_cleanup[8]=1
+roiquant_atlas[7]=gordon
+roiquant_globals[7]=1
+roiquant_vol[7]=1
+roiquant_rerun[7]=0
+roiquant_cleanup[7]=1
 
 ###################################################################
-# 9 NORM
+# 8 NORM
 ###################################################################
-norm_primary[9]=1
-norm_rerun[9]=0
-norm_cleanup[9]=1
+norm_primary[8]=1
+norm_rerun[8]=0
+norm_cleanup[8]=1
+
+##################################################################
+# 9 QCFC
+###################################################################
+qcfc_atlas[9]=gordon
+qcfc_sig[9]=fdr
+qcfc_rerun[9]=0
+qcfc_cleanup[9]=1
