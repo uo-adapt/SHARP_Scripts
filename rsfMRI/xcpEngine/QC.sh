@@ -5,6 +5,6 @@ outputdir=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data
 
 ${XCPEDIR}/utils/combineOutput \
 	-p $outputdir \
-	-f "run-*/*quality.csv" \
+	-f "run-*quality.csv" \
 	-o XCP_QAVARS.csv
 
