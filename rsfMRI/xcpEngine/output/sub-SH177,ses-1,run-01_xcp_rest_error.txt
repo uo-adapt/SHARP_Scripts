@@ -14303,3 +14303,4 @@ Report bugs at bugs.r-project.org '
 + :
 + test -z ''
 + exec /usr/lib/R/bin/exec/R --slave --no-restore --file=/xcpEngine/utils/genfilter.R --args -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH177/ses-1/run-01/regress/sub-SH177_ses-1_run-01~TEMP~.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH177/ses-1/run-01/regress/sub-SH177_ses-1_run-01~TEMP~_TMP.nii.gz -f butterworth -c 0.01 -l 0.08 -r 1 -d 2
+slurmstepd: error: *** JOB 3984501 ON n102 CANCELLED AT 2019-04-21T12:36:52 ***
