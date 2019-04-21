@@ -19,7 +19,7 @@ singularity run -B ${DATA_ROOT}:${HOME} $SIMG \
    -d ${HOME}/SHARP_Scripts/rsfMRI/xcpEngine/fc-ICA-AROMA_201901170904.dsn \
    -c "${TEMP_COHORT}",${ses},${run} \
    -o ${HOME}/bids_data/derivatives/xcpEngine/data \
-   -t 1 \
+   -t 2 \
    -i \$TMPDIR
 
 rm "${TEMP_COHORT}",${ses},${run}
