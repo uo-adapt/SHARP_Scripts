@@ -89,7 +89,6 @@ loaded as requested: "c3d"
 +++ confound2_rps[2]=0
 +++ confound2_rms[2]=0
 +++ confound2_wm[2]=1
-+++ confound_wm_path=
 +++ confound_wm_ero[2]=5
 +++ confound2_csf[2]=1
 +++ confound_csf_ero[2]=10
@@ -155,10 +154,10 @@ loaded as requested: "c3d"
 +++ norm_cleanup[9]=1
 ++ source /xcpEngine/core/defineLogs
 +++ [[ -z '' ]]
-+++ export log=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211926_sub-SH166_ses-1_run-01LOG
-+++ log=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211926_sub-SH166_ses-1_run-01LOG
-+++ export log_proc=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211926_sub-SH166_ses-1_run-01LOG-process
-+++ log_proc=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211926_sub-SH166_ses-1_run-01LOG-process
++++ export log=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211929_sub-SH166_ses-1_run-01LOG
++++ log=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211929_sub-SH166_ses-1_run-01LOG
++++ export log_proc=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211929_sub-SH166_ses-1_run-01LOG-process
++++ log_proc=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/sub-SH166_ses-1_run-01_logs/fc_pettitta_201904211929_sub-SH166_ses-1_run-01LOG-process
 +++ [[ -n localiser ]]
 +++ [[ -n /xcpEngine/core/CONSOLE_MODULE_RC ]]
 +++ echo '
@@ -622,7 +621,7 @@ Current processing step:
 ++ abort_stream 'Invalid path provided for antsct[9001]'
 ++ local errdir=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/group/error
 ++ [[ ! -d /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/group/error ]]
-++ ERR_ROOT=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/group/error/fc_pettitta-201904211926
+++ ERR_ROOT=/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/group/error/fc_pettitta-201904211929
 ++ local 'error=
 · [A major error has occurred.]
 · [The processing stream will now abort.]
