@@ -255,3 +255,24 @@ Current processing step:
 >> rm -rf /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP.nii.gz
                              -   -   -
 >> ${XCPEDIR}/utils/genfilter.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP.nii.gz -f butterworth -c 0.01 -l 0.08 -r 1 -d 2
+· @u.8.3 
+                             -   -   -
+>> rm -rf /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_confmat.1D
+                             -   -   -
+>> ${XCPEDIR}/utils/1dGenfilter.R -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_confmat.1D -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_confmat.1D -f butterworth -t 0.780000 -c 0.01 -l 0.08 -r 1 -d 2
+
+
+
+Current processing step:
+@4 Converting BOLD timeseries to confound residuals
+····································································
+· @4.2 
+· @4.3 
+                             -   -   -
+>> mv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_confmat.1D /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_confmat.1D
+· @4.5 [Computing confound correlations]
+                             -   -   -
+>> ${XCPEDIR}/utils/ts2adjmat.R -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_confmat.1D
+· @4.6 [Executing detrend]
+                             -   -   -
+>> 3dTproject -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP.nii.gz -ort /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_confmat.1D -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG.nii.gz
