@@ -272,3 +272,38 @@ Current processing step:
 · @4.6 [Executing detrend]
                              -   -   -
 >> 3dTproject -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP.nii.gz -ort /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_confmat.1D -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG.nii.gz
+                             -   -   -
+>> fslmaths -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG
+Cannot open volume -mul for reading!
+· @0.2 
+                             -   -   -
+>> immv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz
+                             -   -   -
+>> fslval /projects/adapt_lab/shared/SHARP/bids_data/derivatives/fmriprep/sub-SH166/ses-1/func/sub-SH166_ses-1_task-rest_run-01_space-T1w_desc-preproc_bold.nii.gz pixdim4
+                             -   -   -
+>> ${XCPEDIR}/utils/addTR.py -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz -t 0.780000
+
+
+
+Current processing step:
+@6 Spatially filtering image
+····································································
+· @6.2 [Configuring SUSAN]
+· @6.4 
+· @6.6 
+· @6.10a [Filter: susan]
+· @6.10b [Smoothing kernel: 2 mm]
+· @6.11 
+                             -   -   -
+>> ${XCPEDIR}/utils/sfilter -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_img_sm2.nii.gz -s susan -k 2 -u /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/prestats/sub-SH166_ses-1_run-01_referenceVolume.nii.gz
+· @u.3 
+                             -   -   -
+>> 2/2.35482004503
+                             -   -   -
+>> fslstats /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/prestats/sub-SH166_ses-1_run-01_referenceVolume.nii.gz -k -p 50
+Image Exception : #22 :: ERROR: Could not open image -p
+                             -   -   -
+>> *3/4
+(standard_in) 1: syntax error
+                             -   -   -
+>> susan /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz .84932180028836145990 3 1 1 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/prestats/sub-SH166_ses-1_run-01_referenceVolume.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_img_sm2.nii.gz
