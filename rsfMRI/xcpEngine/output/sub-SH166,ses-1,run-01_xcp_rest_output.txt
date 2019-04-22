@@ -237,3 +237,6 @@ Design files
 ····································································
 Processing step complete:
 Demeaning and detrending BOLD timeseries
+····································································
+Processing step complete:
+Temporally filtering image and confounds
