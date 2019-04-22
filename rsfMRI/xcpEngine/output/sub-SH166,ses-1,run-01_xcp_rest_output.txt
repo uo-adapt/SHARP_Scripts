@@ -237,3 +237,6 @@ Module complete
 [O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress]
 Design files  
 0.780000
+····································································
+Processing step complete:
+Demeaning and detrending BOLD timeseries
