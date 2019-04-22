@@ -276,3 +276,13 @@ Current processing step:
 · @4.6 [Executing detrend]
                              -   -   -
 >> 3dTproject -input /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP.nii.gz -ort /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_confmat.1D -prefix /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG.nii.gz
+                             -   -   -
+>> fslmaths -mul /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG
+Cannot open volume -mul for reading!
+· @0.2 
+                             -   -   -
+>> immv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01~TEMP~_DMT_TMP_REG.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz
+                             -   -   -
+>> fslval /projects/adapt_lab/shared/SHARP/bids_data/derivatives/fmriprep/sub-SH166/ses-1/func/sub-SH166_ses-1_task-rest_run-01_space-T1w_desc-preproc_bold.nii.gz pixdim4
+                             -   -   -
+>> ${XCPEDIR}/utils/addTR.py -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/run-01/regress/sub-SH166_ses-1_run-01_residualised.nii.gz -t 0.780000
