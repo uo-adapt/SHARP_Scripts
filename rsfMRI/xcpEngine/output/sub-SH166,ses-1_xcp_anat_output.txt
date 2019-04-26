@@ -12753,3 +12753,777 @@ XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_L
  1DIAGNOSTIC,    21, -8.329576147901e-01, 2.553714666080e-04, 1.4693e+03, 4.1331e+01, 
  1DIAGNOSTIC,    22, -8.331660300870e-01, 2.157208098235e-04, 1.5105e+03, 4.1208e+01, 
  1DIAGNOSTIC,    23, -8.333478443484e-01, 1.830204640907e-04, 1.5518e+03, 4.1276e+01, 
+ 1DIAGNOSTIC,    24, -8.335066733537e-01, 1.560590066982e-04, 1.5929e+03, 4.1111e+01, 
+ 1DIAGNOSTIC,    25, -8.336480082222e-01, 1.343567024112e-04, 1.6338e+03, 4.0919e+01, 
+ 1DIAGNOSTIC,    26, -8.337725513300e-01, 1.159717548826e-04, 1.6750e+03, 4.1175e+01, 
+ 1DIAGNOSTIC,    27, -8.338875598495e-01, 1.003372223888e-04, 1.7163e+03, 4.1236e+01, 
+ 1DIAGNOSTIC,    28, -8.339916137846e-01, 8.677480309313e-05, 1.7574e+03, 4.1148e+01, 
+ 1DIAGNOSTIC,    29, -8.340868025221e-01, 7.502178609111e-05, 1.7988e+03, 4.1430e+01, 
+ 1DIAGNOSTIC,    30, -8.341748425865e-01, 6.484837071202e-05, 1.8400e+03, 4.1149e+01, 
+ 1DIAGNOSTIC,    31, -8.342583789825e-01, 5.612413106514e-05, 1.8814e+03, 4.1371e+01, 
+ 1DIAGNOSTIC,    32, -8.343324183831e-01, 4.867905584613e-05, 1.9225e+03, 4.1109e+01, 
+ 1DIAGNOSTIC,    33, -8.344004675163e-01, 4.234875590753e-05, 1.9638e+03, 4.1306e+01, 
+ 1DIAGNOSTIC,    34, -8.344673626153e-01, 3.700623342394e-05, 2.0051e+03, 4.1367e+01, 
+ 1DIAGNOSTIC,    35, -8.345268568682e-01, 3.249201664069e-05, 2.0461e+03, 4.0951e+01, 
+ 1DIAGNOSTIC,    36, -8.345768253591e-01, 2.870570297674e-05, 2.0873e+03, 4.1227e+01, 
+ 1DIAGNOSTIC,    37, -8.346183499266e-01, 2.546285529197e-05, 2.1286e+03, 4.1333e+01, 
+ 1DIAGNOSTIC,    38, -8.346550725294e-01, 2.263894367059e-05, 2.1699e+03, 4.1255e+01, 
+ 1DIAGNOSTIC,    39, -8.346891843122e-01, 2.014450815410e-05, 2.2112e+03, 4.1313e+01, 
+ 1DIAGNOSTIC,    40, -8.347190137422e-01, 1.791215223309e-05, 2.2527e+03, 4.1442e+01, 
+ 1DIAGNOSTIC,    41, -8.347472343530e-01, 1.589341933871e-05, 2.2938e+03, 4.1121e+01, 
+ 1DIAGNOSTIC,    42, -8.347740838479e-01, 1.408171191219e-05, 2.3349e+03, 4.1116e+01, 
+ 1DIAGNOSTIC,    43, -8.348009823618e-01, 1.246617005394e-05, 2.3761e+03, 4.1206e+01, 
+ 1DIAGNOSTIC,    44, -8.348291229060e-01, 1.104917665608e-05, 2.4173e+03, 4.1164e+01, 
+ 1DIAGNOSTIC,    45, -8.348580983660e-01, 9.833908303745e-06, 2.4580e+03, 4.0782e+01, 
+ 1DIAGNOSTIC,    46, -8.348908553826e-01, 8.845964850748e-06, 2.4994e+03, 4.1306e+01, 
+ 1DIAGNOSTIC,    47, -8.349235970474e-01, 8.056384409972e-06, 2.5406e+03, 4.1277e+01, 
+ 1DIAGNOSTIC,    48, -8.349589779335e-01, 7.461912398629e-06, 2.5820e+03, 4.1405e+01, 
+ 1DIAGNOSTIC,    49, -8.349955790162e-01, 7.069957066334e-06, 2.6232e+03, 4.1189e+01, 
+ 1DIAGNOSTIC,    50, -8.350352056975e-01, 6.859592394968e-06, 2.6641e+03, 4.0870e+01, 
+ 1DIAGNOSTIC,    51, -8.350761880388e-01, 6.786587513845e-06, 2.7053e+03, 4.1201e+01, 
+ 1DIAGNOSTIC,    52, -8.351187561644e-01, 6.810022532156e-06, 2.7465e+03, 4.1255e+01, 
+ 1DIAGNOSTIC,    53, -8.351645037355e-01, 6.910903977392e-06, 2.7878e+03, 4.1229e+01, 
+ 1DIAGNOSTIC,    54, -8.352124325366e-01, 7.073455290947e-06, 2.8288e+03, 4.1060e+01, 
+ 1DIAGNOSTIC,    55, -8.352589227999e-01, 7.257701927704e-06, 2.8701e+03, 4.1303e+01, 
+ 1DIAGNOSTIC,    56, -8.353049499130e-01, 7.441010109438e-06, 2.9113e+03, 4.1172e+01, 
+ 1DIAGNOSTIC,    57, -8.353507572904e-01, 7.603863756075e-06, 2.9525e+03, 4.1219e+01, 
+ 1DIAGNOSTIC,    58, -8.353941501159e-01, 7.725276025387e-06, 2.9938e+03, 4.1231e+01, 
+ 1DIAGNOSTIC,    59, -8.354406920458e-01, 7.813883650232e-06, 3.0351e+03, 4.1289e+01, 
+ 1DIAGNOSTIC,    60, -8.354844928348e-01, 7.853672342330e-06, 3.0762e+03, 4.1197e+01, 
+ 1DIAGNOSTIC,    61, -8.355310415819e-01, 7.864688914103e-06, 3.1176e+03, 4.1323e+01, 
+ 1DIAGNOSTIC,    62, -8.355777629300e-01, 7.842375846469e-06, 3.1588e+03, 4.1256e+01, 
+ 1DIAGNOSTIC,    63, -8.356267700522e-01, 7.801828102890e-06, 3.2002e+03, 4.1367e+01, 
+ 1DIAGNOSTIC,    64, -8.356772627326e-01, 7.749687339909e-06, 3.2408e+03, 4.0630e+01, 
+ 1DIAGNOSTIC,    65, -8.357298935306e-01, 7.701673768488e-06, 3.2820e+03, 4.1171e+01, 
+ 1DIAGNOSTIC,    66, -8.357845440273e-01, 7.665903038991e-06, 3.3233e+03, 4.1291e+01, 
+ 1DIAGNOSTIC,    67, -8.358420081055e-01, 7.652881545042e-06, 3.3644e+03, 4.1114e+01, 
+ 1DIAGNOSTIC,    68, -8.358963026652e-01, 7.656735245665e-06, 3.4057e+03, 4.1283e+01, 
+ 1DIAGNOSTIC,    69, -8.359442790824e-01, 7.658314718150e-06, 3.4469e+03, 4.1189e+01, 
+ 1DIAGNOSTIC,    70, -8.359876590561e-01, 7.633819003712e-06, 3.4879e+03, 4.1076e+01, 
+XXDIAGNOSTIC,Iteration,metricValue,convergenceValue,ITERATION_TIME_INDEX,SINCE_LAST
+ 1DIAGNOSTIC,     1, -8.102796796297e-01, 1.797693134862e+308, 3.8255e+03, 3.3754e+02, 
+ 1DIAGNOSTIC,     2, -8.111360827496e-01, 1.797693134862e+308, 4.1565e+03, 3.3099e+02, 
+ 1DIAGNOSTIC,     3, -8.121009348375e-01, 1.797693134862e+308, 4.4890e+03, 3.3255e+02, 
+ 1DIAGNOSTIC,     4, -8.130405973729e-01, 1.797693134862e+308, 4.8215e+03, 3.3246e+02, 
+ 1DIAGNOSTIC,     5, -8.138399174547e-01, 1.797693134862e+308, 5.1549e+03, 3.3337e+02, 
+ 1DIAGNOSTIC,     6, -8.145645147249e-01, 1.797693134862e+308, 5.4879e+03, 3.3304e+02, 
+ 1DIAGNOSTIC,     7, -8.151932316834e-01, 1.797693134862e+308, 5.8214e+03, 3.3346e+02, 
+ 1DIAGNOSTIC,     8, -8.157861266700e-01, 1.797693134862e+308, 6.1552e+03, 3.3385e+02, 
+ 1DIAGNOSTIC,     9, -8.163390839748e-01, 1.797693134862e+308, 6.4892e+03, 3.3395e+02, 
+ 1DIAGNOSTIC,    10, -8.168291711732e-01, 1.797693134862e+308, 6.8232e+03, 3.3399e+02, 
+ 1DIAGNOSTIC,    11, -8.172881555549e-01, 1.797693134862e+308, 7.1561e+03, 3.3297e+02, 
+ 1DIAGNOSTIC,    12, -8.176604203326e-01, 1.797693134862e+308, 7.4896e+03, 3.3351e+02, 
+ 1DIAGNOSTIC,    13, -8.180412666260e-01, 1.797693134862e+308, 7.8226e+03, 3.3292e+02, 
+ 1DIAGNOSTIC,    14, -8.183505271724e-01, 1.797693134862e+308, 8.1547e+03, 3.3212e+02, 
+ 1DIAGNOSTIC,    15, -8.186423296360e-01, 4.185107631018e-04, 8.4883e+03, 3.3366e+02, 
+ 1DIAGNOSTIC,    16, -8.189537844529e-01, 3.584569977734e-04, 8.8217e+03, 3.3335e+02, 
+ 1DIAGNOSTIC,    17, -8.192046339570e-01, 3.057407316752e-04, 9.1560e+03, 3.3426e+02, 
+ 1DIAGNOSTIC,    18, -8.194317010757e-01, 2.615784037643e-04, 9.4901e+03, 3.3417e+02, 
+ 1DIAGNOSTIC,    19, -8.196888157227e-01, 2.258683909574e-04, 9.8245e+03, 3.3441e+02, 
+ 1DIAGNOSTIC,    20, -8.198898861061e-01, 1.959461838529e-04, 1.0158e+04, 3.3328e+02, 
+  Elapsed time (stage 2): 1.016e+04
+
+
+Total elapsed time: 1.146e+04
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+mv /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1InverseWarp.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_TemplateToSubject0Warp.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/antsApplyTransforms -d 3 -o Linear[/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_TemplateToSubject1GenericAffine.mat,1] -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat --verbose 1
+Using double precision for computations.
+=============================================================================
+The composite transform comprises the following transforms (in order): 
+  1. /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat (type = AffineTransform)
+=============================================================================
+Default pixel value: 0
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+
+--------------------------------------------------------------------------------------
+ Done with registration:  3h 11m 25s
+--------------------------------------------------------------------------------------
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ExtractedBrain0N4.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/CreateJacobianDeterminantImage 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplateLogJacobian.nii.gz 1 1
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+
+--------------------------------------------------------------------------------------
+ Cortical thickness using DiReCT (KellyKapowski)
+--------------------------------------------------------------------------------------
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+cp /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationPosteriors002.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors002.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+cp /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationPosteriors003.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors003.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ImageMath 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors003.nii.gz + /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors003.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationPosteriors004.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ImageMath 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessSegmentation.nii.gz ReplaceVoxelValue /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation.nii.gz 4 4 3
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/KellyKapowski -d 3 -s [/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessSegmentation.nii.gz,2,3] --verbose 1 -g /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors002.nii.gz -w /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors003.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThickness.nii.gz -c [45,0.0,10] -r 0.025 -m 1.5 -n 10 -b 0 -t 10
+Running DiReCT for 3-dimensional images.
+
+  Iteration 1 (of 45).  Current energy = 0.8085.  
+  Iteration 2 (of 45).  Current energy = 0.753354.  
+  Iteration 3 (of 45).  Current energy = 0.708551.  
+  Iteration 4 (of 45).  Current energy = 0.674765.  
+  Iteration 5 (of 45).  Current energy = 0.64804.  
+  Iteration 6 (of 45).  Current energy = 0.628993.  
+  Iteration 7 (of 45).  Current energy = 0.614023.  
+  Iteration 8 (of 45).  Current energy = 0.603343.  
+  Iteration 9 (of 45).  Current energy = 0.59487.  
+  Iteration 10 (of 45).  Current energy = 0.588295.  (convergence value = 0.0199104, threshold = 0)
+  Iteration 11 (of 45).  Current energy = 0.582494.  (convergence value = 0.0140141, threshold = 0)
+  Iteration 12 (of 45).  Current energy = 0.578378.  (convergence value = 0.00987175, threshold = 0)
+  Iteration 13 (of 45).  Current energy = 0.574925.  (convergence value = 0.00702792, threshold = 0)
+  Iteration 14 (of 45).  Current energy = 0.572094.  (convergence value = 0.00505879, threshold = 0)
+  Iteration 15 (of 45).  Current energy = 0.569509.  (convergence value = 0.00372933, threshold = 0)
+  Iteration 16 (of 45).  Current energy = 0.567493.  (convergence value = 0.00279297, threshold = 0)
+  Iteration 17 (of 45).  Current energy = 0.565639.  (convergence value = 0.00214287, threshold = 0)
+  Iteration 18 (of 45).  Current energy = 0.564153.  (convergence value = 0.00166469, threshold = 0)
+  Iteration 19 (of 45).  Current energy = 0.562854.  (convergence value = 0.00131083, threshold = 0)
+  Iteration 20 (of 45).  Current energy = 0.561629.  (convergence value = 0.00104423, threshold = 0)
+  Iteration 21 (of 45).  Current energy = 0.560648.  (convergence value = 0.000851042, threshold = 0)
+  Iteration 22 (of 45).  Current energy = 0.559739.  (convergence value = 0.0006991, threshold = 0)
+  Iteration 23 (of 45).  Current energy = 0.558953.  (convergence value = 0.000578616, threshold = 0)
+  Iteration 24 (of 45).  Current energy = 0.558105.  (convergence value = 0.000483777, threshold = 0)
+  Iteration 25 (of 45).  Current energy = 0.557625.  (convergence value = 0.000407116, threshold = 0)
+  Iteration 26 (of 45).  Current energy = 0.556832.  (convergence value = 0.000347797, threshold = 0)
+  Iteration 27 (of 45).  Current energy = 0.556235.  (convergence value = 0.000301964, threshold = 0)
+  Iteration 28 (of 45).  Current energy = 0.555723.  (convergence value = 0.000263914, threshold = 0)
+  Iteration 29 (of 45).  Current energy = 0.555195.  (convergence value = 0.000232783, threshold = 0)
+  Iteration 30 (of 45).  Current energy = 0.554721.  (convergence value = 0.000208129, threshold = 0)
+  Iteration 31 (of 45).  Current energy = 0.554289.  (convergence value = 0.000186601, threshold = 0)
+  Iteration 32 (of 45).  Current energy = 0.553969.  (convergence value = 0.000166636, threshold = 0)
+  Iteration 33 (of 45).  Current energy = 0.553566.  (convergence value = 0.000148948, threshold = 0)
+  Iteration 34 (of 45).  Current energy = 0.55316.  (convergence value = 0.000135603, threshold = 0)
+  Iteration 35 (of 45).  Current energy = 0.552773.  (convergence value = 0.000121616, threshold = 0)
+  Iteration 36 (of 45).  Current energy = 0.552389.  (convergence value = 0.000112292, threshold = 0)
+  Iteration 37 (of 45).  Current energy = 0.55206.  (convergence value = 0.00010464, threshold = 0)
+  Iteration 38 (of 45).  Current energy = 0.5517.  (convergence value = 9.82837e-05, threshold = 0)
+  Iteration 39 (of 45).  Current energy = 0.551461.  (convergence value = 9.2134e-05, threshold = 0)
+  Iteration 40 (of 45).  Current energy = 0.551107.  (convergence value = 8.73479e-05, threshold = 0)
+  Iteration 41 (of 45).  Current energy = 0.550792.  (convergence value = 8.31313e-05, threshold = 0)
+  Iteration 42 (of 45).  Current energy = 0.550532.  (convergence value = 7.76849e-05, threshold = 0)
+  Iteration 43 (of 45).  Current energy = 0.55023.  (convergence value = 7.28972e-05, threshold = 0)
+  Iteration 44 (of 45).  Current energy = 0.550005.  (convergence value = 6.81889e-05, threshold = 0)
+  Iteration 45 (of 45).  Current energy = 0.549776.  (convergence value = 6.36786e-05, threshold = 0)
+   ImageToImageFilter (0x555555c09ad0)
+     RTTI typeinfo:   itk::DiReCTImageFilter<itk::Image<unsigned int, 3u>, itk::Image<float, 3u> >
+     Reference Count: 1
+     Modified Time: 675485
+     Debug: Off
+     Object Name: 
+     Observers: 
+       IterationEvent(Command)
+     Inputs: 
+       Primary: (0x555555c141a0) *
+       _1: (0x555555c1d1d0)
+       _2: (0x555555c145c0)
+     Indexed Inputs: 
+       0: Primary (0x555555c141a0)
+       1: _1 (0x555555c1d1d0)
+       2: _2 (0x555555c145c0)
+     Required Input Names: Primary
+     NumberOfRequiredInputs: 3
+     Outputs: 
+       Primary: (0x555555c2ed10)
+       _1: (0x555555c2d970)
+     Indexed Outputs: 
+       0: Primary (0x555555c2ed10)
+       1: _1 (0x555555c2d970)
+     NumberOfRequiredOutputs: 1
+     Number Of Work Units: 112
+     ReleaseDataFlag: Off
+     ReleaseDataBeforeUpdateFlag: Off
+     AbortGenerateData: Off
+     Progress: 0
+     Multithreader: 
+       RTTI typeinfo:   itk::PoolMultiThreader
+       Reference Count: 1
+       Modified Time: 193
+       Debug: Off
+       Object Name: 
+       Observers: 
+         none
+       Number of Work Units: 112
+       Number of Threads: 28
+       Global Maximum Number Of Threads: 128
+       Global Default Number Of Threads: 28
+       Global Default Threader Type: PoolMultiThreader
+       SingleMethod: 0
+       SingleData: 0
+     DynamicMultiThreading: On
+     CoordinateTolerance: 1e-06
+     DirectionTolerance: 1e-06
+     Gray matter label = 2
+     White matter label = 3
+     Maximum number of iterations = 45
+     Thickness prior estimate = 10
+     Smoothing variance = 1
+     Smoothing velocity field variance = 1.5
+     Number of integration points = 10
+     Maximum number of invert displacement field iterations = 20
+     Initial gradient step = 0.025
+     Current gradient step = 0.025
+     Convergence threshold = 0
+     Convergence window size = 10
+     Time smoothing variance = 1
+DiReCT elapsed time: 14387.7
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors002.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessPosteriors003.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessSegmentation.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+
+--------------------------------------------------------------------------------------
+ Done with cortical thickness estimation:  3h 59m 49s
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+Compute summary measurements
+--------------------------------------------------------------------------------------
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/antsApplyTransforms -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThickness.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessNormalizedToTemplate.nii.gz -r /xcpEngine/space/MNI/MNI-1x1x1.nii.gz -n Gaussian -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat --float 0 --verbose 1
+Using double precision for computations.
+Input scalar image: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThickness.nii.gz
+Reference image: /xcpEngine/space/MNI/MNI-1x1x1.nii.gz
+=============================================================================
+The composite transform comprises the following transforms (in order): 
+  1. /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat (type = AffineTransform)
+  2. /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz (type = DisplacementFieldTransform)
+=============================================================================
+Default pixel value: 0
+Interpolation type: GaussianInterpolateImageFunction
+Output warped image: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessNormalizedToTemplate.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ThresholdImage 3 /xcpEngine/space/MNI/MNI-1x1x1.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_RegistrationTemplateBrainMask.nii.gz 1E-6 Inf
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ImageMath 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ExtractedBrain0N4.nii.gz m /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainExtractionMask.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/antsApplyTransforms -d 3 -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ExtractedBrain0N4.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainNormalizedToTemplate.nii.gz -r /xcpEngine/space/MNI/MNI-1x1x1.nii.gz -n Linear -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz -t /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat --float 0 --verbose 1
+Using double precision for computations.
+Input scalar image: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ExtractedBrain0N4.nii.gz
+Reference image: /xcpEngine/space/MNI/MNI-1x1x1.nii.gz
+=============================================================================
+The composite transform comprises the following transforms (in order): 
+  1. /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate0GenericAffine.mat (type = AffineTransform)
+  2. /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_SubjectToTemplate1Warp.nii.gz (type = DisplacementFieldTransform)
+=============================================================================
+Default pixel value: 0
+Interpolation type: LinearInterpolateImageFunction
+Output warped image: /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainNormalizedToTemplate.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+--------------------------------------------------------------------------------------
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ResampleImageBySpacing 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainExtractionMask.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainExtractionMaskResampled.nii.gz 1 1 1 0 0 1
+ spacing [1, 1, 1] dim 3
+ spacing2 [1, 1, 1]
+ out space [1, 1, 1]
+ output size [176, 256, 255] spc [1, 1, 1]
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ResampleImageBySpacing 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4Resampled.nii.gz 1 1 1
+ spacing [1, 1, 1] dim 3
+ spacing2 [1, 1, 1]
+ smoothing by : -1.3113e-06 dir 0
+ smoothing by : 0 dir 1
+ smoothing by : 5.96046e-08 dir 2
+ out space [1, 1, 1]
+ output size [176, 256, 255] spc [1, 1, 1]
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ResampleImageBySpacing 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThickness.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotResampled.nii.gz 1 1 1
+ spacing [1, 1, 1] dim 3
+ spacing2 [1, 1, 1]
+ smoothing by : -1.3113e-06 dir 0
+ smoothing by : 0 dir 1
+ smoothing by : 5.96046e-08 dir 2
+ out space [1, 1, 1]
+ output size [176, 256, 255] spc [1, 1, 1]
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ResampleImageBySpacing 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationResampled.nii.gz 1 1 1 0 0 1
+ spacing [1, 1, 1] dim 3
+ spacing2 [1, 1, 1]
+ out space [1, 1, 1]
+ output size [176, 256, 255] spc [1, 1, 1]
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ThresholdImage 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotResampled.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessMask.nii.gz 0 0 0 1
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ConvertScalarImageToRGB 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotResampled.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotRGB.nii.gz none hot none 0 10
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/CreateTiledMosaic -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4Resampled.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotRGB.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessTiledMosaic.png -a 1.0 -t -1x-1 -d z -p mask -s [2,mask,mask] -x /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessMask.nii.gz
+Slices[2]: 72
+Rows:  8
+Columns:  9
+Processing slice 101
+Processing slice 103
+Processing slice 105
+Processing slice 107
+Processing slice 109
+Processing slice 111
+Processing slice 113
+Processing slice 115
+Processing slice 117
+Processing slice 119
+Processing slice 121
+Processing slice 123
+Processing slice 125
+Processing slice 127
+Processing slice 129
+Processing slice 131
+Processing slice 133
+Processing slice 135
+Processing slice 137
+Processing slice 139
+Processing slice 141
+Processing slice 143
+Processing slice 145
+Processing slice 147
+Processing slice 149
+Processing slice 151
+Processing slice 153
+Processing slice 155
+Processing slice 157
+Processing slice 159
+Processing slice 161
+Processing slice 163
+Processing slice 165
+Processing slice 167
+Processing slice 169
+Processing slice 171
+Processing slice 173
+Processing slice 175
+Processing slice 177
+Processing slice 179
+Processing slice 181
+Processing slice 183
+Processing slice 185
+Processing slice 187
+Processing slice 189
+Processing slice 191
+Processing slice 193
+Processing slice 195
+Processing slice 197
+Processing slice 199
+Processing slice 201
+Processing slice 203
+Processing slice 205
+Processing slice 207
+Processing slice 209
+Processing slice 211
+Processing slice 213
+Processing slice 215
+Processing slice 217
+Processing slice 219
+Processing slice 221
+Processing slice 223
+Processing slice 225
+Processing slice 227
+Processing slice 229
+Processing slice 231
+Processing slice 233
+Processing slice 235
+Processing slice 237
+Processing slice 239
+Processing slice 241
+Processing slice 243
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/ConvertScalarImageToRGB 3 /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationResampled.nii.gz /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationRGB.nii.gz none custom /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ItkSnapColormap.txt 0 6
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+/opt/ants-latest/bin/CreateTiledMosaic -i /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4Resampled.nii.gz -r /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationRGB.nii.gz -o /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationTiledMosaic.png -a 0.3 -t -1x-1 -d 2 -p mask -s [2,mask,mask] -x /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainExtractionMaskResampled.nii.gz
+Slices[2]: 84
+Rows:  9
+Columns:  10
+Processing slice 78
+Processing slice 80
+Processing slice 82
+Processing slice 84
+Processing slice 86
+Processing slice 88
+Processing slice 90
+Processing slice 92
+Processing slice 94
+Processing slice 96
+Processing slice 98
+Processing slice 100
+Processing slice 102
+Processing slice 104
+Processing slice 106
+Processing slice 108
+Processing slice 110
+Processing slice 112
+Processing slice 114
+Processing slice 116
+Processing slice 118
+Processing slice 120
+Processing slice 122
+Processing slice 124
+Processing slice 126
+Processing slice 128
+Processing slice 130
+Processing slice 132
+Processing slice 134
+Processing slice 136
+Processing slice 138
+Processing slice 140
+Processing slice 142
+Processing slice 144
+Processing slice 146
+Processing slice 148
+Processing slice 150
+Processing slice 152
+Processing slice 154
+Processing slice 156
+Processing slice 158
+Processing slice 160
+Processing slice 162
+Processing slice 164
+Processing slice 166
+Processing slice 168
+Processing slice 170
+Processing slice 172
+Processing slice 174
+Processing slice 176
+Processing slice 178
+Processing slice 180
+Processing slice 182
+Processing slice 184
+Processing slice 186
+Processing slice 188
+Processing slice 190
+Processing slice 192
+Processing slice 194
+Processing slice 196
+Processing slice 198
+Processing slice 200
+Processing slice 202
+Processing slice 204
+Processing slice 206
+Processing slice 208
+Processing slice 210
+Processing slice 212
+Processing slice 214
+Processing slice 216
+Processing slice 218
+Processing slice 220
+Processing slice 222
+Processing slice 224
+Processing slice 226
+Processing slice 228
+Processing slice 230
+Processing slice 232
+Processing slice 234
+Processing slice 236
+Processing slice 238
+Processing slice 240
+Processing slice 242
+Processing slice 244
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotRGB.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessMask.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationRGB.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_ItkSnapColormap.txt
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentation0N4Resampled.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_CorticalThicknessHotResampled.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainExtractionMaskResampled.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+rm -f /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/struc/sub-SH166_ses-1_BrainSegmentationResampled.nii.gz
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+BEGIN >>>>>>>>>>>>>>>>>>>>
+checkOutputExists
+END   <<<<<<<<<<<<<<<<<<<<
+
+
+
+--------------------------------------------------------------------------------------
+ Done with ANTs processing pipeline: stage 0
+ Script executed in 44741 seconds
+ 12h 25m 41s
+--------------------------------------------------------------------------------------
+····································································
+Processing step complete:
+ANTs cortical thickness pipeline
+····································································
+Processing step complete:
+Quality assessment
+
+
+
+Module Workflow Map
+····································································
+· START
+· @0.1
+· @0
+· @0.1a
+· @0.1b
+· @0.1c
+· @0.1d
+· @1
+· @1.1a
+· @1.1b
+· @1.1c
+· @1.x
+· @8
+· @8.1
+· @8.2
+· @0.3
+· FINISH
+····································································
+
+
+Module complete
+
+
+
+###################################################################
+#  [0;31m⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:
+                         [0;31m★[0m gmd [0;31m★[0m
+#                                                                 #
+#  [0;31m⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+###################################################################
+# ⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗ #
+#                                                                 #
+#  ⊗                GREY MATTER DENSITY MODULE                 ⊗  #
+#                                                                 #
+# ⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗ #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/sub-SH166_ses-1.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/gmd]
+····································································
+Processing step complete:
+Computing 3-class segmentation
+····································································
+Processing step complete:
+Mapping grey matter density
+
+
+
+Module Workflow Map
+····································································
+· START
+· @1
+· @1.1
+· @1.2
+· @1.3
+· @1.3
+· @1.4
+· @2
+· @2.1
+· @2.2
+· FINISH
+····································································
+
+
+Module complete
+
+
+
+###################################################################
+#  [0;31m⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗[0m  #
+#                                                                 #
+                  CURRENTLY PROCESSING MODULE:
+                         [0;31m★[0m jlf [0;31m★[0m
+#                                                                 #
+#  [0;31m⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗  ⊗[0m  #
+###################################################################
+
+
+
+[Delegating control to module]
+###################################################################
+# ⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗ #
+#                                                                 #
+#  ⊗                 JOINT LABEL FUSION MODULE                 ⊗  #
+#                                                                 #
+# ⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗⊗ #
+###################################################################
+
+
+
+[I][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/sub-SH166_ses-1.nii.gz]
+[O][/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf]
+
+--------------------------------------------------------------------------------------
+ Start JLFization
+--------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------
+ Parameters
+--------------------------------------------------------------------------------------
+ ANTSPATH is /opt/ants-latest/bin/
+
+ Dimensionality:           3
+ Output prefix:            /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_
+ Posteriors format:        
+ Target image:             /projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/sub-SH166_ses-1.nii.gz
+ Atlas images:             /xcpEngine/thirdparty/oasis30/Brains/1000.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1001.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1002.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1003.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1004.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1005.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1006.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1007.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1009.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1010.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1013.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1015.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1017.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1019.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1036.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1104.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1113.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1116.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1119.nii.gz /xcpEngine/thirdparty/oasis30/Brains/1122.nii.gz
+ Atlas labels:             /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1000.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1001.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1002.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1003.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1004.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1005.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1006.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1007.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1009.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1010.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1013.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1015.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1017.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1019.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1036.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1104.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1113.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1116.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1119.nii.gz /xcpEngine/thirdparty/oasis30/MICCAI2012ChallengeLabels/1122.nii.gz
+ Transformation:           s
+
+ Keep all images:          0
+ Processing type:          0
+ Number of cpu cores:      2
+--------------------------------------------------------------------------------------
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1000_0.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1001_1.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1002_2.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1003_3.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1004_4.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1005_5.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1006_6.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1007_7.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1009_8.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1010_9.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1013_10.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1015_11.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1017_12.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1019_13.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1036_14.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1104_15.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1113_16.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1116_17.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1119_18.sh
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/job_1122_19.sh
+
+--------------------------------------------------------------------------------------
+ Starting JLF
+--------------------------------------------------------------------------------------
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1000_0_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1001_1_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1002_2_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1003_3_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1004_4_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1005_5_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1006_6_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1007_7_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1009_8_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1010_9_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1013_10_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1015_11_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1017_12_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1019_13_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1036_14_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1104_15_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1113_16_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1116_17_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1119_18_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_1122_19_Warped.nii.gz
+/projects/adapt_lab/shared/SHARP/bids_data/derivatives/xcpEngine/data/sub-SH166/ses-1/jlf/sub-SH166_ses-1_JLF.sh
+
+Running antsJointFusion for 3-dimensional images.
+
+Weighted averaging: *********10*********20*********30*********40*********50*********60*********70*********80*********90*********
